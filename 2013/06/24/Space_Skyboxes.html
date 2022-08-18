@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Space Skyboxes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>June 24, 2013</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Space Skyboxes
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>Recently I came across <a href="http://alexcpeterson.com/spacescape">Alex Patterson’s
+Spacescape</a> program. It creates
+<a href="http://en.wikipedia.org/wiki/Skybox_(video_games)">space skyboxes</a> by
+building up layers of stars, billboards (special stars, galaxies or
+other external images) and noise (for gas and nebulae). These can then
+be exported as a standard 6 skybox images each up to 4096x4096
+resolution. All this under the permissive <a href="http://en.wikipedia.org/wiki/MIT_License">MIT
+License</a>. Definitely worth
+checking out if you are developing a space-based project.</p>
+
+<p><img src="/assets/posts/ci/skybox.png" alt="" /></p>
+
+<p>This could be very useful in Concealed Intent. However, there are a
+couple of issues to be noted when importing the resulting images into a
+Unity skybox. For more details see the <a href="http://docs.unity3d.com/Documentation/Manual/Textures.html">Unity Texture
+documentation</a></p>
+
+<ul>
+  <li>Spacescape and Unity use opposite conventions for left and right
+skybox images - put the left Spacescape image in Unity’s right
+skybox slot and vice-versa.</li>
+  <li>All images should have their wrap mode set to clamp in Unity.
+Otherwise the seams between images will be visible.</li>
+  <li>The default max texture size for Unity is often set to 1024 (at
+least it was for me). If Spacescape has produced images at higher
+quality be sure to update Unity to get the full resolution image.</li>
+</ul>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/Unity.html">Unity</a>, 
+    
+      <a class="post" href="/blog/tag/Technical.html">Technical</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

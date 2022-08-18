@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vsync</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>September  8, 2012</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Vsync
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>The last couple of days I have struggling with frame stuttering or
+skipping in Unity3D. It seems that movement in my game would
+occasionally miss a frame or not update properly. It transpires that it
+is not Unity causing the problem, instead seems to be caused by a vsync
+mismatch between Windows and the video card.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Screen_tearing">Vsync</a> is a system built
+into monitors to prevent screen tearing. A monitor updates the image it
+displays at a set rate - 60 times a second (hertz) for my monitor.
+However computers may prepare frames for display at a greater rate and
+if the computer updates the frame to display in the middle of the
+monitor displaying a frame then what is actually shown may be a mix of
+the two. This is screen tearing. Many games allow their framerate to be
+locked to monitor refresh rate to prevent tearing - this is vsync.</p>
+
+<p>It seems Windows 7 also uses vsync to prevent tearing with its display.
+For some reason Windows uses a refresh rate of 59 hertz and I can’t seem
+to change it. This seems to cause a 1 frame per second mismatch, about
+the same rate of stutter observed. There are people with people with
+similar problems on the Unity forums
+<a href="http://forum.unity3d.com/threads/137924-Stuttering-with-vSync">here</a>
+and
+<a href="http://forum.unity3d.com/threads/142754-linear-movement-stuttering">here</a>
+(and others, but the important information is just repeated).</p>
+
+<p>I couldn’t find a way to change the monitor’s vsync rate. Instead I
+tried <a href="http://docs.unity3d.com/Documentation/Components/class-QualitySettings.html">turning off vsync in
+Unity</a>
+and with my slower mac with vsync - both resulted in the problem
+disappearing. Thus, I am fairly sure that the issue is not in my (still
+quite simple) Unity game. Although, there is some talk that this
+<a href="http://www.sevenforums.com/gaming/5397-they-need-fix-asap-aero-vsync.html">doesn’t happen in fullscreen
+mode</a>,
+but when I tried fullscreen it still occurred.</p>
+
+<p>I’m not sure how to completely fix this. With vsync turned off my game
+runs at around 4000 fps on my development machine, so there is little
+chance of tearing, but no guarantee other people will be as lucky.
+Anyone have any ideas?</p>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/General.html">General</a>, 
+    
+      <a class="post" href="/blog/tag/Unity.html">Unity</a>, 
+    
+      <a class="post" href="/blog/tag/Windows.html">Windows</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

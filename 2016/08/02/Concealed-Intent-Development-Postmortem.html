@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Concealed Intent Development Postmortem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>August  2, 2016</h4>
+<h4>Category: Posts</h4>
+<h4>Author: Charles</h4>
+<h2>Concealed Intent Development Postmortem
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p><em>“People wanted for hazardous journey. Low wages, bitter cold, long
+hours of complete darkness. Safe return doubtful. Honour and recognition
+in event of success.”</em></p>
+
+<p>Paraphrasing Shakleton’s recruiting notice for Antarctic exploration
+works surprisingly well for indiedevs too.</p>
+
+<p>Today is the culmination (but not termination) of nearly four years of
+effort. My game, Concealed Intent, is now out of Early Access and fully
+released on Steam. It has easily been the largest project I have ever
+undertaken and required intense effort to reach this point. Working
+largely alone in a foreign country I often found myself questioning what
+I was doing. However, in retrospect, I would still do it over again -
+but with a few changes (see the “What went not so well” list below).</p>
+
+<p>After a brief (and shameless) video interlude for Concealed Intent
+itself, I will detail the things I think went right and not so well
+during the development process. I have tried to think back to my state
+of mind four years ago, just before starting and offer advice to that
+naive and optimistic person. A later post, some time after the release,
+will look at the business and financial side of the game - was it
+profitable: stay tuned to find out!</p>
+
+<!--more-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/diqOSzcYhfU" frameborder="0" allowfullscreen=""></iframe>
+
+<p>Concealed Intent is a simultaneous turn-based game of tactical stealth
+space combat, strongly influenced by games such as Homeworld and Frozen
+Synapse. Players control their ships in a fully 3D world - hunting down
+their enemies, just as they are being hunted themselves. In Concealed
+Intent you know your enemies are out there, but not exactly where, or
+even what they are. Concealed Intent includes a single-player campaign,
+an instant skirmish generator and multiplayer options.</p>
+
+<p>Let’s start with the positives.</p>
+
+<p><strong>What went well:</strong></p>
+
+<ul>
+  <li><strong>Luck (or not going broke)</strong> - I am immensely lucky the opportunity
+to make any game came my way. I spent 15 years in software
+development and was reasonably confident I could handle the coding
+side of game development (which was lucky). Cheap or even free game
+engines and assets have lowered the barriers to entry (luckily for
+me). Then my girlfriend got a job in Malaysia where our basic
+expenses would be covered by her employer (even more luck!). This is
+what allowed me the financial freedom to work on a project of my
+choice - and I chose game development. Concealed Intent would never
+have been started without this safety net. Based on Early Access
+sales, this game is unlikely to be a big success. I am lucky to be
+in a position not to worry about a small loss, and still know I will
+eat well and have a roof over my head. It is hard for me to advise
+people to create a game on the basis of profitability. Potential
+indiedevs, please consider this carefully.</li>
+</ul>
+
+<!-- -->
+
+<ul>
+  <li><strong>Finished (or stubbornness)</strong> - So many days started with
+questions: why am I doing this; is there a bad bug; will today be
+the day I fail? However, I just kept going. Many times I wanted to
+give up, but I didn’t have a good excuse other than it was hard
+(money problems would be a good excuse, just not for me, see above).
+I learnt to create a list of tasks looking only a week or two ahead
+and focus solely on them. Eventually, I managed to get on top of the
+project, and then the thought of actually completing a game
+motivated me to finish. You have to really want to finish.</li>
+</ul>
+
+<!-- -->
+
+<ul>
+  <li><strong>Professional help with art</strong> - I did every element of the game
+that I could myself, largely due to my incredibly low budget (not
+counting my time). This worked fine with all the coding tasks, but
+not so well in other areas. One of the best decisions I made was to
+hire a local freelancer to create the 2D art and provide advice on
+the GUI ’s graphic design. After adding her work into the game, the
+difference in player feedback was instant and massively positive.
+Now I regularly get compliments on the GUI. People often call the
+game pretty. This never happened in earlier versions despite all the
+3D art remaining largely unchanged. Small things can make a big
+difference, so pay close attention to everything. There are some
+things you do well, and some things you don’t. Try to find people to
+help you. Unfortunately, this advice will be repeated in the “what
+went wrong” section.</li>
+</ul>
+
+<!-- -->
+
+<ul>
+  <li><strong>Hold the core, let the periphery change</strong> - Concealed Intent has
+massively changed over its development cycle. Not just in the
+graphics. The game has also become much simpler. Originally the game
+had a more real-world physics simulation model and vastly more
+configurable ship controls. Playtesting suggested this was overly
+complex. Various playtesters also suggested changing the game to be
+2D, or real-time or ditching the stealth/detection mechanic to make
+it more like other games they enjoyed. At this point I used a simple
+rule. If something was central to the concept of Concealed Intent,
+then I would not compromise on it - everything else would be
+considered. To me the game would not be Concealed Intent if it
+wasn’t completely 3D, turn-based and using a submarine-inspired
+detection system. If these things changed, it would someone else’s
+game. I may have backed myself into a small market niche, but
+despite all the gameplay improvements and simplifications, the
+original vision of Concealed Intent is intact. The current version
+is recognisably the same game as the early prototypes - only much
+better!</li>
+</ul>
+
+<!-- -->
+
+<ul>
+  <li><strong>Early Access works (if you know what you want from it)</strong> - There
+are many stories about Steam’s Early Access program, both positive
+and negative. For me the experience has definitely been positive. It
+has not made me much money, but that was never my goal. Instead, the
+game has received the feedback it desperately required. Also, just
+knowing that some people have paid their hard earned money for the
+game is huge motivation to make it the best game I can (admittedly
+not many people, but even one is enough). Lastly, almost everything
+I know about game marketing I have learnt the hard way through my
+time in Early Access. There is no doubt that if the game went
+straight to full release without having passed through EA, then it
+would have been worse and pathetically marketed (instead it will
+just be poorly marketed - still an improvement).</li>
+</ul>
+
+<p><a href="\assets\posts\ci\revenge_sss.png"><img src="\assets\posts\ci\revenge_sss_thumb.png" alt="Revenge is best served by a hot heavy beam" title="Revenge is best served by a hot heavy beam" /></a></p>
+
+<p><strong>What went not so well:</strong></p>
+
+<ul>
+  <li><strong>Too big, too long</strong> - Making a game is hard! Way harder than I
+expected. The original plan for Concealed Intent was 18 months -
+that was soon shown to be inadequate. Every system in the game has
+been reworked multiple times. There were numerous tasks not
+considered or even known about at the start. Everything took longer
+than expected. Worst of all, the largest expense on a project will
+be the time of the dev team (that is, me). By taking four years to
+finish the game I have likely condemned it to unprofitability after
+my living costs are considered (even in relatively cheap Malaysia).
+The fault here lays entirely with me; I simply dreamed too big at
+the start. Come up with the smallest decent idea you can, then try
+to make it smaller.</li>
+</ul>
+
+<!-- -->
+
+<ul>
+  <li><strong>Forever alone, and inexperienced</strong> - As well as being hard work,
+game development requires many different skills and can take a toll
+emotionally. Working alone just multiplies the difficulties. With a
+proper dev team, tasks can be split up, different abilities used and
+hopefully development time reduced. The benefits of companionship
+should not be underestimated either. I know (from experience) some
+publishers refuse to accept solo game developers. At first I thought
+that was short-sighted, now I think it is wise. For most of
+Concealed Intent’s development, I was alone, and it was hard. There
+was no one to fall back on. Try to find people to help you, both for
+their skills and company (remember that from above, it is repeated
+as it is important!).</li>
+</ul>
+
+<!-- -->
+
+<ul>
+  <li><strong>Marketing!</strong> - Obscurity is indie death. Did anyone who is reading
+this know about Concealed Intent beforehand? I doubt it. I have not
+done a good job with marketing. Lots of emails and review copies
+have been sent out. I try to stay active on social media. There have
+been some website articles and more Let’s Plays, but not really
+enough. When the game went into Early Access I discovered that it
+was not possible to do both development and marketing at the same
+time. I couldn’t do all the things indie devs are supposed to do. It
+was just too much, and too time consuming. I chose to prioritise
+finishing the game. Over the last month I have reversed this and
+focussed on marketing, but really it is an overwhelming job for a
+solo dev, with a niche game, no contacts and far from any large
+indie scene. My emails largely go ignored, probably in a pile of
+emails from other indies in the same situation. I have no idea how
+to solve this other than to keep going, do as much as you can, and
+keep looking for opportunities. A good game helps too.</li>
+</ul>
+
+<!-- -->
+
+<ul>
+  <li><strong>Lack of focus</strong> - Concealed Intent has a single-player campaign,
+procedural skirmishes and online multiplayer. This is too much, it
+would have been best to focus on one mode, at least at first. During
+development I didn’t know which was best. Early Access feedback
+suggested that procedural skirmishes were the most popular aspect,
+and luckily that plays to my strengths. Unfortunately, a great deal
+of effort went into the other game modes. They are still work well
+and remain in the game, but are less than I hoped. Creating a
+compelling (or even just acceptable) game story and online
+communities is exceptionally hard. Keep the game’s scope down by
+focussing on one type of gameplay and polishing it. It would have
+been best to start with one gameplay mode and then add the others
+later (as long as the code is designed to keep those options
+available).</li>
+</ul>
+
+<!-- -->
+
+<ul>
+  <li><strong>Niche and complex gameplay</strong> - Concealed Intent is much simpler
+now than originally envisioned, but it is still complex. There is a
+lot happening “under the hood”. I have found it hard to explain this
+to players. It is also a niche within a niche - space, turn-based,
+tactical. Think about this when designing games. Who are your
+players? I made the job of selling this game hard for myself by my
+choice of mechanics and setting. Although, this is the game I wanted
+to make.</li>
+</ul>
+
+<p><a href="\assets\posts\ci\savior_sss.png"><img src="\assets\posts\ci\savior_sss_thumb.png" alt="Taking damage while saving civilians" title="Taking damage while saving civilians" /></a></p>
+
+<p>As a parting gift, here are some other things I learnt that might be
+useful:</p>
+
+<ul>
+  <li>Don’t use the first version of a game engine’s major releases, wait
+for the patches (yeah, I’m looking at you large Danish game engine)</li>
+  <li>Write a game you enjoy playing, because you will play it an
+extraordinary amount</li>
+  <li>Music copyright is a minefield - upload any music you use as a
+private video on YouTube ASAP to see if anyone claims it</li>
+  <li>Key scammers are common, and will not care how small your game is -
+be wary!</li>
+  <li>Good feedback is hard to find and harder to accept/use. Be thankful
+for all the feedback you get (as long as it’s not ad hominem)</li>
+  <li>There are a surprisingly large number of non-English purchasers on
+Steam (at least surprising to me). Strongly consider localisation
+from the start. It is probably too late for Concealed Intent, but
+I’ll definitely be doing this in future.</li>
+  <li>The IGF competition doesn’t provide feedback anymore (at least not
+last year). If you have been advised to enter mainly for the
+feedback - check first!</li>
+</ul>
+
+<p>Thank you and good luck.</p>
+
+<p><strong>Comments:</strong>
+<em>I have removed the commenting system (for privacy concerns), below are the comments that were left on this post before doing so…</em></p>
+
+<p><em>cwagner @ 2016-08-02</em> - FWIW, I bought the game because of this nice write up :) I found it on my steam queue (my filtering is so restrictive I sometimes get games not even available in English) and added it to my wishlist last sale. Was on the edge of buying it now until after I read this :) Good luck with the sales :)</p>
+
+<p><em>Charles @ 2016-08-02</em> - Many thanks! So at least one reader knew about CI before reading, I was wrong :) I hope you enjoy the game. Feel free to contact me if you have any questions or issues. Charles.</p>
+
+<p><em>cwagner @ 2016-08-02</em> - Just posted a launch discount thread on gamedeals, maybe it’ll help ;) <a href="https://www.reddit.com/r/GameDeals/comments/4vtp3x/steam_concealed_intent_launch_discount_98934_off/" rel="nofollow noopener" title="https://www.reddit.com/r/GameDeals/comments/4vtp3x/steam_concealed_intent_launch_discount_98934_off/">https://www.reddit.com/r/Ga…</a></p>
+
+<p><em>Charles @ 2016-08-02</em> - It all helps, thank you. It is getting late here (nearly 2am), so I’ll have to stop soon, but tomorrow I’ll get to work on reddit - I plan on doing an AMA on /r/pcgaming</p>
+
+<p><em>John Back @ 2016-08-08</em> - Fantastic write-up.   See if you can get this onto Gamasutra - these 20-20 developer reflections are also the most valuable - really appreciate the time you’ve taken to do it.</p>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/ConcealedIntent.html">ConcealedIntent</a>, 
+    
+      <a class="post" href="/blog/tag/Postmortem.html">Postmortem</a>, 
+    
+      <a class="post" href="/blog/tag/DevDiary.html">DevDiary</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

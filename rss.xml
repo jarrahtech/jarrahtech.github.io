@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jarrah Technology</title>
+    <link>http://www.jarrahtechnology.com/</link>
+    <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Jarrah Technology</description>
+    <language>en-us</language>
+    <pubDate>Thu, 18 Aug 2022 17:20:25 +0800</pubDate>
+    <lastBuildDate>Thu, 18 Aug 2022 17:20:25 +0800</lastBuildDate>
+
+    
+    <item>
+      <title>Joining The Club - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/08/01/Joining-The-Club.html</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/08/01/Joining-The-Club</guid>
+      <description>&lt;p&gt;In July I joined the club - the Covid19 club. Luckily it was a fairly mild case but it still stopped work for nearly a fortnight (2 days in bed, a few days feeling sick and then a week super-tired). As a result I did very few hours on SHD, especially since the few hours I did spend coding were for the &lt;a href=&quot;https://old.reddit.com/r/roguelikedev/comments/vhfsda/roguelikedev_does_the_complete_roguelike_tutorial/&quot;&gt;/r/roguelikedev annual tutorial event&lt;/a&gt; (&lt;a href=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022&quot;&gt;repo&lt;/a&gt;, &lt;a href=&quot;https://jarrahtech.github.io/RoguelikeTutorial2022/&quot;&gt;playable version&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;So achievements are light this months. I have completed weeks 2 through 5 in the /r/roguelikedev challenge, with only 3 more weeks left. It has been worth doing (learning Javascript can only be useful) and without the structure I doubt I would have bothered. Given me a few more ideas to add to the list. As for SHD, I added and hooked up all the remaining planned unlocks/achievements. Plus a few bugfixes, that is it.&lt;/p&gt;
+
+&lt;p&gt;SHD tasks for the coming month are the same as last month: AI and cleanup. I’ll hopefully also get to move the websites, and of course, the last 3 weeks of the r/roguelikedev event.&lt;/p&gt;
+
+&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Wk 2-5 /r/roguelikedev tutorial event&lt;/li&gt;
+  &lt;li&gt;All unlocks/achievements done&lt;/li&gt;
+  &lt;li&gt;Some bugfixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Full AI&lt;/li&gt;
+  &lt;li&gt;Little improvements &amp;amp; bugfixes&lt;/li&gt;
+  &lt;li&gt;Next version of prototypes&lt;/li&gt;
+  &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
+  &lt;li&gt;Online component&lt;/li&gt;
+  &lt;li&gt;complete r/roguelikedev tutorial event&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Holiday - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/07/01/Holiday.html</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/07/01/Holiday</guid>
+      <description>&lt;p&gt;As expected June was a truncated month. A weeks holiday interstate and a couple of days dealing with house issues (the joys of living in an old house) put a big hole in my productivity and definitely slowed progress as I lost momentum. Maybe that is what has lead to me deciding to join the &lt;a href=&quot;https://old.reddit.com/r/roguelikedev/comments/vhfsda/roguelikedev_does_the_complete_roguelike_tutorial/&quot;&gt;/r/roguelikedev annual tutorial event&lt;/a&gt;. “Wait,” you say, “don’t you need to finish SHD first before starting another game?” Yes, you are right. This is almost certainly a bad use of my time, especially since I am trying it in a Javascript, a language I haven’t used properly in over 20 years (also, trying to relearn Git &amp;amp; Github at the same time). However, I think it might be useful for future work and I hope to spend no more than one day per week on getting it going (Week 1 took 2 hours, so far so good). If you want to see the WIP, the &lt;a href=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022&quot;&gt;repo is here&lt;/a&gt; and a &lt;a href=&quot;https://jarrahtech.github.io/RoguelikeTutorial2022/&quot;&gt;playable version here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;SHD is still getting very close to the end now too (about time!). I have added a bunch of new gameplay mechanics: base recharging; base powerups; and bombs. Last time I said the game quickly devolved into a slow defensive slog. Now, not so much. It is not a great game, although definitely a little better than before - and importantly, shorter! There was also some visual improvements and work on achievements. Not the best month in terms of hours worked, but there is clear progress. It was gratifying to see how easily the new mechancis were added due to the earlier framework tasks.&lt;/p&gt;
+
+&lt;p&gt;The remaining SHD tasks are now AI and cleanup. That is the plan for the month.&lt;/p&gt;
+
+&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Wk 1 /r/roguelikedev tutorial event&lt;/li&gt;
+  &lt;li&gt;Reorganised achievements&lt;/li&gt;
+  &lt;li&gt;Little visual improvements&lt;/li&gt;
+  &lt;li&gt;Reworked gameplay to make game faster more interesting - recharge, powerup bases, bomb hex&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finalise unlocks/achievements&lt;/li&gt;
+  &lt;li&gt;Full AI&lt;/li&gt;
+  &lt;li&gt;Little improvements &amp;amp; bugfixes&lt;/li&gt;
+  &lt;li&gt;Next version of prototypes&lt;/li&gt;
+  &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
+  &lt;li&gt;Online component&lt;/li&gt;
+  &lt;li&gt;r/roguelikedev tutorial event&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Done? - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/06/01/Done.html</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/06/01/Done</guid>
+      <description>&lt;p&gt;May was a solid month of work. Could have bee a record if not for losing 4 complete days to sickness and probably lower productivity for a few days after. There is a new AI and lots of little improvements. If a player want to keep going forever there is also now an “infinite” mode.&lt;/p&gt;
+
+&lt;p&gt;The biggest task completed was the engine rework - now finished and all (known) resulting bugs cleared. It took 6 weeks total. I thought in the best case it would require nearly 2 weeks, but gave myself 4 weeks due to experience :) So 6 weeks is not great, but not bad. Of course not all the time was taken with refactoring, there was also some prototype and time and a jaunt into the land of node servers and docker (just to learn about them) along the way, but that sort of thing is expected. Still think it was worth it, the final code is much better and more flexible! I’m happy.&lt;/p&gt;
+
+&lt;p&gt;June will be a short month (I’m away for a week), so of course I have a totally unrealistic list of tasks. The big one is to improve the gameplay. Playing against the new AI quickly results in a defensive slog of a game - not what I had intended. Hopefully I can think of some ways to improve it.&lt;/p&gt;
+
+&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rework engine complete&lt;/li&gt;
+  &lt;li&gt;New AI - but now game bogs down into defensive slogs&lt;/li&gt;
+  &lt;li&gt;Infinite mode&lt;/li&gt;
+  &lt;li&gt;Little visual improvements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improve gameplay?&lt;/li&gt;
+  &lt;li&gt;Rearrange unlocks&lt;/li&gt;
+  &lt;li&gt;Full AI (current version does not take advantage of all gameplay possibilities)&lt;/li&gt;
+  &lt;li&gt;Next version of prototypes&lt;/li&gt;
+  &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
+  &lt;li&gt;Look at online component&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Refactoring - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/05/02/Refactoring.html</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/05/02/Refactoring</guid>
+      <description>&lt;p&gt;April was a month of steady progress. I managed to get 3 games of the IPO prototype played and one of the Ci2d prototype. All went surprisingly well considering expectations. In particular the Ci2d prototype was not completely broken, it played (as intended) like a simplified version of the original - definitely will put some more work into a v2. The mechanics of IPO are fairly steady now. The game drags a little in the mid-game, but that is because I removed some of the more interactive cards (I hope). Now I will try to derive a formula for card strength and add back the interesting cards so combos can be built.&lt;/p&gt;
+
+&lt;p&gt;The rework of SHD’s engine is continuing. It works and is so pretty. Now it just needs to be fully implemented and the old code removed. Hopefully that will complete be before the end of this month. Strangely the new system went through a few design changes to handle cases I didn’t initially consider, and now it looks a lot like the engine in CI (just more abstract). Hmmmm.&lt;/p&gt;
+
+&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Played IPO v4 prototype x3&lt;/li&gt;
+  &lt;li&gt;Played Ci2D v1 prototype x1&lt;/li&gt;
+  &lt;li&gt;Rework engine&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish work to improve and componentise/abstract the action system, plus AI (basically build a reusable simulation engine as a backend component)&lt;/li&gt;
+  &lt;li&gt;Fix infinite mode, separate  random mode, and rearrange unlocks&lt;/li&gt;
+  &lt;li&gt;Better AI&lt;/li&gt;
+  &lt;li&gt;Play new prototypes&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sticking Point? - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/04/05/Sticking-Point.html</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/04/05/Sticking-Point</guid>
+      <description>&lt;p&gt;I have now reached the same point in SHD where I stopped AHB (the “prototype” that went too far). When I decided to stop and restart, I estimated that the work required to fix the problems would take weeks and not be worth the effort. I think the same work will take a week or two with SHD - much better. Also, once done it should be reusable for other turn-based gamedev. Of course I reached that point less half way through the last month, so why isn’t it finished? Well, I haven’t started yet. Instead those distractions (household work and a one week holiday) I mentioned last month took focus. Knowing this was going to happen I worked on tabletop prototypes and little tasks.&lt;/p&gt;
+
+&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;IPO v4 prototype (unplayed)&lt;/li&gt;
+  &lt;li&gt;Ci2D v1 prototype (unplayed)&lt;/li&gt;
+  &lt;li&gt;Level loading system &amp;amp; screen&lt;/li&gt;
+  &lt;li&gt;Simple AI&lt;/li&gt;
+  &lt;li&gt;Audio setup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improve and componentise/abstract the action system and AI (basically build a reusable simulation engine as a backend component)&lt;/li&gt;
+  &lt;li&gt;Fix infinite mode, separate  random mode, and rearrange unlocks&lt;/li&gt;
+  &lt;li&gt;Better AI&lt;/li&gt;
+  &lt;li&gt;Play new prototypes&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Short Month, Record Hours - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/03/01/Short-Month-Record-Hours.html</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/03/01/Short-Month-Record-Hours</guid>
+      <description>&lt;p&gt;Despite being the shortest month of the year, the February was my best for hours worked. Mainly due to one week being almost full-time on the game - the benefit of it being too hot to be outside (ahh, I love my A/C). I’m not going to publicise the hours I worked - it is still well below my (already low) target. However, in the last report I wrote that I hoped to complete: targetting, shooting, extra actions, handle the end of a game, and unlocks. I did all of that and more: context sensitive tooltips and some framework niceties.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, this month is not expected to be as productive. There are several house related tasks that got paused waiting for more inclement temperatures - and today the weather turned! Despite this I expect good progress as the biggest task remaining is the AI, and after no further significant functionality is planned (online multiplayer would be such an item, but I’d want to have a version on stores before starting that). Instead, it is all things to make the game prettier and nicer. Thus, I have added a couple of new tasks to the possibles for the month - new prototypes and some library work.&lt;/p&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Work on SHD (play screen, AI, playability improvements)&lt;/li&gt;
+  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+  &lt;li&gt;First paper prototypes for the next 1 or 2 games&lt;/li&gt;
+  &lt;li&gt;Common library work (card and backporting SHD stuff)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Moving Again? - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/02/02/Moving-Again.html</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/02/02/Moving-Again</guid>
+      <description>&lt;p&gt;Before compiling the results for January, I was a little disappointed in myself. I remember it taking a couple of weeks to get moving as other home tasks took precedence. However, after going through my notes, the result looks more like a normal month - a couple of better than average weeks after a couple of worse than average weeks. Consistency is my problem.&lt;/p&gt;
+
+&lt;p&gt;The game is coming along nicely. The UI is complete and working well (apart from tooltips, to be done later). Forming and moving bases is complete; targeting and firing is in progress. Everything so far works better than before. Perhaps the second time I know better what is required - a point of evidence in favour of prototypes.&lt;/p&gt;
+
+&lt;p&gt;Another two entries have been added onto the game ideas list - time to start culling it. I have also bought some tabletop components as I have plans to create tabletop prototypes of my next games - it is such a great way of iterating through designs quickly. With these new components I will be able to prototype Ci2d, plus a couple of others. I just need a week or so to come up with a set of starting rules.&lt;/p&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Work on SHD (targetting, shooting, extra action, end of game &amp;amp; unlocks)&lt;/li&gt;
+  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Standstill - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/01/02/Standstill.html</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/01/02/Standstill</guid>
+      <description>&lt;p&gt;As we ring in the new year, it occurred to me that my current game is about at the same playable state as this time last year. Hmmmm.
+Of course, I now have a reusable library (hopefully, the test will be in the reuse) and the code is much nicer. However, it seems
+as bit poor to make no progress on the ultimate measure of a game - its playability and fun.&lt;/p&gt;
+
+&lt;p&gt;Over the last month the game has become playable again. The turn structure is in and stamps complete. I’ve have also replaced the
+health/strength/time displays with shader based radial sprites, rather than the weird looking 3D line drawings in a 2D world. Work has now started on the player UI - my worst gamedev skill.&lt;/p&gt;
+
+&lt;p&gt;There has been no work on IPO, but I am getting more ideas for various games. I need to get this one finished before my interest wanes, as I feel it doing. I started December with a rush, but that slowed greatly over the fortnight for Christmas and New Years. I need to get back that previous productivity. Time sinks over the next month include a ton of house issues (old houses!), but thanks to the current pandemic lockdown and heatwave, exercise time is minimal.&lt;/p&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Work on SHD (get UI working)&lt;/li&gt;
+  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Housework - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/12/06/Housework.html</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/12/06/Housework</guid>
+      <description>&lt;p&gt;Did you notice I missed a month? October started well with work on cleaning up the display before adding drag and drop (the main game mechanism).
+There was also some work to improve the config options and putting the source repo on a remote server so I can work anywhere with Internet (not just on my home PC).
+Then by the end of that month everything stopped, and stayed stopped through November.
+There are now three people living in this house and it took some time cleaning up and fixing various things in readiness for their arrival.
+Followed by more tasks as they settled in.
+Hopefully all that is finished now (apart from this Wednesday afternoon) and I can get back to work.&lt;/p&gt;
+
+&lt;p&gt;Over the next month (same as last time):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Work on SHD (and have basic play possible)&lt;/li&gt;
+  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Distractions - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/10/03/Distractions.html</link>
+      <pubDate>Sun, 03 Oct 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/10/03/Distractions</guid>
+      <description>&lt;p&gt;September was a month of distractions. Work continued on SHB, but at a slow pace. A significant amount of time was also spent trying out the new Scala3 and I converted the hex library into that language - it works well (now I’m thinking about SAAS projects again). Outside of work stress and tasks is still high. Unfortunately that is likely to continue for a while. I managed not to spend much time on games this month. However, I did play a complete game of Civ6, but one game seems like enough for now.&lt;/p&gt;
+
+&lt;p&gt;I hope to mainly work on redoing SHD this month. It already feels better and prettier than the old AHB, so I’m definitely feeling positive. Just need to get it back to the old level.&lt;/p&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Work on SHD (and have basic play possible)&lt;/li&gt;
+  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Excuses - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/09/02/Excuses.html</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/09/02/Excuses</guid>
+      <description>&lt;p&gt;Time for more excuses! The first half of August went very well. I finished extracting a common code library and restarted AHB, but this time it is called SpaceHex Duel (SHD). Yes, thankyou, I do know I have a special way with naming. At the moment the board is set up and I have started work on the pieces. And then things have paused. I had my first Pfizer vaccine does and a bad reaction.  Over a week was mostly a write-off. I played the Battletech computer game instead of working (it was on sale at Humble Bundle). I have the next dose soon and fingers crossed that goes better!&lt;/p&gt;
+
+&lt;p&gt;I also ran 2 IPO playtests. The simplifications had mixed results. Continuous growth and card choice worked well. Removing auctions and money generation changes did not work so well. Time for version 4!&lt;/p&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Work on SHD (and have basic play possible)&lt;/li&gt;
+  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Flat - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/08/02/Flat.html</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/08/02/Flat</guid>
+      <description>&lt;p&gt;The last month has been a been a total loss as far as gamedev is concerned. There has been barely 2 equivalent days of progress. I’m feeling a little stressed over some housing issues (that should be resolved this week) and this has affected my ability to get things done. I have played quite a few games though - does that count as market research?&lt;/p&gt;
+
+&lt;p&gt;The tasks this month are the same as last month, with the slight change that I have prepped a third version of IPO. I just need to answer certain questions about the game, so the playtest will be more focussed.&lt;/p&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Extract and improve common code &amp;amp; prefabs from AHB, mainly the card libraries. Then work on examples in the form of simple games (like AHB v2).&lt;/li&gt;
+  &lt;li&gt;Try the third IPO prototype and answer the four gameplay questions.&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fast Start, Slow End - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/07/01/Fast-Start-Slow-End.html</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/07/01/Fast-Start-Slow-End</guid>
+      <description>&lt;p&gt;The start of this month was a rush. I left myself a long TODO list at the end of &lt;a href=&quot;/2021/06/01/Constant-Change.html&quot;&gt;last month&lt;/a&gt;, and I was enthused to get started. First was the hex libraries: done and looking good, ready for an example project. Next was a second IPO prototype: that went well and showed promise, although there are still serious gameplay problems. Then I started working on improving the screen sizing libraries.&lt;/p&gt;
+
+&lt;p&gt;Which is where everything ground to a halt.&lt;/p&gt;
+
+&lt;p&gt;Not because I got stuck. I got demotivated. The sizing work is boring and just needs to be ground through. But it was hard going. Then I got sick (not Covid), and now there is a lockdown (Covid) here again. I’m not feeling much va-va-voom.&lt;/p&gt;
+
+&lt;p&gt;Also still thinking about what to do. &lt;a href=&quot;https://en.wikipedia.org/wiki/Software_as_a_service&quot;&gt;SAAS&lt;/a&gt; seems like a nice idea and something technically well within my abilities, but now I’m concerned by maintenance/support issues if I’m not around. Similarly, I’m having second thoughts about Unity3D. Working on the sizing stuff reminds me of various issues I have with it and how I am using an old version. I will probably just keep with it as I can’t think of anything better which doesn’t invole a lot of learning/rewriting (other engines like Unreal) or the same issues as SAAS (HTML5). Hmmm.&lt;/p&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Extract and improve common code &amp;amp; prefabs from AHB, mainly the card libraries. Then work on examples in the form of simple games (like AHB v2).&lt;/li&gt;
+  &lt;li&gt;Try a third IPO prototype.&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Only Constant Is Change - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/06/01/Constant-Change.html</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/06/01/Constant-Change</guid>
+      <description>&lt;p&gt;&lt;a href=&quot;/2021/05/04/Abandon-Restart.html&quot;&gt;Last month&lt;/a&gt; I announced the cancellation (postponement?) of Abstract Hex Battle. Now I am full of new ideas. Anyway, this month I extracted and improved possibly common code from AHB. There is still some work for the hex library, but that can be done in combination with starting another project.&lt;/p&gt;
+
+&lt;p&gt;I also prototyped IPO and then played it. It has some problems (unsurprsingly). The game is too fast at the start and too fiddly at the end. I still think it has promise, so a second prototype is in the plan for this month.&lt;/p&gt;
+
+&lt;p&gt;I might be taking on too much between: the common library; Concealed Intent 2; AHB v2; and IPO. Actually it is worse than that, because I have had another couple of ideas. They are: another card game I’d like prototype if there is time; and a &lt;a href=&quot;https://en.wikipedia.org/wiki/Software_as_a_service&quot;&gt;SAAS&lt;/a&gt; procgen system. I really like the procgen idea, it fits my strengths and avoids weaknesses very well (except for trying to sell the product itself). I really need to decide upon a focus.&lt;/p&gt;
+
+&lt;p&gt;I have also decided to start month-to-month plans, the adjustable time plans are just  unnecessarily unwieldly.&lt;/p&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Extract and improve common code &amp;amp; prefabs from AHB, mainly the hex and card libraries.&lt;/li&gt;
+  &lt;li&gt;Try a second IPO prototype.&lt;/li&gt;
+  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Abandon and Restart - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/05/04/Abandon-Restart.html</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/05/04/Abandon-Restart</guid>
+      <description>&lt;p&gt;I have abandoned the Abstract Hex Battle project, for now. I started working on the AI and I just couldn’t get it to work properly. The problem was caused by some unfortunate design decisions made early in the project in order to get it up and running quickly. Now those were blocking forward movement. I started reworking the internals for a day, but then stopped. I was not sufficiently excited by the project to put in the effort required to fix it.&lt;/p&gt;
+
+&lt;p&gt;For the last fortnight I have been extracting the useful common code and prefabs from Abstract Hex Battle to use as a base for future games. That has gone quite well. Good enough that I extended the work to build in localisation and other extras. There is a little more to do on this task. After that I plan to start a couple of games (maybe a quick rewrite of AHB and/or CI2D) to prove the common code works before starting the next proper project.&lt;/p&gt;
+
+&lt;p&gt;I also started prototyping a card game, IPO. I had the original idea for this game several years ago (&lt;a href=&quot;/2016/08/30/Prototyping.html&quot;&gt;see here&lt;/a&gt;), but couldn’t get it to work in playtests. A couple of weeks ago I had an idea which may fix the initial problems. Now it is time to see if the game can be saved. I hope so, because it is a cool idea combined with an interesting mechanic. Plus, it can be paper prototyped so iterative improvements will be fast and easy to test (much better than a PC game!).&lt;/p&gt;
+
+&lt;p&gt;Over the next 5 weeks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Extract and Improve common code &amp;amp; prefabs from AHB, including simulation engine and card libraries&lt;/li&gt;
+  &lt;li&gt;Prototype IPO&lt;/li&gt;
+  &lt;li&gt;Restart AHB as proof-of-concept for the common libraries&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;??? (profit!)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting There - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/03/15/Getting-There-Progress.html</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/03/15/Getting-There-Progress</guid>
+      <description>&lt;p&gt;It has now been just under 11 months since I started work on this “little” 3-5 month game. It doesn’t even have a proper name yet! However, over the last 6 weeks quite a bit of progress has been made. I spent 5 weeks: completing all the remaining planned animations; fixing all known bugs; adding music/sfx; handling screen sizes up to 1080p (my screen size); and improving the game progression model. The missing week was spent on writing a simple logic library for scripting and organising an almighty mess of downloaded assets into something reasonable so I could find the sounds needed. Of course now there are 2 new bugs and 2 new animations on the todo list, but despite that it feels like the game is moving forward.&lt;/p&gt;
+
+&lt;p&gt;I’m about to lose a week to Easter holidays, so I’ll add a week to make a 6 week block next. That will be a year from the start. Fingers crossed, most of the work will be done by then. Looking at the todo list, this is possible. The last big item is fixing the AI. Then error handling, cleaning up the menu and making it prettier wherever possible. And a proper a name of course!&lt;/p&gt;
+
+&lt;p&gt;Over the next 6 weeks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AI&lt;/li&gt;
+  &lt;li&gt;Error handling&lt;/li&gt;
+  &lt;li&gt;Make the game prettier (especially the menus) and come up with a name&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Build system&lt;/li&gt;
+  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
+  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Year, New Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2021/02/05/New-Year-New-Progress.html</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2021/02/05/New-Year-New-Progress</guid>
+      <description>&lt;p&gt;As expected &lt;a href=&quot;/2020/12/14/Progress_Report.html&quot;&gt;December was a bad month for progress&lt;/a&gt; on my new game. However,
+January went much better. All the animations I wanted to add plus some extras have been completed. Of course along the way I thought of some more, but they will be for later. The gameplay UI has been cleaned up and looks reasonable now (for a programmer anyway). As a result the game is now 2-player only (originally it allowed upto 4 players) as I couldn’t work out how to do a nice UI for more players. Also, I fixed some annoying bugs. There are still a couple of bugs outstanding, but nothing that should crash the game.&lt;/p&gt;
+
+&lt;centre&gt;&lt;a href=&quot;/assets/posts/ahb/ahb_20210204.png&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/ahb_20210204.png&quot; width=&quot;550&quot; alt=&quot;Abstract Hex Battle WIP&quot; /&gt;&lt;/a&gt;&lt;/centre&gt;
+
+&lt;p&gt;We are back in lockdown here in Perth. Based on previous experience this gives me more time, but less productivity. So now is the occasion to start the slow work of cleaning up the menus, screen sizing, tooltips and audio - not hard, just time consuming. Then think about balance and feel, since moving to 2-player has made the gameplay feel flat in places. It needs to be amped  up with various modifiers. I have some ideas.&lt;/p&gt;
+
+&lt;p&gt;And the game still needs a name!&lt;/p&gt;
+
+&lt;p&gt;Over the next 4 weeks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improve balance and feel of the game&lt;/li&gt;
+  &lt;li&gt;Make the game much prettier and come up with a name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AI, build system &amp;amp; error handling.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And after that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
+  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2020/12/14/Progress_Report.html</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2020/12/14/Progress_Report</guid>
+      <description>&lt;p&gt;I am just back from a fortnight’s holiday on &lt;a href=&quot;https://www.australiascoralcoast.com/&quot;&gt;WA’s Coral Coast&lt;/a&gt;, so time again to look back at what was done and what is coming up.&lt;/p&gt;
+
+&lt;p&gt;The couple of months leading up to the holiday were focussed on animations. This has taken much longer than expected, and there are still a couple to be finished, but the hard work has been completed. I have relearnt an important lesson that had been forgotten. Game systems which allow delays in actions for animations to occur are quite different to systems where everything happens instantaneously. Converting from the latter to the former took the unexpected extra time. In future, unless I am developing a definitely throwaway prototype, it will be best to start with the system that can handle delays. Doing that from the start will take much less time overall. There were a couple of other similar things discovered the hard way.&lt;/p&gt;
+
+&lt;p&gt;The next two weeks are going to be a write-off for decent work time. Between Christmas, New Years, and some required home maintenance, I doubt much progress will be made. I’ve decided not to stress about this and instead start the next 5 week period from the week after Christmas. Same targets as before.&lt;/p&gt;
+
+&lt;p&gt;Over the next 2+5 weeks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish animations.&lt;/li&gt;
+  &lt;li&gt;AI, build system &amp;amp; error handling.&lt;/li&gt;
+  &lt;li&gt;Improve balance and feel of the game&lt;/li&gt;
+  &lt;li&gt;Make the game much prettier and come up with a name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This means the period after should be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
+  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2020/12/14/Progress-Report.html</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2020/12/14/Progress-Report</guid>
+      <description>&lt;p&gt;I am just back from a fortnight’s holiday on &lt;a href=&quot;https://www.australiascoralcoast.com/&quot;&gt;WA’s Coral Coast&lt;/a&gt;, so time again to look back at what was done and what is coming up.&lt;/p&gt;
+
+&lt;p&gt;The couple of months leading up to the holiday were focussed on animations. This has taken much longer than expected, and there are still a couple to be finished, but the hard work has been completed. I have relearnt an important lesson that had been forgotten. Game systems which allow delays in actions for animations to occur are quite different to systems where everything happens instantaneously. Converting from the latter to the former took the unexpected extra time. In future, unless I am developing a definitely throwaway prototype, it will be best to start with the system that can handle delays. Doing that from the start will take much less time overall. There were a couple of other similar things discovered the hard way.&lt;/p&gt;
+
+&lt;p&gt;The next two weeks are going to be a write-off for decent work time. Between Christmas, New Years, and some required home maintenance, I doubt much progress will be made. I’ve decided not to stress about this and instead start the next 5 week period from the week after Christmas. Same targets as before.&lt;/p&gt;
+
+&lt;p&gt;Over the next 2+5 weeks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish animations.&lt;/li&gt;
+  &lt;li&gt;AI, build system &amp;amp; error handling.&lt;/li&gt;
+  &lt;li&gt;Improve balance and feel of the game&lt;/li&gt;
+  &lt;li&gt;Make the game much prettier and come up with a name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This means the period after should be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
+  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2020/09/30/Progress-Report.html</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2020/09/30/Progress-Report</guid>
+      <description>&lt;p&gt;Five more weeks done, so how is “Abstract Hex Battle” going? All the originally planned functionality is done, including game progression. Balance is a little better, but the game can descend into a battle of attrition towards the end. I think more balancing and maybe some more powerups are required. The game is looking a lot better now and I’ve started work on various animations.&lt;/p&gt;
+
+&lt;centre&gt;&lt;a href=&quot;/assets/posts/ahb/ahb_wip_20200922.png&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/ahb_wip_20200922.png&quot; width=&quot;550&quot; alt=&quot;Abstract Hex Battle WIP&quot; /&gt;&lt;/a&gt;&lt;/centre&gt;
+
+&lt;p&gt;There is still so much to do. Now I hope to finish by the end of the year. Especially considering some events I know are coming soon and will absorb a few weeks of attention.&lt;/p&gt;
+
+&lt;p&gt;Over the next 4 weeks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Complete animation, AI, build system &amp;amp; error handling.&lt;/li&gt;
+  &lt;li&gt;Improve balance and feel of the game&lt;/li&gt;
+  &lt;li&gt;Make the game much prettier and come up with a name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This means the 4 weeks after should be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
+  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When back after a holiday:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Release “Abstract Hex Battle” with initial business plan (squash bugs, cleanup stuff) to Itch.io&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+
+  </channel> 
+</rss>

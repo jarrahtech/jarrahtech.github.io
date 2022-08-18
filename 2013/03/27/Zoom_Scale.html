@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Zoom and Scale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>March 27, 2013</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Zoom and Scale
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>The last couple of weeks of Concealed Intent development have been
+focused on improving the way players move the camera around the 3D
+playing space. Part of this magnifying the view or seeing more of the
+whole scene - the same affect as zooming/unzooming with a camera lens.
+This is a fairly standard mechanism in strategy games and there are
+couple of ways to implement it. I am coming to the conclusion I picked a
+very bad way to do it.</p>
+
+<!--more-->
+
+<p>In a camera, zoom is achieved by changing the <a href="http://en.wikipedia.org/wiki/Zoom_lens">focal length of the
+lens</a>. I am not aware of any
+computer game that does zoom this way, generally everything is in focus
+at once (<a href="http://en.wikipedia.org/wiki/Tilt-shift">tilt-shift</a> being a
+notably exception). Instead it appears (from playing various games in
+the last few days) that the most common way to implement camera zoom is
+changing the <a href="http://en.wikipedia.org/wiki/Field_of_view_in_video_games">field of
+view</a>. That
+is when zooming the angle of the camera’s view is changed, the lower the
+angle the less “space” is shown at the same distance from the camera.
+Hence as the screen size doesn’t change, everything in the view seems
+bigger. This effect is most obvious when a game allows the player to
+look down the sights of a gun (a sniper view). Everything in the view is
+magnified at the cost of losing peripheral vision.</p>
+
+<p>Unity3D has a simple setter for
+<a href="https://docs.unity3d.com/Documentation/ScriptReference/Camera-fieldOfView.html">fieldOfView</a>.
+Combined with <a href="http://docs.unity3d.com/Documentation/Manual/LevelOfDetail.html">Levels of
+Detail</a>,
+using this technique for zoom is quite easy. I didn’t do it this way.</p>
+
+<p>Concealed Intent currently uses a third technique - scaling. When a
+player zooms, they are actually changing the scale of the viewed
+simulation. That is, “zooming in” means the camera is unchanged but all
+the models get bigger and the space between them gets larger (and vice
+versa for zooming out). At
+<a href="http://www.cordinc.com/blog/2012/09/unite12---day-3.html">Unite12</a>
+<a href="http://universesandbox.com/">Universe Sandbox</a> said they were using
+this technique to help ensure mathematical accuracy. Also, in Concealed
+Intent two ships very close to each other are displayed as a single ship
+(with note to say there are multiple ships present). By using scaling
+these ships would separate as zooming increases the space between them.</p>
+
+<p>The downside of scaling is the complexity. Every time the scale changes
+(and it tends to change in small amounts so the transition looks smooth
+to players), everything needs to change position and size. All this
+results in extra code and maths I had to add myself with custom events.
+It took about a week to get right (so far). Now I’m not sure the work
+was worth it.</p>
+
+<p>People are coming back saying the zoom acts a bit weird, probably
+because they are not familiar with it. The complexity is only increasing
+(everytime I add a new type of object to the screen - like movement
+trails) and the benefits don’t seem so important anymore. I fear the
+best course of action may be to spend the time removing the scaling and
+replace it with field of view zooming. Then I can chalk the whole thing
+up to experience.</p>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/ConcealedIntent.html">ConcealedIntent</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

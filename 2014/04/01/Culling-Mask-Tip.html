@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Unity3D Culling Mask Tip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>April  1, 2014</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Unity3D Culling Mask Tip
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>Yesterday I was working on making layers appear and disappear
+programmatically in Unity3D. The Unity <span style="text-align:left;"><a href="https://docs.unity3d.com/Documentation/ScriptReference/Camera.html">code&gt;Camera&lt;/code&gt;</a></span>
+class has a <a href="https://docs.unity3d.com/Documentation/ScriptReference/Camera-cullingMask.html">culling
+mask</a>
+so that each camera can be set to only display a subset of the available
+layers. This is handy for placing 3D objects in one layer visible by the
+main camera, and say the GUI in another layer visible by a different
+camera. This can be setup using the camera’s culling mask dropdown in
+the editor. However, I wanted to be able to change the visible layers
+during runtime in response to a player’s actions (pressing a key will
+make a grid appear/disappear over the playing area).</p>
+
+<!--more-->
+
+<p>To change the culling mask programmatically some bitfield maths is
+required. Each layer is represented by a bit in an integer. Layer 12 is
+<code>000000000000000000100000000000</code> - the twelfth bit in a
+32-bit integer mask. The culling mask itself is just the combination
+(bitwise OR) of these layers. Thus, if the culling mask is
+<code>000000000010000000100000001000</code> (equivalent to the number
+526344), the 4<sup>th</sup>, 12<sup>th</sup> and 20<sup>th</sup> layers
+would be displayed as the 4<sup>th</sup>, 12<sup>th</sup> and
+20<sup>th</sup> bits are turned on. To do this in code, first find the
+number of the layer and then shift a bit this number of places, then add
+or remove this from the mask. For example, to add the “Enemy” layer to
+the mask would be: <code>cam.cullingMask \|= 1 \&lt;\&lt;
+LayerMask.NameToLayer(“Enemy”);</code>. Other bitwise operations can
+remove layers.</p>
+
+<p>I find this messy. I prefer my code to be a little more explicit and
+readable. So I wrote a set of <a href="http://msdn.microsoft.com/en-us//library/bb383977.aspx">class
+extensions</a> for
+the <code>Camera</code> to add a better way of manipulating the culling
+mask. Just add the class below into your project and then
+<code>cam.LayerCullingShow(“Enemy”)</code> will add the “Enemy” layer to
+the cam. Similarly, <code>cam.LayerCullingHide(“Enemy”)</code> will
+remove the layer; <code>cam.LayerCullingIncludes(“Enemy”)</code> will
+tell you whether it is being displayed or not; and
+<code>cam.LayerCullingToggle(“Enemy”)</code> will flip the visibility of
+the “Enemy” layer. If preferred, the layer mask can be passed as a
+parameter rather than the layer’s name. Enjoy.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="c1">// Copyright 2014 Jarrah Technology (http://www.jarrahtechnology.com). All Rights Reserved. </span>
+
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">CameraExtensions</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">LayerCullingShow</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">int</span> <span class="n">layerMask</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cam</span><span class="p">.</span><span class="n">cullingMask</span> <span class="p">|=</span> <span class="n">layerMask</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">LayerCullingShow</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">string</span> <span class="n">layer</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">LayerCullingShow</span><span class="p">(</span><span class="n">cam</span><span class="p">,</span> <span class="m">1</span> <span class="p">&lt;&lt;</span> <span class="n">LayerMask</span><span class="p">.</span><span class="nf">NameToLayer</span><span class="p">(</span><span class="n">layer</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">LayerCullingHide</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">int</span> <span class="n">layerMask</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cam</span><span class="p">.</span><span class="n">cullingMask</span> <span class="p">&amp;=</span> <span class="p">~</span><span class="n">layerMask</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">LayerCullingHide</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">string</span> <span class="n">layer</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">LayerCullingHide</span><span class="p">(</span><span class="n">cam</span><span class="p">,</span> <span class="m">1</span> <span class="p">&lt;&lt;</span> <span class="n">LayerMask</span><span class="p">.</span><span class="nf">NameToLayer</span><span class="p">(</span><span class="n">layer</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">LayerCullingToggle</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">int</span> <span class="n">layerMask</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cam</span><span class="p">.</span><span class="n">cullingMask</span> <span class="p">^=</span> <span class="n">layerMask</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">LayerCullingToggle</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">string</span> <span class="n">layer</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">LayerCullingToggle</span><span class="p">(</span><span class="n">cam</span><span class="p">,</span> <span class="m">1</span> <span class="p">&lt;&lt;</span> <span class="n">LayerMask</span><span class="p">.</span><span class="nf">NameToLayer</span><span class="p">(</span><span class="n">layer</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">LayerCullingIncludes</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">int</span> <span class="n">layerMask</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">cam</span><span class="p">.</span><span class="n">cullingMask</span> <span class="p">&amp;</span> <span class="n">layerMask</span><span class="p">)</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">LayerCullingIncludes</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">string</span> <span class="n">layer</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">LayerCullingIncludes</span><span class="p">(</span><span class="n">cam</span><span class="p">,</span> <span class="m">1</span> <span class="p">&lt;&lt;</span> <span class="n">LayerMask</span><span class="p">.</span><span class="nf">NameToLayer</span><span class="p">(</span><span class="n">layer</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">LayerCullingToggle</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">int</span> <span class="n">layerMask</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">isOn</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">bool</span> <span class="n">included</span> <span class="p">=</span> <span class="nf">LayerCullingIncludes</span><span class="p">(</span><span class="n">cam</span><span class="p">,</span> <span class="n">layerMask</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">isOn</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">included</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">LayerCullingShow</span><span class="p">(</span><span class="n">cam</span><span class="p">,</span> <span class="n">layerMask</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(!</span><span class="n">isOn</span> <span class="p">&amp;&amp;</span> <span class="n">included</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">LayerCullingHide</span><span class="p">(</span><span class="n">cam</span><span class="p">,</span> <span class="n">layerMask</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">LayerCullingToggle</span><span class="p">(</span><span class="k">this</span> <span class="n">Camera</span> <span class="n">cam</span><span class="p">,</span> <span class="kt">string</span> <span class="n">layer</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">isOn</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">LayerCullingToggle</span><span class="p">(</span><span class="n">cam</span><span class="p">,</span> <span class="m">1</span> <span class="p">&lt;&lt;</span> <span class="n">LayerMask</span><span class="p">.</span><span class="nf">NameToLayer</span><span class="p">(</span><span class="n">layer</span><span class="p">),</span> <span class="n">isOn</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><strong>Comments:</strong>
+<em>I have removed the commenting system (for privacy concerns), below are the comments that were left on this post before doing so…</em></p>
+
+<p><em>ahmad khawaja @ 2014-08-25</em> - Excellent …I was pretty confused about the concept. Your example helped me a lot</p>
+
+<p><em>Samantha Alder @ 2016-01-24</em> - Excellent …I was pretty baffled by the idea. Your example solved the problem a lot</p>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/Unity.html">Unity</a>, 
+    
+      <a class="post" href="/blog/tag/Technical.html">Technical</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>March 26, 2015</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Feedback
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>At an early stage of Concealed Intent’s development I sent it out online
+to get feedback from people who expressed an interest in the game. There
+were very few replies and most of those were just of the form “yeah,
+it’s ok.” As a result I started doing playtesting while sitting next to
+the victim/tester. This is a much better technique - a huge amount of
+information is gleaned from just watching someone else play, any
+comments are a bonus. However, it does not scale, especially as a sole
+indie developer. So in the background I continued to try finding a
+better way.</p>
+
+<p>At GDC <a href="https://twitter.com/hugh_jeremy">Hugh Jeremy</a> presented
+<a href="http://unknownworlds.com/subnautica/">Subnautica’s</a> feedback system. Oh
+yeah, this is what I wanted. Being a proud member of the “break’n’enter”
+school of game design, I had the <a href="https://github.com/hwjeremy/snfeedback">example code and presentation
+slides</a> downloaded within
+minutes. Now a similar feedback system is built into Concealed Intent.</p>
+
+<p><a href="/assets/posts/ci/feedback.png"><img src="/assets/posts/ci/feedback.png" width="550" alt="" /></a></p>
+
+<p>As developers we need to make it as frictionless as possible for players
+to communicate feedback to us - otherwise most won’t bother. This is the
+beauty of the Subnautica system (and my reimplementation).</p>
+
+<ul>
+  <li>Collect feedback from within the game. Don’t make the player switch
+to a different application. Create an in-game screen that can send the
+feedback automatically to an online collection system.</li>
+  <li>Ensure there is a quick-key to jump straight to the feedback screen
+from anywhere within the game. When the player has something to say,
+ensure they can reach the screen quickly.</li>
+  <li>Collect minimal information from the player. The more information
+fields, the more intimidating. Concealed Intent has just 2 text boxes
+and a submit button. If the player has an online account (like Steam)
+then one of the fields is filled in for them.</li>
+  <li>Collect the player’s emotion. This is a brilliant idea from
+Subnautica, there are a range of emoticons each acting as a submit
+button. So there is always a guide to what the player is feeling when
+they provide feedback. Overtime hopefully more positive emotions will
+dominate.</li>
+  <li>Make as much of what is collected optional. Other than the clicking
+the submit button, nothing is required in the Concealed Intent feedback
+screen.</li>
+  <li>Add extra information behind the scenes. As Concealed Intent is
+turn-based and already logs game events, the feedback system just adds
+this log to the submission without the player’s interaction.
+Screenshots, framerates and other game info could also be added to aid
+diagnosing bugs.</li>
+  <li>But don’t send anything personal or identifying! Make sure the system
+is safe and will not compromise the player’s privacy.
+<a href="http://en.wikipedia.org/wiki/Cryptographic_hash_function">Hash</a> login
+id’s and other personal info if it’s absolutely necessary to have them
+in the feedback.</li>
+  <li>Have a back-end system to handle the feedback. A simple
+<a href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a>
+website should be enough. <a href="http://subnautica.unknownworlds.com/#/subnautica/feedback">Subnatica’s
+system</a> is
+public</li>
+  <li>Think about rewarding the player for leaving feedback. Subnautica has
+a Steam achievement for feedback.</li>
+</ul>
+
+<center>
+<blockquote class="twitter-tweet" lang="en">
+<p>
+
+\~13% of
+<a href="https://twitter.com/Subnautica">`Subnautica</a> players choose to submit development feedback in-game: <a href="http://t.co/nMl6M2Jznm">http://t.co/nMl6M2Jznm</a> <a href="http://t.co/VcJeQvLZ7A">pic.twitter.com/VcJeQvLZ7A</a></p>&mdash; Hugh Jeremy (`hugh\_jeremy)
+<a href="https://twitter.com/hugh_jeremy/status/578272446643474433">March
+18, 2015</a>
+
+</blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+</center>
+
+<p>How well the feedback system works when live is something for a
+postmortem. Although it seems to be working well for Subnautica so far
+(13% may not sound like much, but I’d be happy with that). It should at
+least work better than my previous system!</p>
+
+<p><strong>Contact Details:</strong></p>
+
+<ul>
+  <li><a href="http://www.concealedintent.com">Concealed Intent website &amp; blog</a></li>
+  <li>Twitter: <a href="https://twitter.com/JarrahTech">@JarrahTech</a></li>
+  <li><a href="http://www.indiedb.com/games/concealed-intent">IndieDB entry</a></li>
+  <li><a href="http://forums.tigsource.com/index.php?topic=46163.0">TIGSource
+DevBlog</a></li>
+  <li>Facebook:
+<a href="https://www.facebook.com/JarrahTechnology">JarrahTechnology</a></li>
+  <li>Instagram: <a href="http://instagram.com/jarrahtech">JarrahTech</a></li>
+  <li><a href="http://eepurl.com/7uj2j">Mailing List</a></li>
+  <li>Email: charles at jarrahtechnology dot com</li>
+</ul>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/ConcealedIntent.html">ConcealedIntent</a>, 
+    
+      <a class="post" href="/blog/tag/Syndicated.html">Syndicated</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>
