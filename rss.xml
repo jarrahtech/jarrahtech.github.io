@@ -6,9 +6,34 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Thu, 18 Aug 2022 17:20:25 +0800</pubDate>
-    <lastBuildDate>Thu, 18 Aug 2022 17:20:25 +0800</lastBuildDate>
+    <pubDate>Fri, 19 Aug 2022 14:26:04 +0800</pubDate>
+    <lastBuildDate>Fri, 19 Aug 2022 14:26:04 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Roguelike Tutorial 2022</title>
+      <link>http://www.jarrahtechnology.com/2022/08/17/Roguelike.html</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/08/17/Roguelike</guid>
+      <description>&lt;p&gt;As a distraction from other things I should have been doing over the last 6 weeks, I completed the &lt;a href=&quot;https://www.reddit.com/r/roguelikedev/comments/vhfsda/roguelikedev_does_the_complete_roguelike_tutorial/&quot;&gt;/r/roguelikedev Tutorial 2022&lt;/a&gt;. An event to teach people how to write roguelike games like &lt;a href=&quot;https://en.wikipedia.org/wiki/NetHack&quot;&gt;Nethack&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Angband_%28video_game%29&quot;&gt;Angband&lt;/a&gt;, and my old favourite, &lt;a href=&quot;/blog/2016/07/omega.html&quot;&gt;Omega&lt;/a&gt;. I wanted to learn some &lt;a href=&quot;https://javascript.info/&quot;&gt;Javascript&lt;/a&gt;, and this seemed a good way to go.&lt;/p&gt;
+
+&lt;p&gt;It is done now. There is a &lt;a href=&quot;https://jarrahtech.github.io/RoguelikeTutorial2022/&quot;&gt;playable version here&lt;/a&gt; and the &lt;a href=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022&quot;&gt;source code is here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The controls are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;movement/target: arrow keys or wasd (+qezx)&lt;/li&gt;
+  &lt;li&gt;look: ‘/’&lt;/li&gt;
+  &lt;li&gt;pickup: ‘p’&lt;/li&gt;
+  &lt;li&gt;message history: ‘v’&lt;/li&gt;
+  &lt;li&gt;drop/leave: ‘l’&lt;/li&gt;
+  &lt;li&gt;activate/use/equip: ‘u’&lt;/li&gt;
+  &lt;li&gt;character screen: ‘c’&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022/blob/main/assets/img/logo.png?raw=true&quot; alt=&quot;/r/roguelikedev Tutorial2022 Logo&quot; width=&quot;640&quot; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Joining The Club - Progress Report</title>
@@ -500,40 +525,6 @@ January went much better. All the animations I wanted to add plus some extras ha
 &lt;ul&gt;
   &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
   &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2020/09/30/Progress-Report.html</link>
-      <pubDate>Wed, 30 Sep 2020 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2020/09/30/Progress-Report</guid>
-      <description>&lt;p&gt;Five more weeks done, so how is “Abstract Hex Battle” going? All the originally planned functionality is done, including game progression. Balance is a little better, but the game can descend into a battle of attrition towards the end. I think more balancing and maybe some more powerups are required. The game is looking a lot better now and I’ve started work on various animations.&lt;/p&gt;
-
-&lt;centre&gt;&lt;a href=&quot;/assets/posts/ahb/ahb_wip_20200922.png&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/ahb_wip_20200922.png&quot; width=&quot;550&quot; alt=&quot;Abstract Hex Battle WIP&quot; /&gt;&lt;/a&gt;&lt;/centre&gt;
-
-&lt;p&gt;There is still so much to do. Now I hope to finish by the end of the year. Especially considering some events I know are coming soon and will absorb a few weeks of attention.&lt;/p&gt;
-
-&lt;p&gt;Over the next 4 weeks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Complete animation, AI, build system &amp;amp; error handling.&lt;/li&gt;
-  &lt;li&gt;Improve balance and feel of the game&lt;/li&gt;
-  &lt;li&gt;Make the game much prettier and come up with a name.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This means the 4 weeks after should be:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
-  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When back after a holiday:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Release “Abstract Hex Battle” with initial business plan (squash bugs, cleanup stuff) to Itch.io&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
