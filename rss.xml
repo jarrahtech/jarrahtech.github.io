@@ -6,9 +6,41 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Thu, 01 Sep 2022 17:08:57 +0800</pubDate>
-    <lastBuildDate>Thu, 01 Sep 2022 17:08:57 +0800</lastBuildDate>
+    <pubDate>Mon, 03 Oct 2022 16:15:46 +0800</pubDate>
+    <lastBuildDate>Mon, 03 Oct 2022 16:15:46 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Need For Speed - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/10/03/Need-For-Speed.html</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/10/03/Need-For-Speed</guid>
+      <description>&lt;p&gt;If you looked at SHD a month ago and again today, you would probably notice no difference at all. However, behind the scenes a great deal has changed. Over the last month my main task has been improving the AI. It soon became clear a major issue was speed. Examining a set of moves took several milliseconds (ms), and there were often thousands of possible moves, sometimes tens of thousands - it was taking too long. In speeding up the analysis, errors began creeping into the system caused by timing and threading issues. Hmmm. I decided to change the way the engine worked so that these errors could not occur and managed to get this largely complete in a week. The result was that average analysis time for a single set of moves went from 5ms to 0.19ms, error free. Proud of that work. It  should be fast enough to let the AI to look more than one move ahead - which is the next task.&lt;/p&gt;
+
+&lt;p&gt;I also got a little distracted by possible future projects. Now have another good idea for the next project. Hard decisions will need to be made soon around what to do next.&lt;/p&gt;
+
+&lt;p&gt;SHD tasks for November are the same as before, just the AI is now very close to complete.&lt;/p&gt;
+
+&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moved SHD engine from a Plan/Action pattern to a Command/Effect pattern&lt;/li&gt;
+  &lt;li&gt;AI working well, just speeding up code so that can process more scenarios in reasonable time (5ms to 0.19ms so far)&lt;/li&gt;
+  &lt;li&gt;Played with setups &amp;amp; org for next project&lt;/li&gt;
+  &lt;li&gt;Bugfixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over the next month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Full AI&lt;/li&gt;
+  &lt;li&gt;Little improvements &amp;amp; bugfixes&lt;/li&gt;
+  &lt;li&gt;Next version of prototypes&lt;/li&gt;
+  &lt;li&gt;Online component&lt;/li&gt;
+  &lt;li&gt;Try not to get distracted&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Light At The End Of The Tunnel - Progress Report</title>
@@ -495,35 +527,6 @@ January went much better. All the animations I wanted to add plus some extras ha
 &lt;/ul&gt;
 
 &lt;p&gt;And after that:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
-  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2020/12/14/Progress_Report.html</link>
-      <pubDate>Mon, 14 Dec 2020 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2020/12/14/Progress_Report</guid>
-      <description>&lt;p&gt;I am just back from a fortnight’s holiday on &lt;a href=&quot;https://www.australiascoralcoast.com/&quot;&gt;WA’s Coral Coast&lt;/a&gt;, so time again to look back at what was done and what is coming up.&lt;/p&gt;
-
-&lt;p&gt;The couple of months leading up to the holiday were focussed on animations. This has taken much longer than expected, and there are still a couple to be finished, but the hard work has been completed. I have relearnt an important lesson that had been forgotten. Game systems which allow delays in actions for animations to occur are quite different to systems where everything happens instantaneously. Converting from the latter to the former took the unexpected extra time. In future, unless I am developing a definitely throwaway prototype, it will be best to start with the system that can handle delays. Doing that from the start will take much less time overall. There were a couple of other similar things discovered the hard way.&lt;/p&gt;
-
-&lt;p&gt;The next two weeks are going to be a write-off for decent work time. Between Christmas, New Years, and some required home maintenance, I doubt much progress will be made. I’ve decided not to stress about this and instead start the next 5 week period from the week after Christmas. Same targets as before.&lt;/p&gt;
-
-&lt;p&gt;Over the next 2+5 weeks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Finish animations.&lt;/li&gt;
-  &lt;li&gt;AI, build system &amp;amp; error handling.&lt;/li&gt;
-  &lt;li&gt;Improve balance and feel of the game&lt;/li&gt;
-  &lt;li&gt;Make the game much prettier and come up with a name.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This means the period after should be:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
