@@ -6,9 +6,40 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Mon, 03 Oct 2022 16:15:46 +0800</pubDate>
-    <lastBuildDate>Mon, 03 Oct 2022 16:15:46 +0800</lastBuildDate>
+    <pubDate>Tue, 01 Nov 2022 16:22:55 +0800</pubDate>
+    <lastBuildDate>Tue, 01 Nov 2022 16:22:55 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Now Or Never - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/11/01/Now-Or-Never.html</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/11/01/Now-Or-Never</guid>
+      <description>&lt;p&gt;A little change to format in this progress report. Rather than say what I hope to achieve, instead the below list is SHD’s remaining tasks (in order). It is also my current plan. The goal is the release of SHD to Itch.io by the end of the month. That is it. This section comes first, because I’m focussed on the finish. Tasks 1 &amp;amp; 4 may take some time; the rest should be fairly straightforward (fingers crossed).&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tutorial&lt;/li&gt;
+  &lt;li&gt;Translations: remove non-english and check text&lt;/li&gt;
+  &lt;li&gt;Possible small changes: should blast self-destruct? how many levels use dumb AI?&lt;/li&gt;
+  &lt;li&gt;Clean/test/build&lt;/li&gt;
+  &lt;li&gt;Itch.io: build, screenshots, cover image &amp;amp; release&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Last month I ruthlessly culled the list of remaining tasks. This game need to be finished ASAP. The AI component is good enough. I could work on it for many months if I wanted, but won’t. The online component is dropped, the feedback screen is gone. The project’s README file now has over a dozen other possible small improvements, plus a few of bigger ones (but was online play ever a real possibility?). I don’t expect to revisit them.&lt;/p&gt;
+
+&lt;p&gt;The tasks completed last month were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finished AI&lt;/li&gt;
+  &lt;li&gt;Completed UI sizing for different screen sizes (this took most of the time, especially tracking down a DPI scaling bug)&lt;/li&gt;
+  &lt;li&gt;Updated splash screen&lt;/li&gt;
+  &lt;li&gt;Bugfixes&lt;/li&gt;
+  &lt;li&gt;Started on tutorial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anyway, time to get back to it!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Need For Speed - Progress Report</title>
@@ -493,42 +524,6 @@ Hopefully all that is finished now (apart from this Wednesday afternoon) and I c
 
 &lt;ul&gt;
   &lt;li&gt;Build system&lt;/li&gt;
-  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
-  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>New Year, New Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2021/02/05/New-Year-New-Progress.html</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2021/02/05/New-Year-New-Progress</guid>
-      <description>&lt;p&gt;As expected &lt;a href=&quot;/2020/12/14/Progress_Report.html&quot;&gt;December was a bad month for progress&lt;/a&gt; on my new game. However,
-January went much better. All the animations I wanted to add plus some extras have been completed. Of course along the way I thought of some more, but they will be for later. The gameplay UI has been cleaned up and looks reasonable now (for a programmer anyway). As a result the game is now 2-player only (originally it allowed upto 4 players) as I couldn’t work out how to do a nice UI for more players. Also, I fixed some annoying bugs. There are still a couple of bugs outstanding, but nothing that should crash the game.&lt;/p&gt;
-
-&lt;centre&gt;&lt;a href=&quot;/assets/posts/ahb/ahb_20210204.png&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/ahb_20210204.png&quot; width=&quot;550&quot; alt=&quot;Abstract Hex Battle WIP&quot; /&gt;&lt;/a&gt;&lt;/centre&gt;
-
-&lt;p&gt;We are back in lockdown here in Perth. Based on previous experience this gives me more time, but less productivity. So now is the occasion to start the slow work of cleaning up the menus, screen sizing, tooltips and audio - not hard, just time consuming. Then think about balance and feel, since moving to 2-player has made the gameplay feel flat in places. It needs to be amped  up with various modifiers. I have some ideas.&lt;/p&gt;
-
-&lt;p&gt;And the game still needs a name!&lt;/p&gt;
-
-&lt;p&gt;Over the next 4 weeks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Improve balance and feel of the game&lt;/li&gt;
-  &lt;li&gt;Make the game much prettier and come up with a name.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;AI, build system &amp;amp; error handling.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And after that:&lt;/p&gt;
-
-&lt;ul&gt;
   &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
   &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
 &lt;/ul&gt;

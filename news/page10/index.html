@@ -72,6 +72,45 @@
 <h2>News</h2>
       
         <hr>
+	<h4>May 27, 2013: <a href="/2013/05/27/Motivation.html">Motivation</a>
+<a href="https://twitter.com/intent/tweet?text=Motivation%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/05/27/Motivation.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/05/27/Motivation.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+</h4>
+Tags: 
+    
+      <a class="post" href="/news/tag/General.html">General</a>
+    
+  <br/>
+        <p><p>Writing a game by yourself is hard. Harder than I thought when I
+started. Obviously, everything needs to be done by a single person, or
+outsourced. The game’s scope needs to be kept realistic and that means
+fairly small. I aimed small when starting, but in retrospect I should
+have aimed even smaller. This means that progress can be slow and, as a
+non-artist, it is easy to see all the things can’t do well. Sometimes
+motivation can be an issue.</p>
+
+<p>The past week has seen the extremes experienced. At the start of the
+week there were many bugs and the game obviously had no polish. I
+thought I would never get it to work. A week later and the bugs are all
+fixed, at least the known ones! The goals for the 3rd alpha release have
+been reached and it is clear there has been forward movement. I was also
+surprised by the AI as my computer opponent surrounded me - how cool!</p>
+
+<p>With this alpha release it is time to start working towards a wider
+audience. At the moment there is just a couple of people seeing my work.
+Motivation to do the work will be easier if more people are playing a
+test version - assuming they don’t completely trash the concept. So
+Alpha4 will be a complete player-vs-computer scenario version of the
+game (campaign and multiplayer will come later). If it is all fine, it
+should be quickly followed by a very similar beta version to show to as
+many people as possible.</p>
+
+<p>It may be a case of the <a href="http://en.wikipedia.org/wiki/Sunk_costs">sunken cost
+fallacy</a>, but I just have to
+keep going. Oh, and remember to do a smaller game next time!</p>
+</p>
+      
+        <hr>
 	<h4>May 15, 2013: <a href="/2013/05/15/Gui_Improvements.html">Developer Diary - GUI Improvements</a>
 <a href="https://twitter.com/intent/tweet?text=Developer Diary - GUI Improvements%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/05/15/Gui_Improvements.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
 <a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/05/15/Gui_Improvements.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
@@ -334,62 +373,6 @@ time to share the progress.</p>
 <p><a href="/assets/posts/ci/ConcealedIntent_WIP_20130127.png"><img src="/assets/posts/ci/ConcealedIntent_WIP_20130127.png" title="Work In Progress" width="512" height="384" alt="Work In Progress" /></a></p>
 
 <p class='more'><br/><a href='/2013/01/28/Screenshot.html'>Read the rest of this entry</a></p></p>
-      
-        <hr>
-	<h4>January 25, 2013: <a href="/2013/01/25/Unity_Shader_Loading.html">Unity Shader Loading</a>
-<a href="https://twitter.com/intent/tweet?text=Unity Shader Loading%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/01/25/Unity_Shader_Loading.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/01/25/Unity_Shader_Loading.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
-</h4>
-Tags: 
-    
-      <a class="post" href="/news/tag/Unity.html">Unity</a>
-    
-  <br/>
-        <p><p>After working mainly inside the <a href="http://unity3d.com/">Unity3D</a>
-environment for the last couple of months, I decided to create a
-standalone build. It didn’t work! Some mouse clicks did not seem to be
-detected, while others produced the expected results. I went back to
-Unity3D and everything worked fine there. Unity and it’s standalone
-build must work in slightly different ways. Luckily the standalone build
-produces an <code>output\_log.txt</code> in the project’s
-<code>\_Data</code> directory. Normally this contains very little, but
-in my broken build the following lines were repeated.</p>
-
-<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">NullReferenceException</span>
-  <span class="nf">at</span> <span class="p">(</span><span class="n">wrapper</span> <span class="n">managed</span><span class="p">-</span><span class="n">to</span><span class="p">-</span><span class="n">native</span><span class="p">)</span> <span class="n">UnityEngine</span><span class="p">.</span><span class="n">Material</span><span class="p">:</span><span class="nf">Internal_CreateWithShader</span> <span class="p">(</span><span class="n">UnityEngine</span><span class="p">.</span><span class="n">Material</span><span class="p">,</span><span class="n">UnityEngine</span><span class="p">.</span><span class="n">Shader</span><span class="p">)</span> 
-  <span class="n">at</span> <span class="n">UnityEngine</span><span class="p">.</span><span class="n">Material</span><span class="p">..</span><span class="nf">ctor</span> <span class="p">(</span><span class="n">UnityEngine</span><span class="p">.</span><span class="n">Shader</span> <span class="n">shader</span><span class="p">)</span> <span class="p">[</span><span class="m">0x00000</span><span class="p">]</span> <span class="k">in</span> <span class="p">&lt;</span><span class="n">filename</span> <span class="n">unknown</span><span class="p">&gt;:</span><span class="m">0</span>  
-  <span class="n">at</span> <span class="n">VectorLineUtil</span><span class="p">.</span><span class="nf">GetLineMaterial</span> <span class="p">()</span> <span class="p">[</span><span class="m">0x00000</span><span class="p">]</span> <span class="k">in</span> <span class="p">&lt;</span><span class="n">filename</span> <span class="n">unknown</span><span class="p">&gt;:</span><span class="m">0</span>  
-  <span class="n">at</span> <span class="n">TargetPlanner</span><span class="p">..</span><span class="nf">cctor</span> <span class="p">()</span> <span class="p">[</span><span class="m">0x00000</span><span class="p">]</span> <span class="k">in</span> <span class="p">&lt;</span><span class="n">filename</span> <span class="n">unknown</span><span class="p">&gt;:</span><span class="m">0</span> 
-<span class="n">Rethrow</span> <span class="k">as</span> <span class="n">TypeInitializationException</span><span class="p">:</span> <span class="n">An</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">thrown</span> <span class="k">by</span> <span class="n">the</span> <span class="n">type</span> <span class="n">initializer</span> <span class="k">for</span> <span class="n">TargetPlanner</span></code></pre></figure>
-
-<p>Thus the problem is because the standalone can’t find the Shader
-specified in a <code>Shader.Find()</code> call. According to the
-<a href="http://docs.unity3d.com/Documentation/ScriptReference/Shader.Find.html">documentation for the API
-call</a>,
-shaders are only included in the build if they are used in a material or
-in the <code>Resources</code> directory. The shader causing the error
-was installed in the <code>Plugins</code> folder (as it was part of a
-plugin bought from the Unity Asset Store).</p>
-
-<p>Just moving all the shaders into the <code>Resources</code> directory
-fixed the issue. A handy tip to remember when structuring your Unity3D
-project.</p>
-
-<p><strong>Comments:</strong>
-<em>I have removed the commenting system (for privacy concerns), below are the comments that were left on this post before doing so…</em></p>
-
-<p><em>test @ 2013-03-29</em> - thank you!</p>
-
-<p><em>MF @ 2013-07-02</em> - We had just spent at least 30 minutes trying to figure this out.  Thanks a ton!</p>
-
-<p><em>Максим Таран @ 2015-06-11</em> - Edit-&gt;Project settings-&gt;Graphics-&gt; ..add you custom shader</p>
-
-<p><em>Александр Корчуганов @ 2016-05-04</em> - Thank you very much, dude!</p>
-
-<p><em>Kleber Lopes da Silva @ 2016-06-16</em> - Thanks for that!</p>
-
-<p><em>Alessandro @ 2017-09-28</em> - I was going crazy, thanks!</p>
-</p>
       
 </div>
 </div>
