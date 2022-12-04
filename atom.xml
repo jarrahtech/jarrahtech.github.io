@@ -3,13 +3,40 @@
     <title type="text" xml:lang="en">Jarrah Technology</title>
     <link type="application/atom+xml" href="http://www.jarrahtechnology.com/atom.xml" rel="self"/>
     <link type="text" href="http://www.jarrahtechnology.com" rel="alternate"/>
-    <updated>2022-11-01T16:22:55+08:00</updated>
+    <updated>2022-12-04T11:15:11+08:00</updated>
     <id>http://www.jarrahtechnology.com</id>
     <author>
         <name>Jarrah Technology</name>
     </author>
     <rights>Copyright (c) 2012 Jarrah Technology</rights>
 
+    
+    <entry>
+        <title>So Close - Progress Report</title>
+        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2022/12/04/So-Close.html/"/>
+        <published>2022-12-04T00:00:00+08:00</published>
+        <updated>2022-12-04T00:00:00+08:00</updated>
+        <id>http://www.jarrahtechnology.com/2022/12/04/So-Close.html/</id>
+        <content type="html">&lt;p&gt;Ahhh, I am agonisingly close to release! This progress report is delayed a few days because I thought I could get it out yesterday. The game is complete (enough :). However, I forgot how long it takes to make a trailer video and other marketing materials. Now the plan is to release by Friday (9th). The trailer should be done on Monday, but then there is copy/images for various forums (Itch, website, IndieDB, mailing list, …) and I have decided to have another go at improving the AI time estimation function (presently it can be badly wrong).&lt;/p&gt;
+
+&lt;p&gt;My TODO list for the month:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Release!&lt;/li&gt;
+  &lt;li&gt;???&lt;/li&gt;
+  &lt;li&gt;Profit&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The tasks completed last month were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finished Tutorial&lt;/li&gt;
+  &lt;li&gt;Improved UI and text&lt;/li&gt;
+  &lt;li&gt;Lots of QA/bugfixing&lt;/li&gt;
+  &lt;li&gt;Started creating marketing materials&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
     
     <entry>
         <title>Now Or Never - Progress Report</title>
@@ -519,34 +546,6 @@ Hopefully all that is finished now (apart from this Wednesday afternoon) and I c
 
 &lt;ul&gt;
   &lt;li&gt;??? (profit!)&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </entry>
-    
-    <entry>
-        <title>Getting There - Progress Report</title>
-        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2021/03/15/Getting-There-Progress.html/"/>
-        <published>2021-03-15T00:00:00+08:00</published>
-        <updated>2021-03-15T00:00:00+08:00</updated>
-        <id>http://www.jarrahtechnology.com/2021/03/15/Getting-There-Progress.html/</id>
-        <content type="html">&lt;p&gt;It has now been just under 11 months since I started work on this “little” 3-5 month game. It doesn’t even have a proper name yet! However, over the last 6 weeks quite a bit of progress has been made. I spent 5 weeks: completing all the remaining planned animations; fixing all known bugs; adding music/sfx; handling screen sizes up to 1080p (my screen size); and improving the game progression model. The missing week was spent on writing a simple logic library for scripting and organising an almighty mess of downloaded assets into something reasonable so I could find the sounds needed. Of course now there are 2 new bugs and 2 new animations on the todo list, but despite that it feels like the game is moving forward.&lt;/p&gt;
-
-&lt;p&gt;I’m about to lose a week to Easter holidays, so I’ll add a week to make a 6 week block next. That will be a year from the start. Fingers crossed, most of the work will be done by then. Looking at the todo list, this is possible. The last big item is fixing the AI. Then error handling, cleaning up the menu and making it prettier wherever possible. And a proper a name of course!&lt;/p&gt;
-
-&lt;p&gt;Over the next 6 weeks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;AI&lt;/li&gt;
-  &lt;li&gt;Error handling&lt;/li&gt;
-  &lt;li&gt;Make the game prettier (especially the menus) and come up with a name&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Build system&lt;/li&gt;
-  &lt;li&gt;Prepare marketing materials &amp;amp; limited buildup with a plan&lt;/li&gt;
-  &lt;li&gt;Release to testers. Setup on &lt;a href=&quot;https://itch.io/&quot;&gt;Itch.io&lt;/a&gt; &amp;amp; create a build system&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </entry>

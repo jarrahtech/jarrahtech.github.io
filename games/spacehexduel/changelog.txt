@@ -1,0 +1,10 @@
+Current Version: 1.0.0 (20th November 2022)
+
+Known Issues:
+* N/A
+
+Immediate Roadmap:
+* Bugfixes
+
+1.0.0 (20th November 2022) -> ???
+*

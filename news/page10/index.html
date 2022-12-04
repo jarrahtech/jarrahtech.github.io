@@ -72,6 +72,47 @@
 <h2>News</h2>
       
         <hr>
+	<h4>June 24, 2013: <a href="/2013/06/24/Space_Skyboxes.html">Space Skyboxes</a>
+<a href="https://twitter.com/intent/tweet?text=Space Skyboxes%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/06/24/Space_Skyboxes.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/06/24/Space_Skyboxes.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+</h4>
+Tags: 
+    
+      <a class="post" href="/news/tag/Unity.html">Unity</a>, 
+    
+      <a class="post" href="/news/tag/Technical.html">Technical</a>
+    
+  <br/>
+        <p><p>Recently I came across <a href="http://alexcpeterson.com/spacescape">Alex Patterson’s
+Spacescape</a> program. It creates
+<a href="http://en.wikipedia.org/wiki/Skybox_(video_games)">space skyboxes</a> by
+building up layers of stars, billboards (special stars, galaxies or
+other external images) and noise (for gas and nebulae). These can then
+be exported as a standard 6 skybox images each up to 4096x4096
+resolution. All this under the permissive <a href="http://en.wikipedia.org/wiki/MIT_License">MIT
+License</a>. Definitely worth
+checking out if you are developing a space-based project.</p>
+
+<p><img src="/assets/posts/ci/skybox.png" alt="" /></p>
+
+<p>This could be very useful in Concealed Intent. However, there are a
+couple of issues to be noted when importing the resulting images into a
+Unity skybox. For more details see the <a href="http://docs.unity3d.com/Documentation/Manual/Textures.html">Unity Texture
+documentation</a></p>
+
+<ul>
+  <li>Spacescape and Unity use opposite conventions for left and right
+skybox images - put the left Spacescape image in Unity’s right
+skybox slot and vice-versa.</li>
+  <li>All images should have their wrap mode set to clamp in Unity.
+Otherwise the seams between images will be visible.</li>
+  <li>The default max texture size for Unity is often set to 1024 (at
+least it was for me). If Spacescape has produced images at higher
+quality be sure to update Unity to get the full resolution image.</li>
+</ul>
+</p>
+      
+        <hr>
 	<h4>May 27, 2013: <a href="/2013/05/27/Motivation.html">Motivation</a>
 <a href="https://twitter.com/intent/tweet?text=Motivation%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/05/27/Motivation.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
 <a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/05/27/Motivation.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
@@ -355,24 +396,6 @@ the declarative syntax remains.</p>
 tests and easier to modify maths and scenarios. I think it was worth the
 effort. Next up, trying out various new systems for detection and lock.</p>
 </p>
-      
-        <hr>
-	<h4>January 28, 2013: <a href="/2013/01/28/Screenshot.html">Screenshot</a>
-<a href="https://twitter.com/intent/tweet?text=Screenshot%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/01/28/Screenshot.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/01/28/Screenshot.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
-</h4>
-Tags: 
-    
-      <a class="post" href="/news/tag/ConcealedIntent.html">ConcealedIntent</a>
-    
-  <br/>
-        <p><p>It has been a while since the last Concealed Intent screenshot. As work
-is now progressing again at a decent rate after moving country, it is
-time to share the progress.</p>
-
-<p><a href="/assets/posts/ci/ConcealedIntent_WIP_20130127.png"><img src="/assets/posts/ci/ConcealedIntent_WIP_20130127.png" title="Work In Progress" width="512" height="384" alt="Work In Progress" /></a></p>
-
-<p class='more'><br/><a href='/2013/01/28/Screenshot.html'>Read the rest of this entry</a></p></p>
       
 </div>
 </div>
