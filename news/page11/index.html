@@ -72,6 +72,56 @@
 <h2>News</h2>
       
         <hr>
+	<h4>February  7, 2013: <a href="/2013/02/07/Dev_Diary.html">Developer Diary - 7th February 2013</a>
+<a href="https://twitter.com/intent/tweet?text=Developer Diary - 7th February 2013%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/02/07/Dev_Diary.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/02/07/Dev_Diary.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+</h4>
+Tags: 
+    
+      <a class="post" href="/news/tag/ConcealedIntent.html">ConcealedIntent</a>, 
+    
+      <a class="post" href="/news/tag/DevDiary.html">DevDiary</a>
+    
+  <br/>
+        <p><p>I have nothing to show for the last week’s work on Concealed Intent. Not
+because I haven’t been working, but because the effort was spent behind
+the scenes. I have been working on rearchitecting the simulation maths
+(mainly for detection).</p>
+
+<p>Originally all the simulation code was attached to classes representing
+the spaceships themselves. So a ship has sensors and those sensors knew
+how to detect other ships - typical
+<a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OO</a> design.
+However, during early testing a number of different ways were suggested
+to handle detection and determine lock. I needed to be able to change
+between multiple simulation schemes easily. Thus in the last week the
+maths has been put into its own class using a <a href="http://en.wikipedia.org/wiki/Strategy_pattern">Strategy
+Pattern</a>. This change
+made testing easier (so I wrote some tests - and found a few silly maths
+errors!) and allowed the ship classes to be greatly simplified.</p>
+
+<p>After that it wasn’t too hard to create a builder system for creating
+scenarios. Below is the new code for creating my 2-against-1 test
+scenario. I think this is quite easy to understand what the scenario
+involves. It can get more complicated with goals and events added, but
+the declarative syntax remains.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">ScenarioBuilder</span> <span class="n">builder</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ScenarioBuilder</span><span class="p">(</span><span class="s">"Mark's Mission"</span><span class="p">);</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">Calcs</span><span class="p">(</span><span class="n">BasicCalcsBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">().</span><span class="nf">NoiseMult</span><span class="p">(</span><span class="m">5</span><span class="p">).</span><span class="nf">TimeDecay</span><span class="p">(</span><span class="m">1</span><span class="p">).</span><span class="nf">TargettingGain</span><span class="p">(</span><span class="m">1.5f</span><span class="p">));</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">Skybox</span><span class="p">(</span><span class="s">"SkyBoxes/Basic Star Field/Basic Star Field"</span><span class="p">).</span><span class="nf">ViewScale</span><span class="p">(</span><span class="m">0.66f</span><span class="p">);</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">CameraFov</span><span class="p">(</span><span class="m">25</span><span class="p">).</span><span class="nf">CameraPosition</span><span class="p">(</span><span class="m">336</span><span class="p">,</span> <span class="m">270</span><span class="p">,</span> <span class="p">-</span><span class="m">525</span><span class="p">).</span><span class="nf">CameraRotation</span><span class="p">(</span><span class="m">25</span><span class="p">,</span> <span class="m">330</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Sulaco"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">CORVETTE</span><span class="p">).</span><span class="nf">SetAsPlayer</span><span class="p">().</span><span class="nf">Position</span><span class="p">(</span><span class="m">100</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">).</span><span class="nf">DefaultLoadout</span><span class="p">());</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Pirate 1"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">SKIFF</span><span class="p">).</span><span class="nf">Ctrl</span><span class="p">(</span><span class="n">Control</span><span class="p">.</span><span class="n">TENTATIVE_CONTROL</span><span class="p">).</span><span class="nf">Position</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">).</span><span class="nf">DefaultLoadout</span><span class="p">().</span><span class="nf">SetAsEnemy</span><span class="p">());</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Pirate 2"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">SKIFF</span><span class="p">).</span><span class="nf">Ctrl</span><span class="p">(</span><span class="n">Control</span><span class="p">.</span><span class="n">AGGRESSIVE_CONTROL</span><span class="p">).</span><span class="nf">Position</span><span class="p">(-</span><span class="m">200</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="p">-</span><span class="m">300</span><span class="p">).</span><span class="nf">DefaultLoadout</span><span class="p">().</span><span class="nf">SetAsEnemy</span><span class="p">());</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Brockley"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">MERCURY</span><span class="p">).</span><span class="nf">Ctrl</span><span class="p">(</span><span class="n">Control</span><span class="p">.</span><span class="n">PREVIEW_CONTROL</span><span class="p">).</span><span class="nf">Position</span><span class="p">(</span><span class="m">40</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">40</span><span class="p">));</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Star"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">G_STAR</span><span class="p">).</span><span class="nf">Position</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">40000</span><span class="p">).</span><span class="nf">Rotation</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">180</span><span class="p">,</span> <span class="m">0</span><span class="p">));</span></code></pre></figure>
+
+<p>So after a week, the game is largely where it started - just with more
+tests and easier to modify maths and scenarios. I think it was worth the
+effort. Next up, trying out various new systems for detection and lock.</p>
+</p>
+      
+        <hr>
 	<h4>January 28, 2013: <a href="/2013/01/28/Screenshot.html">Screenshot</a>
 <a href="https://twitter.com/intent/tweet?text=Screenshot%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/01/28/Screenshot.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
 <a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/01/28/Screenshot.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
@@ -421,33 +471,6 @@ situation, but disproving it requires finishing Concealed Intent (or at
 least getting very close to finishing).</p>
 
 <p>Onward!</p>
-</p>
-      
-        <hr>
-	<h4>August 17, 2012: <a href="/2012/08/17/Unite12.html">Unite12</a>
-<a href="https://twitter.com/intent/tweet?text=Unite12%20%40JarrahTech%20http://www.jarrahtechnology.com/2012/08/17/Unite12.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2012/08/17/Unite12.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
-</h4>
-Tags: 
-    
-      <a class="post" href="/news/tag/General.html">General</a>, 
-    
-      <a class="post" href="/news/tag/Unity.html">Unity</a>
-    
-  <br/>
-        <p><p>Next week Jarrah Technology is going to Amsterdam for
-<a href="http://unity3d.com/unite/">Unite12</a>, the conference for
-<a href="http://unity3d.com/unity/">Unity3D</a>. Well, I’m going - so that is 100%
-of Jarrah Technology. If you’re there, I’d be interested in chatting
-about all things Unity related and beyond.</p>
-
-<p>In my six months using Unity I’ve become very impressed with it.
-However, I know I’m still learning and lean heavily on my background in
-programming to write Unity scripts to achieve my aims. Often I later
-discover an easier way built into the tool itself. Meeting up with other
-Unity developers and seeing what they do can only be beneficial. I go to
-the London Unity User Group meetings and they have been great, so
-hopefully this conference will be even better. I’m getting excited.</p>
 </p>
       
 </div>

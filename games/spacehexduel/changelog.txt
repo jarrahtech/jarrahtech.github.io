@@ -1,10 +1,11 @@
-Current Version: 1.0.0 (20th November 2022)
+Current Version: 1.0.0 (9th December 2022)
 
 Known Issues:
-* N/A
+* Rarely, some builds end scenarios before home explosion animation completes (or sometimes even starts)
+* Once the AI took at least a minute - calculating or bug? Handle error on AI thread and be able to stop it, (eg. when scene ends)
 
 Immediate Roadmap:
 * Bugfixes
 
-1.0.0 (20th November 2022) -> ???
+1.0.0 (9th December 2022) -> ???
 *

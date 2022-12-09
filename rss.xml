@@ -6,9 +6,44 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Sun, 04 Dec 2022 11:15:11 +0800</pubDate>
-    <lastBuildDate>Sun, 04 Dec 2022 11:15:11 +0800</lastBuildDate>
+    <pubDate>Fri, 09 Dec 2022 10:58:37 +0800</pubDate>
+    <lastBuildDate>Fri, 09 Dec 2022 10:58:37 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Space Hex Duel Released!</title>
+      <link>http://www.jarrahtechnology.com/2022/12/09/Space-Hex-Duel-Released.html</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/12/09/Space-Hex-Duel-Released</guid>
+      <description>&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
+
+&lt;p&gt;It is done! Space Hex Duel is now available on &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Itch.io&lt;/a&gt; as a Pay-What-You-Want (PWYW) download (suggested donation: US$2).
+I recommend interested people download it for free, and if they enjoy it and would like to say thankyou, then go back and donate. I chose PWYW as a test - to get as
+many people as possible playing and see if it has any potential. Also, because it has not been playtested by anyone other than myself - hopefully there will
+not be many issues.&lt;/p&gt;
+
+&lt;center&gt;
+    &lt;iframe height=&quot;167&quot; src=&quot;http://www.youtube.com/embed/62viGwySbjk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+    &lt;iframe frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1823532?linkback=true&quot; width=&quot;552&quot; height=&quot;167&quot;&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Space Hex Duel by JarrahTech&lt;/a&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;p&gt;For the basic marketing material see above and:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/games/spacehexduel&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/press/spacehexduel.html&quot;&gt;Presskit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Storefront&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So what next?&lt;/p&gt;
+
+&lt;p&gt;The first task will be to let people know the game is released. Time to dust off my mailing list and Twitter/Mastodon accounts. Probably a few other places too. If nothing else it is good practice.
+Next, fix any bugs that come up. Since I should have tons of time apart from bugfixing (&lt;em&gt;fingers crossed&lt;/em&gt;), I need to decide what to do next. I have 5 possibilities, from the obvious (Concealed Intent 2D) to the unusual (not telling yet!). I also need to decide if I should release this game to Steam. I’m tempted, just because Steam is so big compared to everyone else in PC games that if it is not there then the game will be obscure. However, releasing to Steam will require some extra work, and I don’t want to start that yet. Instead I will mostly spend the few weeks mostly on just-for-fun programming and household tasks. The plan being to start the new year on the next game (and if decide to do it, Steam).&lt;/p&gt;
+
+&lt;p&gt;Happy Holidays.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>So Close - Progress Report</title>
@@ -498,33 +533,6 @@ Hopefully all that is finished now (apart from this Wednesday afternoon) and I c
   &lt;li&gt;Extract and improve common code &amp;amp; prefabs from AHB, mainly the hex and card libraries.&lt;/li&gt;
   &lt;li&gt;Try a second IPO prototype.&lt;/li&gt;
   &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Abandon and Restart - Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2021/05/04/Abandon-Restart.html</link>
-      <pubDate>Tue, 04 May 2021 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2021/05/04/Abandon-Restart</guid>
-      <description>&lt;p&gt;I have abandoned the Abstract Hex Battle project, for now. I started working on the AI and I just couldn’t get it to work properly. The problem was caused by some unfortunate design decisions made early in the project in order to get it up and running quickly. Now those were blocking forward movement. I started reworking the internals for a day, but then stopped. I was not sufficiently excited by the project to put in the effort required to fix it.&lt;/p&gt;
-
-&lt;p&gt;For the last fortnight I have been extracting the useful common code and prefabs from Abstract Hex Battle to use as a base for future games. That has gone quite well. Good enough that I extended the work to build in localisation and other extras. There is a little more to do on this task. After that I plan to start a couple of games (maybe a quick rewrite of AHB and/or CI2D) to prove the common code works before starting the next proper project.&lt;/p&gt;
-
-&lt;p&gt;I also started prototyping a card game, IPO. I had the original idea for this game several years ago (&lt;a href=&quot;/2016/08/30/Prototyping.html&quot;&gt;see here&lt;/a&gt;), but couldn’t get it to work in playtests. A couple of weeks ago I had an idea which may fix the initial problems. Now it is time to see if the game can be saved. I hope so, because it is a cool idea combined with an interesting mechanic. Plus, it can be paper prototyped so iterative improvements will be fast and easy to test (much better than a PC game!).&lt;/p&gt;
-
-&lt;p&gt;Over the next 5 weeks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Extract and Improve common code &amp;amp; prefabs from AHB, including simulation engine and card libraries&lt;/li&gt;
-  &lt;li&gt;Prototype IPO&lt;/li&gt;
-  &lt;li&gt;Restart AHB as proof-of-concept for the common libraries&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;??? (profit!)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
