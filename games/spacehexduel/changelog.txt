@@ -3,6 +3,13 @@ Current Version: 1.0.0 (9th December 2022)
 Known Issues:
 * Rarely, some builds end scenarios before home explosion animation completes (or sometimes even starts)
 * Once the AI took at least a minute - calculating or bug? Handle error on AI thread and be able to stop it, (eg. when scene ends)
+  - report of 15min - definitely an issue - see https://jarrahtech.itch.io/spacehexduel/comments
+* Tutorial text refers to colours & controls that may not be correct due to settings
+* Badge unlock description - state requirement
+* AI time limit - config option and stop after X seconds if still going
+* https://www.reddit.com/r/gamedev/comments/mxqg4f/code_signing_on_itchiosteam/
+* more info on tutorial - have a video and allow skipping of 0 mission - redo play screen
+* good ai - if shooting does not destroy anything then immediately go to next base (no need for drop check)
 
 Immediate Roadmap:
 * Bugfixes

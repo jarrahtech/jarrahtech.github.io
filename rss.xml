@@ -6,9 +6,40 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Fri, 09 Dec 2022 10:58:37 +0800</pubDate>
-    <lastBuildDate>Fri, 09 Dec 2022 10:58:37 +0800</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2023 14:49:11 +0800</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2023 14:49:11 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Inevitable - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2023/01/04/Inevitable.html</link>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/01/04/Inevitable</guid>
+      <description>&lt;p&gt;The big news from last month is &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Space Hex Duel is released&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;The plan was to take the rest of December dealing with a little marketing, the holidays and do some coding for fun before choosing the next project. Well I managed two of those. My internet connection died the day after release and only got repaired nearly a fortnight later, so not much marketing. There have been seven downloads of the game and two people got back to me - one liked it (and paid for it despite being PWYW - thanks!), the other had difficulty with the tutorial. Thanks to the feedback and some of my own thoughts, I now have a couple of things to change. Time for a patch release. It probably won’t be for this month, but hopefully early Feb it will be done. Then I’ll do some more marketing and revisit a possible Steam release.&lt;/p&gt;
+
+&lt;p&gt;I’m also back working on a generic online game server. Not for playing SHD online, but to handle all the other stuff like feedback, game stats, etc. As part of the patch release I will build this into SHD. It will be in keeping with the original idea of SHD as a testbed for new libraries. As for the next project, last month I had 5 ideas worth pursuing, which I have now whittled down to 6 (I had a good idea for a simple card-battler). Hmmmm.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Little fixes in SHD&lt;/li&gt;
+  &lt;li&gt;Released SHD to Itch with a little marketing and support&lt;/li&gt;
+  &lt;li&gt;Rework internal Scala libraries&lt;/li&gt;
+  &lt;li&gt;Worked on generic game server (stats, feedback, news, etc …)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish generic game server&lt;/li&gt;
+  &lt;li&gt;Work on patch release for SHD&lt;/li&gt;
+  &lt;li&gt;Think about next project&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Space Hex Duel Released!</title>
@@ -509,29 +540,6 @@ Hopefully all that is finished now (apart from this Wednesday afternoon) and I c
 &lt;ul&gt;
   &lt;li&gt;Extract and improve common code &amp;amp; prefabs from AHB, mainly the card libraries. Then work on examples in the form of simple games (like AHB v2).&lt;/li&gt;
   &lt;li&gt;Try a third IPO prototype.&lt;/li&gt;
-  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Only Constant Is Change - Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2021/06/01/Constant-Change.html</link>
-      <pubDate>Tue, 01 Jun 2021 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2021/06/01/Constant-Change</guid>
-      <description>&lt;p&gt;&lt;a href=&quot;/2021/05/04/Abandon-Restart.html&quot;&gt;Last month&lt;/a&gt; I announced the cancellation (postponement?) of Abstract Hex Battle. Now I am full of new ideas. Anyway, this month I extracted and improved possibly common code from AHB. There is still some work for the hex library, but that can be done in combination with starting another project.&lt;/p&gt;
-
-&lt;p&gt;I also prototyped IPO and then played it. It has some problems (unsurprsingly). The game is too fast at the start and too fiddly at the end. I still think it has promise, so a second prototype is in the plan for this month.&lt;/p&gt;
-
-&lt;p&gt;I might be taking on too much between: the common library; Concealed Intent 2; AHB v2; and IPO. Actually it is worse than that, because I have had another couple of ideas. They are: another card game I’d like prototype if there is time; and a &lt;a href=&quot;https://en.wikipedia.org/wiki/Software_as_a_service&quot;&gt;SAAS&lt;/a&gt; procgen system. I really like the procgen idea, it fits my strengths and avoids weaknesses very well (except for trying to sell the product itself). I really need to decide upon a focus.&lt;/p&gt;
-
-&lt;p&gt;I have also decided to start month-to-month plans, the adjustable time plans are just  unnecessarily unwieldly.&lt;/p&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Extract and improve common code &amp;amp; prefabs from AHB, mainly the hex and card libraries.&lt;/li&gt;
-  &lt;li&gt;Try a second IPO prototype.&lt;/li&gt;
   &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
 &lt;/ul&gt;
 </description>

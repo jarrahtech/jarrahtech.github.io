@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-09T10:58:37+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Space Hex Duel Released!</title><link href="http://localhost:4000/2022/12/09/Space-Hex-Duel-Released.html" rel="alternate" type="text/html" title="Space Hex Duel Released!" /><published>2022-12-09T00:00:00+08:00</published><updated>2022-12-09T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/09/Space-Hex-Duel-Released</id><content type="html" xml:base="http://localhost:4000/2022/12/09/Space-Hex-Duel-Released.html">&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-04T14:49:11+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Inevitable - Progress Report</title><link href="http://localhost:4000/2023/01/04/Inevitable.html" rel="alternate" type="text/html" title="Inevitable - Progress Report" /><published>2023-01-04T00:00:00+08:00</published><updated>2023-01-04T00:00:00+08:00</updated><id>http://localhost:4000/2023/01/04/Inevitable</id><content type="html" xml:base="http://localhost:4000/2023/01/04/Inevitable.html">&lt;p&gt;The big news from last month is &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Space Hex Duel is released&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;The plan was to take the rest of December dealing with a little marketing, the holidays and do some coding for fun before choosing the next project. Well I managed two of those. My internet connection died the day after release and only got repaired nearly a fortnight later, so not much marketing. There have been seven downloads of the game and two people got back to me - one liked it (and paid for it despite being PWYW - thanks!), the other had difficulty with the tutorial. Thanks to the feedback and some of my own thoughts, I now have a couple of things to change. Time for a patch release. It probably won’t be for this month, but hopefully early Feb it will be done. Then I’ll do some more marketing and revisit a possible Steam release.&lt;/p&gt;
+
+&lt;p&gt;I’m also back working on a generic online game server. Not for playing SHD online, but to handle all the other stuff like feedback, game stats, etc. As part of the patch release I will build this into SHD. It will be in keeping with the original idea of SHD as a testbed for new libraries. As for the next project, last month I had 5 ideas worth pursuing, which I have now whittled down to 6 (I had a good idea for a simple card-battler). Hmmmm.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Little fixes in SHD&lt;/li&gt;
+  &lt;li&gt;Released SHD to Itch with a little marketing and support&lt;/li&gt;
+  &lt;li&gt;Rework internal Scala libraries&lt;/li&gt;
+  &lt;li&gt;Worked on generic game server (stats, feedback, news, etc …)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish generic game server&lt;/li&gt;
+  &lt;li&gt;Work on patch release for SHD&lt;/li&gt;
+  &lt;li&gt;Think about next project&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="General" /><category term="DevDiary" /><category term="ProgressReport" /><summary type="html">The big news from last month is Space Hex Duel is released!</summary></entry><entry><title type="html">Space Hex Duel Released!</title><link href="http://localhost:4000/2022/12/09/Space-Hex-Duel-Released.html" rel="alternate" type="text/html" title="Space Hex Duel Released!" /><published>2022-12-09T00:00:00+08:00</published><updated>2022-12-09T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/09/Space-Hex-Duel-Released</id><content type="html" xml:base="http://localhost:4000/2022/12/09/Space-Hex-Duel-Released.html">&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
 
 &lt;p&gt;It is done! Space Hex Duel is now available on &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Itch.io&lt;/a&gt; as a Pay-What-You-Want (PWYW) download (suggested donation: US$2).
 I recommend interested people download it for free, and if they enjoy it and would like to say thankyou, then go back and donate. I chose PWYW as a test - to get as
@@ -197,23 +218,4 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;Next version of prototypes&lt;/li&gt;
   &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
   &lt;li&gt;Look at online component&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="General" /><category term="DevDiary" /><category term="ProgressReport" /><summary type="html">May was a solid month of work. Could have bee a record if not for losing 4 complete days to sickness and probably lower productivity for a few days after. There is a new AI and lots of little improvements. If a player want to keep going forever there is also now an “infinite” mode.</summary></entry><entry><title type="html">Refactoring - Progress Report</title><link href="http://localhost:4000/2022/05/02/Refactoring.html" rel="alternate" type="text/html" title="Refactoring - Progress Report" /><published>2022-05-02T00:00:00+08:00</published><updated>2022-05-02T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/02/Refactoring</id><content type="html" xml:base="http://localhost:4000/2022/05/02/Refactoring.html">&lt;p&gt;April was a month of steady progress. I managed to get 3 games of the IPO prototype played and one of the Ci2d prototype. All went surprisingly well considering expectations. In particular the Ci2d prototype was not completely broken, it played (as intended) like a simplified version of the original - definitely will put some more work into a v2. The mechanics of IPO are fairly steady now. The game drags a little in the mid-game, but that is because I removed some of the more interactive cards (I hope). Now I will try to derive a formula for card strength and add back the interesting cards so combos can be built.&lt;/p&gt;
-
-&lt;p&gt;The rework of SHD’s engine is continuing. It works and is so pretty. Now it just needs to be fully implemented and the old code removed. Hopefully that will complete be before the end of this month. Strangely the new system went through a few design changes to handle cases I didn’t initially consider, and now it looks a lot like the engine in CI (just more abstract). Hmmmm.&lt;/p&gt;
-
-&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Played IPO v4 prototype x3&lt;/li&gt;
-  &lt;li&gt;Played Ci2D v1 prototype x1&lt;/li&gt;
-  &lt;li&gt;Rework engine&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Finish work to improve and componentise/abstract the action system, plus AI (basically build a reusable simulation engine as a backend component)&lt;/li&gt;
-  &lt;li&gt;Fix infinite mode, separate  random mode, and rearrange unlocks&lt;/li&gt;
-  &lt;li&gt;Better AI&lt;/li&gt;
-  &lt;li&gt;Play new prototypes&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="General" /><category term="DevDiary" /><category term="ProgressReport" /><summary type="html">April was a month of steady progress. I managed to get 3 games of the IPO prototype played and one of the Ci2d prototype. All went surprisingly well considering expectations. In particular the Ci2d prototype was not completely broken, it played (as intended) like a simplified version of the original - definitely will put some more work into a v2. The mechanics of IPO are fairly steady now. The game drags a little in the mid-game, but that is because I removed some of the more interactive cards (I hope). Now I will try to derive a formula for card strength and add back the interesting cards so combos can be built.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="General" /><category term="DevDiary" /><category term="ProgressReport" /><summary type="html">May was a solid month of work. Could have bee a record if not for losing 4 complete days to sickness and probably lower productivity for a few days after. There is a new AI and lots of little improvements. If a player want to keep going forever there is also now an “infinite” mode.</summary></entry></feed>
