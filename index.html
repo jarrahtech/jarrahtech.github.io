@@ -107,11 +107,11 @@
 
 <div class="row">
 <div class="span12">
-      <h2>Latest News: Happy Coding - Progress Report
-<a href="https://twitter.com/intent/tweet?text=Happy Coding - Progress Report%20%40JarrahTech%20http://www.jarrahtechnology.com/2023/02/02/Happy-Coding.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2023/02/02/Happy-Coding.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+      <h2>Latest News: Solid Month - Progress Report
+<a href="https://twitter.com/intent/tweet?text=Solid Month - Progress Report%20%40JarrahTech%20http://www.jarrahtechnology.com/2023/03/01/Solid.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2023/03/01/Solid.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
       
-      <h4>February  2, 2023 - <a href="/2023/02/02/Happy-Coding.html">permalink</a></h4>
+      <h4>March  1, 2023 - <a href="/2023/03/01/Solid.html">permalink</a></h4>
       Tags: 
     
       <a class="post" href="/news/tag/General.html">General</a>, 
@@ -121,24 +121,23 @@
       <a class="post" href="/news/tag/ProgressReport.html">ProgressReport</a>
     
   <br/>
-      <p><p>There was a surprise with the JarrahTech end of month summary. I was expecting to require a whole load of excuses why I did so few hours of work. I still have those excuses (I have been spending many hours doing maintenance on the house), but it turns out they are not needed. Without realising it, I have spend a respectable amount of time completing a basic generic game server. It was a mostly enjoyable process where I tried out a load of new libraries and technologies, so maybe that is why the time just disappeared?</p>
+      <p><p>February was a solid month. Nothing flashy or fancy, but just clearing the task list. Not bad considering I lost probably 4-5 complete days to tasks around the house. A couple of interesting issues arose. It turns out that the version of .Net Unity 5.6 uses does not support TLS1.2+ so doesn’t work on recent web services - like the host I deployed the generic server. That took a little fiddling to get working. Before working out a solution, for a couple of days, I thought the whole thing would need to be scrapped - I was not a happy boy! Also realised I needed to change the server to build-in internationalisation of strings - that was was fiddly, but not hard.</p>
 
-<p>Anyway, the generic server is largely done. The functionality needed at this stage is all there, but a couple of unexpected <a href="https://www.docker.com/">docker</a> related issues came up in a test deploy (database replication and external logging). When they are done I’ll write the integration into SHD and then the patch release. Still looking good for this month. I’m not sure I chose the best technology for the server, but I’m not redoing it now - maybe later.</p>
-
-<p>I also had a chat with people about what game I should develop next. In a complete non-surprise it will be Concealed Intent 2D (a working title, not the final name). It will combine the stealth focused synchronous turn-based spaceship combat of Concealed Intent with a procgen rogue-like and on a flat 2D map (rather than full 3D). Two other ideas also caught people’s attention. As a result there may be some background work on the IPO card game, and maybe a little experimentation towards something else.</p>
+<p>The SHD patch release is not done, but very close. Now I just need to: finish up the tutorial changes; record a video of me doing the tutorial; and then final testing. There is a good chance this will be complete in early March. Then hopefully my Internet will hold up long enough to do a little marketing. I’ll be losing a week due to holidays, so just those few tasks are the goals for the month. If there is time after that there always things to do: start Ci2d; improve the generic server; write libraries. I’ll work it out when the time comes.</p>
 
 <p>Done last month:</p>
 
 <ul>
-  <li>Finished generic game server (stats, feedback, news, etc …)</li>
-  <li>Chose Concealed Intent 2D (ci2d) as my next project</li>
+  <li>Generic game server deployed and integrated with SHD using a replicated DB</li>
+  <li>Reorganised SHD code to split out a Common Unity Toolkit as a submodule</li>
+  <li>AI Timeout &amp; other improvements in SHD</li>
+  <li>Started on SHD tutorial rework</li>
 </ul>
 
 <p>Tasks for this month:</p>
 
 <ul>
-  <li>Deploy generic game server</li>
-  <li>Work on (and hopefully complete) a 1.1 patch release for SHD</li>
+  <li>Release SHD 1.1 and market it a little</li>
 </ul>
 </p>
 </div>

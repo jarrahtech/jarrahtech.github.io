@@ -3,13 +3,40 @@
     <title type="text" xml:lang="en">Jarrah Technology</title>
     <link type="application/atom+xml" href="http://www.jarrahtechnology.com/atom.xml" rel="self"/>
     <link type="text" href="http://www.jarrahtechnology.com" rel="alternate"/>
-    <updated>2023-02-03T16:45:39+08:00</updated>
+    <updated>2023-03-01T18:15:07+08:00</updated>
     <id>http://www.jarrahtechnology.com</id>
     <author>
         <name>Jarrah Technology</name>
     </author>
     <rights>Copyright (c) 2012 Jarrah Technology</rights>
 
+    
+    <entry>
+        <title>Solid Month - Progress Report</title>
+        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2023/03/01/Solid.html/"/>
+        <published>2023-03-01T00:00:00+08:00</published>
+        <updated>2023-03-01T00:00:00+08:00</updated>
+        <id>http://www.jarrahtechnology.com/2023/03/01/Solid.html/</id>
+        <content type="html">&lt;p&gt;February was a solid month. Nothing flashy or fancy, but just clearing the task list. Not bad considering I lost probably 4-5 complete days to tasks around the house. A couple of interesting issues arose. It turns out that the version of .Net Unity 5.6 uses does not support TLS1.2+ so doesn’t work on recent web services - like the host I deployed the generic server. That took a little fiddling to get working. Before working out a solution, for a couple of days, I thought the whole thing would need to be scrapped - I was not a happy boy! Also realised I needed to change the server to build-in internationalisation of strings - that was was fiddly, but not hard.&lt;/p&gt;
+
+&lt;p&gt;The SHD patch release is not done, but very close. Now I just need to: finish up the tutorial changes; record a video of me doing the tutorial; and then final testing. There is a good chance this will be complete in early March. Then hopefully my Internet will hold up long enough to do a little marketing. I’ll be losing a week due to holidays, so just those few tasks are the goals for the month. If there is time after that there always things to do: start Ci2d; improve the generic server; write libraries. I’ll work it out when the time comes.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Generic game server deployed and integrated with SHD using a replicated DB&lt;/li&gt;
+  &lt;li&gt;Reorganised SHD code to split out a Common Unity Toolkit as a submodule&lt;/li&gt;
+  &lt;li&gt;AI Timeout &amp;amp; other improvements in SHD&lt;/li&gt;
+  &lt;li&gt;Started on SHD tutorial rework&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Release SHD 1.1 and market it a little&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
     
     <entry>
         <title>Happy Coding - Progress Report</title>
@@ -19,7 +46,7 @@
         <id>http://www.jarrahtechnology.com/2023/02/02/Happy-Coding.html/</id>
         <content type="html">&lt;p&gt;There was a surprise with the JarrahTech end of month summary. I was expecting to require a whole load of excuses why I did so few hours of work. I still have those excuses (I have been spending many hours doing maintenance on the house), but it turns out they are not needed. Without realising it, I have spend a respectable amount of time completing a basic generic game server. It was a mostly enjoyable process where I tried out a load of new libraries and technologies, so maybe that is why the time just disappeared?&lt;/p&gt;
 
-&lt;p&gt;Anyway, the generic server is largely done. The functionality needed at this stage is all there, but a couple of unexpected &lt;a href=&quot;https://www.docker.com/&quot;&gt;docker&lt;/a&gt; related issues came up in a test deploy (database replication and external logging). When they are done I’ll write the integration into SHD and then the patch release. Still looking good for this month. I’m not sure I chose the best technology for the server, but I’m not redoing it now - maybe later.&lt;/p&gt;
+&lt;p&gt;Anyway, the generic server is largely done. The functionality needed at this stage is all there, but a couple of unexpected &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; related issues came up in a test deploy (database replication and external logging). When they are done I’ll write the integration into SHD and then the patch release. Still looking good for this month. I’m not sure I chose the best technology for the server, but I’m not redoing it now - maybe later.&lt;/p&gt;
 
 &lt;p&gt;I also had a chat with people about what game I should develop next. In a complete non-surprise it will be Concealed Intent 2D (a working title, not the final name). It will combine the stealth focused synchronous turn-based spaceship combat of Concealed Intent with a procgen rogue-like and on a flat 2D map (rather than full 3D). Two other ideas also caught people’s attention. As a result there may be some background work on the IPO card game, and maybe a little experimentation towards something else.&lt;/p&gt;
 
@@ -545,26 +572,6 @@ Hopefully all that is finished now (apart from this Wednesday afternoon) and I c
 &lt;ul&gt;
   &lt;li&gt;Work on SHD (and have basic play possible)&lt;/li&gt;
   &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
-  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </entry>
-    
-    <entry>
-        <title>Flat - Progress Report</title>
-        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2021/08/02/Flat.html/"/>
-        <published>2021-08-02T00:00:00+08:00</published>
-        <updated>2021-08-02T00:00:00+08:00</updated>
-        <id>http://www.jarrahtechnology.com/2021/08/02/Flat.html/</id>
-        <content type="html">&lt;p&gt;The last month has been a been a total loss as far as gamedev is concerned. There has been barely 2 equivalent days of progress. I’m feeling a little stressed over some housing issues (that should be resolved this week) and this has affected my ability to get things done. I have played quite a few games though - does that count as market research?&lt;/p&gt;
-
-&lt;p&gt;The tasks this month are the same as last month, with the slight change that I have prepped a third version of IPO. I just need to answer certain questions about the game, so the playtest will be more focussed.&lt;/p&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Extract and improve common code &amp;amp; prefabs from AHB, mainly the card libraries. Then work on examples in the form of simple games (like AHB v2).&lt;/li&gt;
-  &lt;li&gt;Try the third IPO prototype and answer the four gameplay questions.&lt;/li&gt;
   &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
