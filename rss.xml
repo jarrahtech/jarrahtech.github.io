@@ -6,9 +6,62 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Wed, 01 Mar 2023 18:15:07 +0800</pubDate>
-    <lastBuildDate>Wed, 01 Mar 2023 18:15:07 +0800</lastBuildDate>
+    <pubDate>Sun, 12 Mar 2023 11:51:04 +0800</pubDate>
+    <lastBuildDate>Sun, 12 Mar 2023 11:51:04 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Space Hex Duel 1.1 Released!</title>
+      <link>http://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1.html</link>
+      <pubDate>Sun, 12 Mar 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1</guid>
+      <description>&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
+
+&lt;p&gt;The 1.1 patch of Space Hex Duel is now released and out on &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Itch.io&lt;/a&gt; (and still PWYW - effectively free!). It is actually quite small release, there were no game breaking bugs, so this is mainly “quality of life” improvements. Normally this would be version 1.0.1, but there are a couple of extra screens to support an online connection (feedback page, news display on the main page), so I bumped it to 1.1. Other notable changes include: a timeout on the good AI so It doesn’t sit for minutes in hard situations looking for the best possible move; and a reworded tutorial with a YouTube video (embedded at the bottom of this post) for those who just want to jump straight in. The full changelist is below.&lt;/p&gt;
+
+&lt;p&gt;Next up I should start some prototyping work for my next game. Although I’m considering releasing Space Hex Duel to Steam at some point, which will require a few extra tasks. So maybe a 1.2 release in a few months to add those?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Space Hex Duel 1.1.0 (13th March 2023)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add Online support (if no connection do nothing and continue)
+    &lt;ul&gt;
+      &lt;li&gt;Add feedback page&lt;/li&gt;
+      &lt;li&gt;Add JarrahTech news box&lt;/li&gt;
+      &lt;li&gt;Collect anonymous stats on player progress and locale&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;AI
+    &lt;ul&gt;
+      &lt;li&gt;if shooting does not destroy anything, then try the next base’s shooting rather than check if a drop is possible (as no new spaces will have appeared)&lt;/li&gt;
+      &lt;li&gt;time limit stored in config file (timeout_seconds), defaults to 15 seconds - use  the best plan found so far if time expires&lt;/li&gt;
+      &lt;li&gt;try (a little) not to put bases that will be immediately destroyed right next to the players home&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Change Tutorial text and ensure colours and controls referred to are correct when displayed&lt;/li&gt;
+  &lt;li&gt;Code signed the executable (with a self-created certificate)&lt;/li&gt;
+  &lt;li&gt;Make tutorial skippable and add a link to a YouTube video of the tutorial&lt;/li&gt;
+  &lt;li&gt;Dropped bombs make a small explosion even if they don’t destroy what they are on&lt;/li&gt;
+  &lt;li&gt;Set explosions to be at the top of the render queue so they are not hidden by planets/bases&lt;/li&gt;
+  &lt;li&gt;Fix tooltip for unclaimed powerup hexes&lt;/li&gt;
+  &lt;li&gt;Stop unlocks running over menu if there are lots of them on game over screen&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Give different enemy types different names&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/games/spacehexduel&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/press/spacehexduel.html&quot;&gt;Presskit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Storefront&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+    &lt;iframe frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1823532?linkback=true&quot; width=&quot;552&quot; height=&quot;167&quot;&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Space Hex Duel by JarrahTech&lt;/a&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+    &lt;iframe height=&quot;167&quot; src=&quot;http://www.youtube.com/embed/dvyQinkVeHk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+</description>
+    </item>
     
     <item>
       <title>Solid Month - Progress Report</title>
@@ -526,25 +579,6 @@ Hopefully all that is finished now (apart from this Wednesday afternoon) and I c
       <description>&lt;p&gt;September was a month of distractions. Work continued on SHB, but at a slow pace. A significant amount of time was also spent trying out the new Scala3 and I converted the hex library into that language - it works well (now I’m thinking about SAAS projects again). Outside of work stress and tasks is still high. Unfortunately that is likely to continue for a while. I managed not to spend much time on games this month. However, I did play a complete game of Civ6, but one game seems like enough for now.&lt;/p&gt;
 
 &lt;p&gt;I hope to mainly work on redoing SHD this month. It already feels better and prettier than the old AHB, so I’m definitely feeling positive. Just need to get it back to the old level.&lt;/p&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Work on SHD (and have basic play possible)&lt;/li&gt;
-  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
-  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Excuses - Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2021/09/02/Excuses.html</link>
-      <pubDate>Thu, 02 Sep 2021 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2021/09/02/Excuses</guid>
-      <description>&lt;p&gt;Time for more excuses! The first half of August went very well. I finished extracting a common code library and restarted AHB, but this time it is called SpaceHex Duel (SHD). Yes, thankyou, I do know I have a special way with naming. At the moment the board is set up and I have started work on the pieces. And then things have paused. I had my first Pfizer vaccine does and a bad reaction.  Over a week was mostly a write-off. I played the Battletech computer game instead of working (it was on sale at Humble Bundle). I have the next dose soon and fingers crossed that goes better!&lt;/p&gt;
-
-&lt;p&gt;I also ran 2 IPO playtests. The simplifications had mixed results. Continuous growth and card choice worked well. Removing auctions and money generation changes did not work so well. Time for version 4!&lt;/p&gt;
 
 &lt;p&gt;Over the next month:&lt;/p&gt;
 
