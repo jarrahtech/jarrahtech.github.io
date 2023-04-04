@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-12T11:51:04+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Space Hex Duel 1.1 Released!</title><link href="http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1.html" rel="alternate" type="text/html" title="Space Hex Duel 1.1 Released!" /><published>2023-03-12T00:00:00+08:00</published><updated>2023-03-12T00:00:00+08:00</updated><id>http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1</id><content type="html" xml:base="http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1.html">&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-04T11:03:34+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Annoyance</title><link href="http://localhost:4000/2023/04/03/Annoyance.html" rel="alternate" type="text/html" title="Annoyance" /><published>2023-04-03T00:00:00+08:00</published><updated>2023-04-03T00:00:00+08:00</updated><id>http://localhost:4000/2023/04/03/Annoyance</id><content type="html" xml:base="http://localhost:4000/2023/04/03/Annoyance.html">&lt;p&gt;Last month split into 4 parts. First the &lt;a href=&quot;https://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1.html&quot;&gt;1.1 version of Space Hex Duel was completed and released&lt;/a&gt;. Next I worked on testing out new tools and setting up the Ci2D dev environment. Then I gave up on that in annoyance and just did some fun coding before finishing with a holiday to Adelaide.&lt;/p&gt;
+
+&lt;p&gt;What annoyed me? Unity. In particular Unity 5.6, and the lack of support in modern libraries and technologies. Admittedly that version is about 6 years old, but it is the version I own (forever) and the prices have risen significantly for the current version. Do I really want to spend the money for an update? I don’t need any of the big new features, but there will come a time that I just won’t be able to build and run with the old version anymore. Already VS Code (my IDE) no longer supports the version of .Net required by 5.6 (I had to trick it to work productively). I don’t want to end up trapped. So it is time to investigate my options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stay on Unity 5.6 and suck it up&lt;/li&gt;
+  &lt;li&gt;Move to the current free version of Unity&lt;/li&gt;
+  &lt;li&gt;Move to the current paid version of Unity&lt;/li&gt;
+  &lt;li&gt;Move to a similar open source engine like Godot&lt;/li&gt;
+  &lt;li&gt;Move to another big (but quite different) engine like Unreal&lt;/li&gt;
+  &lt;li&gt;Move to a Javascript engine (like Tyrian or Babylon) and release to the web&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They all have their pros &amp;amp; cons (maybe I’ll write a post about them). For now I am going to check out some Javascript options, largely because those are the ones I know least about.&lt;/p&gt;
+
+&lt;p&gt;Also I learnt that I should restrict the ordering of actions in turn-based games to reduce the space of possible actions. This will make the search space for AI much smaller. For example, in SHD it is possible to shoot or place your piece in any order. Just changing this (eg forcing the player to place before shooting) would reduce the possible moves in a turn by orders of magnitude in the worst case (when there are lots of bases). I must remember this in future.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finished and released SHD 1.1 (and did a little marketing)&lt;/li&gt;
+  &lt;li&gt;Setup Ci2D in Unity 5.6&lt;/li&gt;
+  &lt;li&gt;Investigated AI, Rewired, and updated libraries - none would work for SHD&lt;/li&gt;
+  &lt;li&gt;Added steam manager to common Unity utilities&lt;/li&gt;
+  &lt;li&gt;Hex library&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish the hex library&lt;/li&gt;
+  &lt;li&gt;Investigate other game engines (starting with Javascript ones)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="ProgressReport" /><category term="DevDiary" /><summary type="html">Last month split into 4 parts. First the 1.1 version of Space Hex Duel was completed and released. Next I worked on testing out new tools and setting up the Ci2D dev environment. Then I gave up on that in annoyance and just did some fun coding before finishing with a holiday to Adelaide.</summary></entry><entry><title type="html">Space Hex Duel 1.1 Released!</title><link href="http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1.html" rel="alternate" type="text/html" title="Space Hex Duel 1.1 Released!" /><published>2023-03-12T00:00:00+08:00</published><updated>2023-03-12T00:00:00+08:00</updated><id>http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1</id><content type="html" xml:base="http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1.html">&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
 
 &lt;p&gt;The 1.1 patch of Space Hex Duel is now released and out on &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Itch.io&lt;/a&gt; (and still PWYW - effectively free!). It is actually quite small release, there were no game breaking bugs, so this is mainly “quality of life” improvements. Normally this would be version 1.0.1, but there are a couple of extra screens to support an online connection (feedback page, news display on the main page), so I bumped it to 1.1. Other notable changes include: a timeout on the good AI so It doesn’t sit for minutes in hard situations looking for the best possible move; and a reworded tutorial with a YouTube video (embedded at the bottom of this post) for those who just want to jump straight in. The full changelist is below.&lt;/p&gt;
 
@@ -209,20 +241,4 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;Next version of prototypes&lt;/li&gt;
   &lt;li&gt;Online component&lt;/li&gt;
   &lt;li&gt;Try not to get distracted&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="General" /><category term="DevDiary" /><category term="ProgressReport" /><summary type="html">The point has been reached where the end is so near, I find my attention waning and drifting to other projects. This month I spent nearly a record low number of hours on SHD, and yet my todo list is still quite short. Today I went through the list of ideas/issues/features remaining. Most are not worth doing, or are code improvements for the next game (they will make no significant difference to this one). The ones left I grouped by theme and numbered by importance - the last is #5. The first is the long-planned full AI; second is the online componenent. The others are not worth mentioning.</summary></entry><entry><title type="html">Roguelike Tutorial 2022</title><link href="http://localhost:4000/2022/08/17/Roguelike.html" rel="alternate" type="text/html" title="Roguelike Tutorial 2022" /><published>2022-08-17T00:00:00+08:00</published><updated>2022-08-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/08/17/Roguelike</id><content type="html" xml:base="http://localhost:4000/2022/08/17/Roguelike.html">&lt;p&gt;As a distraction from other things I should have been doing over the last 6 weeks, I completed the &lt;a href=&quot;https://www.reddit.com/r/roguelikedev/comments/vhfsda/roguelikedev_does_the_complete_roguelike_tutorial/&quot;&gt;/r/roguelikedev Tutorial 2022&lt;/a&gt;. An event to teach people how to write roguelike games like &lt;a href=&quot;https://en.wikipedia.org/wiki/NetHack&quot;&gt;Nethack&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Angband_%28video_game%29&quot;&gt;Angband&lt;/a&gt;, and my old favourite, &lt;a href=&quot;/blog/2016/07/omega.html&quot;&gt;Omega&lt;/a&gt;. I wanted to learn some &lt;a href=&quot;https://javascript.info/&quot;&gt;Javascript&lt;/a&gt;, and this seemed a good way to go.&lt;/p&gt;
-
-&lt;p&gt;It is done now. There is a &lt;a href=&quot;https://jarrahtech.github.io/RoguelikeTutorial2022/&quot;&gt;playable version here&lt;/a&gt; and the &lt;a href=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022&quot;&gt;source code is here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The controls are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;movement/target: arrow keys or wasd (+qezx)&lt;/li&gt;
-  &lt;li&gt;look: ‘/’&lt;/li&gt;
-  &lt;li&gt;pickup: ‘p’&lt;/li&gt;
-  &lt;li&gt;message history: ‘v’&lt;/li&gt;
-  &lt;li&gt;drop/leave: ‘l’&lt;/li&gt;
-  &lt;li&gt;activate/use/equip: ‘u’&lt;/li&gt;
-  &lt;li&gt;character screen: ‘c’&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022/blob/main/assets/img/logo.png?raw=true&quot; alt=&quot;/r/roguelikedev Tutorial2022 Logo&quot; width=&quot;640&quot; /&gt;&lt;/p&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="General" /><summary type="html">As a distraction from other things I should have been doing over the last 6 weeks, I completed the /r/roguelikedev Tutorial 2022. An event to teach people how to write roguelike games like Nethack, Angband, and my old favourite, Omega. I wanted to learn some Javascript, and this seemed a good way to go.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="General" /><category term="DevDiary" /><category term="ProgressReport" /><summary type="html">The point has been reached where the end is so near, I find my attention waning and drifting to other projects. This month I spent nearly a record low number of hours on SHD, and yet my todo list is still quite short. Today I went through the list of ideas/issues/features remaining. Most are not worth doing, or are code improvements for the next game (they will make no significant difference to this one). The ones left I grouped by theme and numbered by importance - the last is #5. The first is the long-planned full AI; second is the online componenent. The others are not worth mentioning.</summary></entry></feed>

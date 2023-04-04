@@ -107,65 +107,52 @@
 
 <div class="row">
 <div class="span12">
-      <h2>Latest News: Space Hex Duel 1.1 Released!
-<a href="https://twitter.com/intent/tweet?text=Space Hex Duel 1.1 Released!%20%40JarrahTech%20http://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+      <h2>Latest News: Annoyance
+<a href="https://twitter.com/intent/tweet?text=Annoyance%20%40JarrahTech%20http://www.jarrahtechnology.com/2023/04/03/Annoyance.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2023/04/03/Annoyance.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
       
-      <h4>March 12, 2023 - <a href="/2023/03/12/Space-Hex-Duel-1.1.html">permalink</a></h4>
+      <h4>April  3, 2023 - <a href="/2023/04/03/Annoyance.html">permalink</a></h4>
       Tags: 
-    
-      <a class="post" href="/news/tag/SpaceHexDuel.html">SpaceHexDuel</a>, 
     
       <a class="post" href="/news/tag/ProgressReport.html">ProgressReport</a>, 
     
       <a class="post" href="/news/tag/DevDiary.html">DevDiary</a>
     
   <br/>
-      <p><center><a href="https://jarrahtech.itch.io/spacehexduel"><img src="/assets/posts/ahb/capsule_lg.png" alt="Space Hex Duel" /></a></center>
+      <p><p>Last month split into 4 parts. First the <a href="https://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1.html">1.1 version of Space Hex Duel was completed and released</a>. Next I worked on testing out new tools and setting up the Ci2D dev environment. Then I gave up on that in annoyance and just did some fun coding before finishing with a holiday to Adelaide.</p>
 
-<p>The 1.1 patch of Space Hex Duel is now released and out on <a href="https://jarrahtech.itch.io/spacehexduel">Itch.io</a> (and still PWYW - effectively free!). It is actually quite small release, there were no game breaking bugs, so this is mainly “quality of life” improvements. Normally this would be version 1.0.1, but there are a couple of extra screens to support an online connection (feedback page, news display on the main page), so I bumped it to 1.1. Other notable changes include: a timeout on the good AI so It doesn’t sit for minutes in hard situations looking for the best possible move; and a reworded tutorial with a YouTube video (embedded at the bottom of this post) for those who just want to jump straight in. The full changelist is below.</p>
-
-<p>Next up I should start some prototyping work for my next game. Although I’m considering releasing Space Hex Duel to Steam at some point, which will require a few extra tasks. So maybe a 1.2 release in a few months to add those?</p>
-
-<p><strong>Space Hex Duel 1.1.0 (13th March 2023)</strong></p>
+<p>What annoyed me? Unity. In particular Unity 5.6, and the lack of support in modern libraries and technologies. Admittedly that version is about 6 years old, but it is the version I own (forever) and the prices have risen significantly for the current version. Do I really want to spend the money for an update? I don’t need any of the big new features, but there will come a time that I just won’t be able to build and run with the old version anymore. Already VS Code (my IDE) no longer supports the version of .Net required by 5.6 (I had to trick it to work productively). I don’t want to end up trapped. So it is time to investigate my options:</p>
 
 <ul>
-  <li>Add Online support (if no connection do nothing and continue)
-    <ul>
-      <li>Add feedback page</li>
-      <li>Add JarrahTech news box</li>
-      <li>Collect anonymous stats on player progress and locale</li>
-    </ul>
-  </li>
-  <li>AI
-    <ul>
-      <li>if shooting does not destroy anything, then try the next base’s shooting rather than check if a drop is possible (as no new spaces will have appeared)</li>
-      <li>time limit stored in config file (timeout_seconds), defaults to 15 seconds - use  the best plan found so far if time expires</li>
-      <li>try (a little) not to put bases that will be immediately destroyed right next to the players home</li>
-    </ul>
-  </li>
-  <li>Change Tutorial text and ensure colours and controls referred to are correct when displayed</li>
-  <li>Code signed the executable (with a self-created certificate)</li>
-  <li>Make tutorial skippable and add a link to a YouTube video of the tutorial</li>
-  <li>Dropped bombs make a small explosion even if they don’t destroy what they are on</li>
-  <li>Set explosions to be at the top of the render queue so they are not hidden by planets/bases</li>
-  <li>Fix tooltip for unclaimed powerup hexes</li>
-  <li>Stop unlocks running over menu if there are lots of them on game over screen</li>
-  <li>
-    <p>Give different enemy types different names</p>
-  </li>
-  <li><a href="https://www.jarrahtechnology.com/games/spacehexduel">Website</a></li>
-  <li><a href="https://www.jarrahtechnology.com/press/spacehexduel.html">Presskit</a></li>
-  <li><a href="https://jarrahtech.itch.io/spacehexduel">Storefront</a></li>
+  <li>Stay on Unity 5.6 and suck it up</li>
+  <li>Move to the current free version of Unity</li>
+  <li>Move to the current paid version of Unity</li>
+  <li>Move to a similar open source engine like Godot</li>
+  <li>Move to another big (but quite different) engine like Unreal</li>
+  <li>Move to a Javascript engine (like Tyrian or Babylon) and release to the web</li>
 </ul>
 
-<center>
-    <iframe frameborder="0" src="https://itch.io/embed/1823532?linkback=true" width="552" height="167"><a href="https://jarrahtech.itch.io/spacehexduel">Space Hex Duel by JarrahTech</a></iframe>
-</center>
+<p>They all have their pros &amp; cons (maybe I’ll write a post about them). For now I am going to check out some Javascript options, largely because those are the ones I know least about.</p>
 
-<center>
-    <iframe height="167" src="http://www.youtube.com/embed/dvyQinkVeHk" frameborder="0" allowfullscreen=""></iframe>
-</center>
+<p>Also I learnt that I should restrict the ordering of actions in turn-based games to reduce the space of possible actions. This will make the search space for AI much smaller. For example, in SHD it is possible to shoot or place your piece in any order. Just changing this (eg forcing the player to place before shooting) would reduce the possible moves in a turn by orders of magnitude in the worst case (when there are lots of bases). I must remember this in future.</p>
+
+<p>Done last month:</p>
+
+<ul>
+  <li>Finished and released SHD 1.1 (and did a little marketing)</li>
+  <li>Setup Ci2D in Unity 5.6</li>
+  <li>Investigated AI, Rewired, and updated libraries - none would work for SHD</li>
+  <li>Added steam manager to common Unity utilities</li>
+  <li>Hex library</li>
+</ul>
+
+<p>Tasks for this month:</p>
+
+<ul>
+  <li>Finish the hex library</li>
+  <li>Investigate other game engines (starting with Javascript ones)</li>
+</ul>
+
 </p>
 </div>
         </div>
