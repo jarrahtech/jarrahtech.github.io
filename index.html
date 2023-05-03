@@ -107,11 +107,11 @@
 
 <div class="row">
 <div class="span12">
-      <h2>Latest News: Annoyance
-<a href="https://twitter.com/intent/tweet?text=Annoyance%20%40JarrahTech%20http://www.jarrahtechnology.com/2023/04/03/Annoyance.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2023/04/03/Annoyance.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+      <h2>Latest News: Babylon
+<a href="https://twitter.com/intent/tweet?text=Babylon%20%40JarrahTech%20http://www.jarrahtechnology.com/2023/05/02/Babylon.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2023/05/02/Babylon.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
       
-      <h4>April  3, 2023 - <a href="/2023/04/03/Annoyance.html">permalink</a></h4>
+      <h4>May  2, 2023 - <a href="/2023/05/02/Babylon.html">permalink</a></h4>
       Tags: 
     
       <a class="post" href="/news/tag/ProgressReport.html">ProgressReport</a>, 
@@ -119,40 +119,24 @@
       <a class="post" href="/news/tag/DevDiary.html">DevDiary</a>
     
   <br/>
-      <p><p>Last month split into 4 parts. First the <a href="https://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1.html">1.1 version of Space Hex Duel was completed and released</a>. Next I worked on testing out new tools and setting up the Ci2D dev environment. Then I gave up on that in annoyance and just did some fun coding before finishing with a holiday to Adelaide.</p>
+      <p><p>Over the last month I investigated alternatives to the Unity3d game engine. In particular, the Javascript based Babylon engine (I took a look at Tyrian too, but it is 2d only so I moved on). Now there is HexTacToe, an incredibly simple hex based tic-tac-toe game created as a Scala.js and Babylon.js proof-of-concept. <a href="https://www.jarrahtechnology.com/HexTacToe/">Play it here</a> and the <a href="https://github.com/jarrahtech/HexTacToe">code is on Github here</a>. I still need to clean it up a bit, but the functionality is all done. The point has been proved, all these technologies play nicely together. There was the occasional frustration, but overall it went quite well. I am impressed. There is not the community or game tooling available for Babylon as for Unity. However, there are other benefits. Definitely something for me to think about. I will need to write that post on pros/cons of different engines from my point-of-view.</p>
 
-<p>What annoyed me? Unity. In particular Unity 5.6, and the lack of support in modern libraries and technologies. Admittedly that version is about 6 years old, but it is the version I own (forever) and the prices have risen significantly for the current version. Do I really want to spend the money for an update? I don’t need any of the big new features, but there will come a time that I just won’t be able to build and run with the old version anymore. Already VS Code (my IDE) no longer supports the version of .Net required by 5.6 (I had to trick it to work productively). I don’t want to end up trapped. So it is time to investigate my options:</p>
-
-<ul>
-  <li>Stay on Unity 5.6 and suck it up</li>
-  <li>Move to the current free version of Unity</li>
-  <li>Move to the current paid version of Unity</li>
-  <li>Move to a similar open source engine like Godot</li>
-  <li>Move to another big (but quite different) engine like Unreal</li>
-  <li>Move to a Javascript engine (like Tyrian or Babylon) and release to the web</li>
-</ul>
-
-<p>They all have their pros &amp; cons (maybe I’ll write a post about them). For now I am going to check out some Javascript options, largely because those are the ones I know least about.</p>
-
-<p>Also I learnt that I should restrict the ordering of actions in turn-based games to reduce the space of possible actions. This will make the search space for AI much smaller. For example, in SHD it is possible to shoot or place your piece in any order. Just changing this (eg forcing the player to place before shooting) would reduce the possible moves in a turn by orders of magnitude in the worst case (when there are lots of bases). I must remember this in future.</p>
+<p>April was the month highest gamedev hours since starting this fulltime, largely because I would not give up on the problems integrating the technologies in HexTacToe (it always felt like I was so close to getting it working, and I generally was). A nice target for me to aim for again in future, but not this coming month. There is a long list of non-gamedev tasks to get done that I have been ignoring since before going to Adelaide in March. So I’m lowering expectations for May. Gamedev-wise it will be mainly reading and experimentation.</p>
 
 <p>Done last month:</p>
 
 <ul>
-  <li>Finished and released SHD 1.1 (and did a little marketing)</li>
-  <li>Setup Ci2D in Unity 5.6</li>
-  <li>Investigated AI, Rewired, and updated libraries - none would work for SHD</li>
-  <li>Added steam manager to common Unity utilities</li>
-  <li>Hex library</li>
+  <li>Updated hex lib &amp; started scala ink (skink) library</li>
+  <li>HexTacToe - simple hex based tic-tac-toe game as a Scala.js and Babylon.js proof-of-concept</li>
 </ul>
 
 <p>Tasks for this month:</p>
 
 <ul>
-  <li>Finish the hex library</li>
-  <li>Investigate other game engines (starting with Javascript ones)</li>
+  <li>Clean up HexTacToe for ideas on common libs and patterns</li>
+  <li>Next IPO prototype?</li>
+  <li>Move new engine experimentation?</li>
 </ul>
-
 </p>
 </div>
         </div>
