@@ -478,7 +478,11 @@
     </url>
     <url>
         <loc>http://localhost:4000/2023/05/02/Babylon.html</loc>
-        <lastmod>2023-05-03T12:07:13+08:00</lastmod>
+        <lastmod>2023-06-02T10:21:59+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/2023/06/02/Skink.html</loc>
+        <lastmod>2023-06-02T16:23:51+08:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/404.html</loc>
@@ -506,7 +510,7 @@
     </url>
     <url>
         <loc>http://localhost:4000/</loc>
-        <lastmod>2023-05-03T12:07:13+08:00</lastmod>
+        <lastmod>2023-06-02T16:23:51+08:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/news/</loc>

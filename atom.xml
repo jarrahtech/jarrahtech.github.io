@@ -3,13 +3,41 @@
     <title type="text" xml:lang="en">Jarrah Technology</title>
     <link type="application/atom+xml" href="http://www.jarrahtechnology.com/atom.xml" rel="self"/>
     <link type="text" href="http://www.jarrahtechnology.com" rel="alternate"/>
-    <updated>2023-05-03T12:07:13+08:00</updated>
+    <updated>2023-06-02T16:27:06+08:00</updated>
     <id>http://www.jarrahtechnology.com</id>
     <author>
         <name>Jarrah Technology</name>
     </author>
     <rights>Copyright (c) 2012 Jarrah Technology</rights>
 
+    
+    <entry>
+        <title>Skink</title>
+        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2023/06/02/Skink.html/"/>
+        <published>2023-06-02T00:00:00+08:00</published>
+        <updated>2023-06-02T00:00:00+08:00</updated>
+        <id>http://www.jarrahtechnology.com/2023/06/02/Skink.html/</id>
+        <content type="html">&lt;p&gt;May seemed quite busy as I was working through it, but as expected it was not a month of great achievements. First I created some libraries out of HexTacToe to support Scala.js/Babylon.js games (see &lt;a href=&quot;https://github.com/jarrahtech/kassite&quot;&gt;Kassite on Github&lt;/a&gt;), and also some work adding Electron.js support so I could create native builds. Then I created the next IPO prototype - the first playtest went quite well (more are required). The last fortnight was spent working on Skink, a Scala reimplementation of the &lt;a href=&quot;https://github.com/inkle/ink&quot;&gt;Ink language&lt;/a&gt; for game narratives. It is an interesting project, although I’m not sure how useful it will be given I have sworn off story in my games. There was also a great deal of household tasks completed. Thankfully that todo list is much shorter now.&lt;/p&gt;
+
+&lt;p&gt;Right now I’m focussed on finishing Skink. Or at least finished enough to be minimally useful. It is just stubborness really. I hope to have that done in a couple of weeks and after that I’m going to do some tech tests on parts of Ci2d. Plus, I’ll platest and iterate on IPO whenever possible.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Created libraries (from HexTacToe) to support Scala.js/Babylon.js game creation&lt;/li&gt;
+  &lt;li&gt;Worked on Skink library&lt;/li&gt;
+  &lt;li&gt;Created next IPO prototype and tested it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Test IPO some more&lt;/li&gt;
+  &lt;li&gt;Finish initial work on Skink&lt;/li&gt;
+  &lt;li&gt;More Scala.js/Babylon.js tests&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
     
     <entry>
         <title>Babylon</title>
@@ -33,7 +61,7 @@
 &lt;ul&gt;
   &lt;li&gt;Clean up HexTacToe for ideas on common libs and patterns&lt;/li&gt;
   &lt;li&gt;Next IPO prototype?&lt;/li&gt;
-  &lt;li&gt;Move new engine experimentation?&lt;/li&gt;
+  &lt;li&gt;New engine experimentation?&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </entry>
@@ -607,31 +635,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
 
 &lt;ul&gt;
   &lt;li&gt;Work on SHD (targetting, shooting, extra action, end of game &amp;amp; unlocks)&lt;/li&gt;
-  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
-  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </entry>
-    
-    <entry>
-        <title>Standstill - Progress Report</title>
-        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2022/01/02/Standstill.html/"/>
-        <published>2022-01-02T00:00:00+08:00</published>
-        <updated>2022-01-02T00:00:00+08:00</updated>
-        <id>http://www.jarrahtechnology.com/2022/01/02/Standstill.html/</id>
-        <content type="html">&lt;p&gt;As we ring in the new year, it occurred to me that my current game is about at the same playable state as this time last year. Hmmmm.
-Of course, I now have a reusable library (hopefully, the test will be in the reuse) and the code is much nicer. However, it seems
-as bit poor to make no progress on the ultimate measure of a game - its playability and fun.&lt;/p&gt;
-
-&lt;p&gt;Over the last month the game has become playable again. The turn structure is in and stamps complete. I’ve have also replaced the
-health/strength/time displays with shader based radial sprites, rather than the weird looking 3D line drawings in a 2D world. Work has now started on the player UI - my worst gamedev skill.&lt;/p&gt;
-
-&lt;p&gt;There has been no work on IPO, but I am getting more ideas for various games. I need to get this one finished before my interest wanes, as I feel it doing. I started December with a rush, but that slowed greatly over the fortnight for Christmas and New Years. I need to get back that previous productivity. Time sinks over the next month include a ton of house issues (old houses!), but thanks to the current pandemic lockdown and heatwave, exercise time is minimal.&lt;/p&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Work on SHD (get UI working)&lt;/li&gt;
   &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
   &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
 &lt;/ul&gt;
