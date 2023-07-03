@@ -6,9 +6,31 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Fri, 02 Jun 2023 16:27:06 +0800</pubDate>
-    <lastBuildDate>Fri, 02 Jun 2023 16:27:06 +0800</lastBuildDate>
+    <pubDate>Mon, 03 Jul 2023 17:11:57 +0800</pubDate>
+    <lastBuildDate>Mon, 03 Jul 2023 17:11:57 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Bad Skink</title>
+      <link>http://www.jarrahtechnology.com/2023/07/03/Bad-Skink.html</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/07/03/Bad-Skink</guid>
+      <description>&lt;p&gt;Last month I started working on Skink, a game narrative library. Now I can annouce Skink is dead. Well, maybe not permanently dead, but dead as a reimplemetation of Ink. I just couldn’t see it working for &lt;a href=&quot;https://emshort.blog/2019/11/29/storylets-you-want-them/&quot;&gt;storylets&lt;/a&gt; (which is what I need) rather than as the engine driving a whole game (which I don’t). Unfortunately, I still spent significant time this month on it before that realisation. The rest of the month I worked on prototypes/tools for future Scala.js/Babylon.js games. I plan to continue doing that all through July too.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stopped work on Skink library&lt;/li&gt;
+  &lt;li&gt;More Scala.js/Babylon.js tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;More Scala.js/Babylon.js tests&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Skink</title>
@@ -595,27 +617,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
   &lt;li&gt;First paper prototypes for the next 1 or 2 games&lt;/li&gt;
   &lt;li&gt;Common library work (card and backporting SHD stuff)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Moving Again? - Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2022/02/02/Moving-Again.html</link>
-      <pubDate>Wed, 02 Feb 2022 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2022/02/02/Moving-Again</guid>
-      <description>&lt;p&gt;Before compiling the results for January, I was a little disappointed in myself. I remember it taking a couple of weeks to get moving as other home tasks took precedence. However, after going through my notes, the result looks more like a normal month - a couple of better than average weeks after a couple of worse than average weeks. Consistency is my problem.&lt;/p&gt;
-
-&lt;p&gt;The game is coming along nicely. The UI is complete and working well (apart from tooltips, to be done later). Forming and moving bases is complete; targeting and firing is in progress. Everything so far works better than before. Perhaps the second time I know better what is required - a point of evidence in favour of prototypes.&lt;/p&gt;
-
-&lt;p&gt;Another two entries have been added onto the game ideas list - time to start culling it. I have also bought some tabletop components as I have plans to create tabletop prototypes of my next games - it is such a great way of iterating through designs quickly. With these new components I will be able to prototype Ci2d, plus a couple of others. I just need a week or so to come up with a set of starting rules.&lt;/p&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Work on SHD (targetting, shooting, extra action, end of game &amp;amp; unlocks)&lt;/li&gt;
-  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
-  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
