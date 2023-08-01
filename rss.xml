@@ -6,9 +6,24 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Mon, 03 Jul 2023 17:11:57 +0800</pubDate>
-    <lastBuildDate>Mon, 03 Jul 2023 17:11:57 +0800</lastBuildDate>
+    <pubDate>Tue, 01 Aug 2023 10:59:46 +0800</pubDate>
+    <lastBuildDate>Tue, 01 Aug 2023 10:59:46 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Learning</title>
+      <link>http://www.jarrahtechnology.com/2023/08/01/Learning.html</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/08/01/Learning</guid>
+      <description>&lt;p&gt;Over the last month I have continued learning the Scala.js/Babylon.js environment by creating a prototype for my next game. Progress is slow but steady, and no blockers have been hit so far. I consider that a success. Progress will continue being slow for the next 2 months at least. Partially because it is new, and many of the familiar tools are missing, but also because there will be some large disruptions in my non-work life over the next couple of months. For that reason, do not expect a progress report next month. Although no loss, as it would just be more of the same.&lt;/p&gt;
+
+&lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;More Scala.js/Babylon.js tests&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Bad Skink</title>
@@ -596,27 +611,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;Fix infinite mode, separate  random mode, and rearrange unlocks&lt;/li&gt;
   &lt;li&gt;Better AI&lt;/li&gt;
   &lt;li&gt;Play new prototypes&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Short Month, Record Hours - Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2022/03/01/Short-Month-Record-Hours.html</link>
-      <pubDate>Tue, 01 Mar 2022 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2022/03/01/Short-Month-Record-Hours</guid>
-      <description>&lt;p&gt;Despite being the shortest month of the year, the February was my best for hours worked. Mainly due to one week being almost full-time on the game - the benefit of it being too hot to be outside (ahh, I love my A/C). I’m not going to publicise the hours I worked - it is still well below my (already low) target. However, in the last report I wrote that I hoped to complete: targetting, shooting, extra actions, handle the end of a game, and unlocks. I did all of that and more: context sensitive tooltips and some framework niceties.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, this month is not expected to be as productive. There are several house related tasks that got paused waiting for more inclement temperatures - and today the weather turned! Despite this I expect good progress as the biggest task remaining is the AI, and after no further significant functionality is planned (online multiplayer would be such an item, but I’d want to have a version on stores before starting that). Instead, it is all things to make the game prettier and nicer. Thus, I have added a couple of new tasks to the possibles for the month - new prototypes and some library work.&lt;/p&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Work on SHD (play screen, AI, playability improvements)&lt;/li&gt;
-  &lt;li&gt;Create IPO prototype version 4&lt;/li&gt;
-  &lt;li&gt;Decide which projects to pursue immediately, and which to put on pause.&lt;/li&gt;
-  &lt;li&gt;First paper prototypes for the next 1 or 2 games&lt;/li&gt;
-  &lt;li&gt;Common library work (card and backporting SHD stuff)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

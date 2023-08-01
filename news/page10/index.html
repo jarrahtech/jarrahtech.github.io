@@ -72,6 +72,32 @@
 <h2>News</h2>
       
         <hr>
+	<h4>August 26, 2014: <a href="/2014/08/26/Working-with-Unity.html">Working with Unity, rather than against it</a>
+<a href="https://twitter.com/intent/tweet?text=Working with Unity, rather than against it%20%40JarrahTech%20http://www.jarrahtechnology.com/2014/08/26/Working-with-Unity.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2014/08/26/Working-with-Unity.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+</h4>
+Tags: 
+    
+      <a class="post" href="/news/tag/ConcealedIntent.html">ConcealedIntent</a>, 
+    
+      <a class="post" href="/news/tag/DevDiary.html">DevDiary</a>, 
+    
+      <a class="post" href="/news/tag/Unity.html">Unity</a>
+    
+  <br/>
+        <p><p>Like the old cliche “to a hammer, everything looks like a nail”, as a
+programmer I think many of my game-dev problems can be solved with code.
+So at first many of my solutions to issues in Concealed Intent were to
+add more functions onto control classes. For instance, to handle screen
+size changes, each GUI element’s control class included a function that
+knew how to resize that GUI element. The problem with this is sometimes
+this is the only code required in such a class. Also, it requires the
+resizing logic to be hardcoded and thus changing it means changing the
+code. This is not the Unity way.</p>
+
+<p class='more'><br/><a href='/2014/08/26/Working-with-Unity.html'>Read the rest of this entry</a></p></p>
+      
+        <hr>
 	<h4>July 14, 2014: <a href="/2014/07/14/GUI-and-Online-Again.html">GUI and Online Again</a>
 <a href="https://twitter.com/intent/tweet?text=GUI and Online Again%20%40JarrahTech%20http://www.jarrahtechnology.com/2014/07/14/GUI-and-Online-Again.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
 <a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2014/07/14/GUI-and-Online-Again.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
@@ -472,47 +498,6 @@ worst outcome.</p>
 <p>If you would like to join the testers, just drop me an email.</p>
 
 <p class='more'><br/><a href='/2013/07/31/Scary_Times.html'>Read the rest of this entry</a></p></p>
-      
-        <hr>
-	<h4>June 24, 2013: <a href="/2013/06/24/Space_Skyboxes.html">Space Skyboxes</a>
-<a href="https://twitter.com/intent/tweet?text=Space Skyboxes%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/06/24/Space_Skyboxes.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/06/24/Space_Skyboxes.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
-</h4>
-Tags: 
-    
-      <a class="post" href="/news/tag/Unity.html">Unity</a>, 
-    
-      <a class="post" href="/news/tag/Technical.html">Technical</a>
-    
-  <br/>
-        <p><p>Recently I came across <a href="http://alexcpeterson.com/spacescape">Alex Patterson’s
-Spacescape</a> program. It creates
-<a href="http://en.wikipedia.org/wiki/Skybox_(video_games)">space skyboxes</a> by
-building up layers of stars, billboards (special stars, galaxies or
-other external images) and noise (for gas and nebulae). These can then
-be exported as a standard 6 skybox images each up to 4096x4096
-resolution. All this under the permissive <a href="http://en.wikipedia.org/wiki/MIT_License">MIT
-License</a>. Definitely worth
-checking out if you are developing a space-based project.</p>
-
-<p><img src="/assets/posts/ci/skybox.png" alt="" /></p>
-
-<p>This could be very useful in Concealed Intent. However, there are a
-couple of issues to be noted when importing the resulting images into a
-Unity skybox. For more details see the <a href="http://docs.unity3d.com/Documentation/Manual/Textures.html">Unity Texture
-documentation</a></p>
-
-<ul>
-  <li>Spacescape and Unity use opposite conventions for left and right
-skybox images - put the left Spacescape image in Unity’s right
-skybox slot and vice-versa.</li>
-  <li>All images should have their wrap mode set to clamp in Unity.
-Otherwise the seams between images will be visible.</li>
-  <li>The default max texture size for Unity is often set to 1024 (at
-least it was for me). If Spacescape has produced images at higher
-quality be sure to update Unity to get the full resolution image.</li>
-</ul>
-</p>
       
 </div>
 </div>
