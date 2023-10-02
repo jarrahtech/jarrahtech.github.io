@@ -493,6 +493,10 @@
         <lastmod>2023-08-01T10:59:37+08:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/2023/10/01/Smug-Mode.html</loc>
+        <lastmod>2023-10-02T15:12:53+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/404.html</loc>
         <lastmod>2022-09-01T17:33:24+08:00</lastmod>
     </url>
@@ -518,7 +522,7 @@
     </url>
     <url>
         <loc>http://localhost:4000/</loc>
-        <lastmod>2023-08-01T10:59:37+08:00</lastmod>
+        <lastmod>2023-10-02T15:12:53+08:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/news/</loc>
