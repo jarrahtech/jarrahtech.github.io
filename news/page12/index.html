@@ -72,6 +72,45 @@
 <h2>News</h2>
       
         <hr>
+	<h4>February 22, 2013: <a href="/2013/02/22/Noise.html">Noise</a>
+<a href="https://twitter.com/intent/tweet?text=Noise%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/02/22/Noise.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/02/22/Noise.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+</h4>
+Tags: 
+    
+      <a class="post" href="/news/tag/ConcealedIntent.html">ConcealedIntent</a>
+    
+  <br/>
+        <p><p>Concealed Intent is about stealth, or at least that is the aim (the
+current build needs more work on balance). But how can you be stealthy
+in space? Well, space is <a href="http://www.jarrahtechnology.com/2012/10/02/Space_Is_Big/">big and
+empty</a> . Thus
+finding something can be like looking for a needle in a haystack. On the
+other hand, there is nowhere for the needle to hide - to stay hidden it
+needs to fade into the background as much as possible.</p>
+
+<p>How easily a ship can be detected is determined by the amount of noise
+it produces. Here noise is not sound - there are no sound waves
+transmitted across the vacuum of space. Instead, it is anything the ship
+may do that signals its presence. A big ship may blot out stars as it
+passes; heat from engines can be detected against the cold of the void;
+and, lasers can be tracked back to their origin. Nearly anything a ship
+can do will also increase the ability of those around to detect it.</p>
+
+<p>On this basis, noise in Concealed Intent is distance. The more noise a
+ship produces, the further away it can be detected. Over time, more
+information about the detected ship is discovered as the level of
+detection increases. Eventually a firing solution can be calculated so
+that a beam of coherent light a few millimeters in diameter can cross
+thousands of kilometers to strike an evasive enemy. Although all these
+actions only make the detecting ship more easily detected!</p>
+
+<p>This is the core gameplay mechanic in Concealed Intent. Using drones,
+probes, mines and decoys to detect your enemies with the minimum of
+action so that they can’t detect you.</p>
+</p>
+      
+        <hr>
 	<h4>February 15, 2013: <a href="/2013/02/15/Anti-stats.html">Anti Stats</a>
 <a href="https://twitter.com/intent/tweet?text=Anti Stats%20%40JarrahTech%20http://www.jarrahtechnology.com/2013/02/15/Anti-stats.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
 <a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2013/02/15/Anti-stats.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
@@ -394,61 +433,6 @@ as evidence it will be completed and the backers will receive their
 rewards. It could also be good PR - letting people know the graphics
 will be professionally produced. However, that is at least over a year
 away, so don’t look for Concealed Intent on KickStarter anytime soon.</p>
-</p>
-      
-        <hr>
-	<h4>September  8, 2012: <a href="/2012/09/08/Vsync.html">Vsync</a>
-<a href="https://twitter.com/intent/tweet?text=Vsync%20%40JarrahTech%20http://www.jarrahtechnology.com/2012/09/08/Vsync.html" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com/2012/09/08/Vsync.html" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
-</h4>
-Tags: 
-    
-      <a class="post" href="/news/tag/General.html">General</a>, 
-    
-      <a class="post" href="/news/tag/Unity.html">Unity</a>, 
-    
-      <a class="post" href="/news/tag/Windows.html">Windows</a>
-    
-  <br/>
-        <p><p>The last couple of days I have struggling with frame stuttering or
-skipping in Unity3D. It seems that movement in my game would
-occasionally miss a frame or not update properly. It transpires that it
-is not Unity causing the problem, instead seems to be caused by a vsync
-mismatch between Windows and the video card.</p>
-
-<p><a href="http://en.wikipedia.org/wiki/Screen_tearing">Vsync</a> is a system built
-into monitors to prevent screen tearing. A monitor updates the image it
-displays at a set rate - 60 times a second (hertz) for my monitor.
-However computers may prepare frames for display at a greater rate and
-if the computer updates the frame to display in the middle of the
-monitor displaying a frame then what is actually shown may be a mix of
-the two. This is screen tearing. Many games allow their framerate to be
-locked to monitor refresh rate to prevent tearing - this is vsync.</p>
-
-<p>It seems Windows 7 also uses vsync to prevent tearing with its display.
-For some reason Windows uses a refresh rate of 59 hertz and I can’t seem
-to change it. This seems to cause a 1 frame per second mismatch, about
-the same rate of stutter observed. There are people with people with
-similar problems on the Unity forums
-<a href="http://forum.unity3d.com/threads/137924-Stuttering-with-vSync">here</a>
-and
-<a href="http://forum.unity3d.com/threads/142754-linear-movement-stuttering">here</a>
-(and others, but the important information is just repeated).</p>
-
-<p>I couldn’t find a way to change the monitor’s vsync rate. Instead I
-tried <a href="http://docs.unity3d.com/Documentation/Components/class-QualitySettings.html">turning off vsync in
-Unity</a>
-and with my slower mac with vsync - both resulted in the problem
-disappearing. Thus, I am fairly sure that the issue is not in my (still
-quite simple) Unity game. Although, there is some talk that this
-<a href="http://www.sevenforums.com/gaming/5397-they-need-fix-asap-aero-vsync.html">doesn’t happen in fullscreen
-mode</a>,
-but when I tried fullscreen it still occurred.</p>
-
-<p>I’m not sure how to completely fix this. With vsync turned off my game
-runs at around 4000 fps on my development machine, so there is little
-chance of tearing, but no guarantee other people will be as lucky.
-Anyone have any ideas?</p>
 </p>
       
 </div>

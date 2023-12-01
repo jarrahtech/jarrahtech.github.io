@@ -3,13 +3,29 @@
     <title type="text" xml:lang="en">Jarrah Technology</title>
     <link type="application/atom+xml" href="http://www.jarrahtechnology.com/atom.xml" rel="self"/>
     <link type="text" href="http://www.jarrahtechnology.com" rel="alternate"/>
-    <updated>2023-11-02T17:57:13+08:00</updated>
+    <updated>2023-12-01T16:17:57+08:00</updated>
     <id>http://www.jarrahtechnology.com</id>
     <author>
         <name>Jarrah Technology</name>
     </author>
     <rights>Copyright (c) 2012 Jarrah Technology</rights>
 
+    
+    <entry>
+        <title>Nothing</title>
+        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2023/12/01/Nothing.html/"/>
+        <published>2023-12-01T00:00:00+08:00</published>
+        <updated>2023-12-01T00:00:00+08:00</updated>
+        <id>http://www.jarrahtechnology.com/2023/12/01/Nothing.html/</id>
+        <content type="html">&lt;p&gt;Is it a progress report when there is no progress?&lt;/p&gt;
+
+&lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Typescript/Babylon.js tests and prototype&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
     
     <entry>
         <title>Rewrite</title>
@@ -575,40 +591,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
   &lt;li&gt;Online component&lt;/li&gt;
   &lt;li&gt;r/roguelikedev tutorial event&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </entry>
-    
-    <entry>
-        <title>Done? - Progress Report</title>
-        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2022/06/01/Done.html/"/>
-        <published>2022-06-01T00:00:00+08:00</published>
-        <updated>2022-06-01T00:00:00+08:00</updated>
-        <id>http://www.jarrahtechnology.com/2022/06/01/Done.html/</id>
-        <content type="html">&lt;p&gt;May was a solid month of work. Could have bee a record if not for losing 4 complete days to sickness and probably lower productivity for a few days after. There is a new AI and lots of little improvements. If a player want to keep going forever there is also now an “infinite” mode.&lt;/p&gt;
-
-&lt;p&gt;The biggest task completed was the engine rework - now finished and all (known) resulting bugs cleared. It took 6 weeks total. I thought in the best case it would require nearly 2 weeks, but gave myself 4 weeks due to experience :) So 6 weeks is not great, but not bad. Of course not all the time was taken with refactoring, there was also some prototype and time and a jaunt into the land of node servers and docker (just to learn about them) along the way, but that sort of thing is expected. Still think it was worth it, the final code is much better and more flexible! I’m happy.&lt;/p&gt;
-
-&lt;p&gt;June will be a short month (I’m away for a week), so of course I have a totally unrealistic list of tasks. The big one is to improve the gameplay. Playing against the new AI quickly results in a defensive slog of a game - not what I had intended. Hopefully I can think of some ways to improve it.&lt;/p&gt;
-
-&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Rework engine complete&lt;/li&gt;
-  &lt;li&gt;New AI - but now game bogs down into defensive slogs&lt;/li&gt;
-  &lt;li&gt;Infinite mode&lt;/li&gt;
-  &lt;li&gt;Little visual improvements&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Improve gameplay?&lt;/li&gt;
-  &lt;li&gt;Rearrange unlocks&lt;/li&gt;
-  &lt;li&gt;Full AI (current version does not take advantage of all gameplay possibilities)&lt;/li&gt;
-  &lt;li&gt;Next version of prototypes&lt;/li&gt;
-  &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
-  &lt;li&gt;Look at online component&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </entry>
