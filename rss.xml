@@ -6,9 +6,26 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Fri, 01 Dec 2023 16:17:57 +0800</pubDate>
-    <lastBuildDate>Fri, 01 Dec 2023 16:17:57 +0800</lastBuildDate>
+    <pubDate>Tue, 02 Jan 2024 10:49:35 +0800</pubDate>
+    <lastBuildDate>Tue, 02 Jan 2024 10:49:35 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Nothing</title>
+      <link>http://www.jarrahtechnology.com/2024/01/02/Coop.html</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/01/02/Coop</guid>
+      <description>&lt;p&gt;So there was some progress, just nothing with gamedev. I worked on various admin and household tasks. For instance, I designed and built the chicken coop below.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;/assets/posts/general/chicken_coop.png&quot; alt=&quot;Chicken coop&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Typescript/Babylon.js tests and prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Nothing</title>
@@ -536,40 +553,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
   &lt;li&gt;Online component&lt;/li&gt;
   &lt;li&gt;complete r/roguelikedev tutorial event&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Holiday - Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2022/07/01/Holiday.html</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2022/07/01/Holiday</guid>
-      <description>&lt;p&gt;As expected June was a truncated month. A weeks holiday interstate and a couple of days dealing with house issues (the joys of living in an old house) put a big hole in my productivity and definitely slowed progress as I lost momentum. Maybe that is what has lead to me deciding to join the &lt;a href=&quot;https://old.reddit.com/r/roguelikedev/comments/vhfsda/roguelikedev_does_the_complete_roguelike_tutorial/&quot;&gt;/r/roguelikedev annual tutorial event&lt;/a&gt;. “Wait,” you say, “don’t you need to finish SHD first before starting another game?” Yes, you are right. This is almost certainly a bad use of my time, especially since I am trying it in a Javascript, a language I haven’t used properly in over 20 years (also, trying to relearn Git &amp;amp; Github at the same time). However, I think it might be useful for future work and I hope to spend no more than one day per week on getting it going (Week 1 took 2 hours, so far so good). If you want to see the WIP, the &lt;a href=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022&quot;&gt;repo is here&lt;/a&gt; and a &lt;a href=&quot;https://jarrahtech.github.io/RoguelikeTutorial2022/&quot;&gt;playable version here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;SHD is still getting very close to the end now too (about time!). I have added a bunch of new gameplay mechanics: base recharging; base powerups; and bombs. Last time I said the game quickly devolved into a slow defensive slog. Now, not so much. It is not a great game, although definitely a little better than before - and importantly, shorter! There was also some visual improvements and work on achievements. Not the best month in terms of hours worked, but there is clear progress. It was gratifying to see how easily the new mechancis were added due to the earlier framework tasks.&lt;/p&gt;
-
-&lt;p&gt;The remaining SHD tasks are now AI and cleanup. That is the plan for the month.&lt;/p&gt;
-
-&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Wk 1 /r/roguelikedev tutorial event&lt;/li&gt;
-  &lt;li&gt;Reorganised achievements&lt;/li&gt;
-  &lt;li&gt;Little visual improvements&lt;/li&gt;
-  &lt;li&gt;Reworked gameplay to make game faster more interesting - recharge, powerup bases, bomb hex&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Finalise unlocks/achievements&lt;/li&gt;
-  &lt;li&gt;Full AI&lt;/li&gt;
-  &lt;li&gt;Little improvements &amp;amp; bugfixes&lt;/li&gt;
-  &lt;li&gt;Next version of prototypes&lt;/li&gt;
-  &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
-  &lt;li&gt;Online component&lt;/li&gt;
-  &lt;li&gt;r/roguelikedev tutorial event&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

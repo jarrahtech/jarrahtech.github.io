@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-01T16:17:57+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Nothing</title><link href="http://localhost:4000/2023/12/01/Nothing.html" rel="alternate" type="text/html" title="Nothing" /><published>2023-12-01T00:00:00+08:00</published><updated>2023-12-01T00:00:00+08:00</updated><id>http://localhost:4000/2023/12/01/Nothing</id><content type="html" xml:base="http://localhost:4000/2023/12/01/Nothing.html">&lt;p&gt;Is it a progress report when there is no progress?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-02T10:49:35+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Nothing</title><link href="http://localhost:4000/2024/01/02/Coop.html" rel="alternate" type="text/html" title="Nothing" /><published>2024-01-02T00:00:00+08:00</published><updated>2024-01-02T00:00:00+08:00</updated><id>http://localhost:4000/2024/01/02/Coop</id><content type="html" xml:base="http://localhost:4000/2024/01/02/Coop.html">&lt;p&gt;So there was some progress, just nothing with gamedev. I worked on various admin and household tasks. For instance, I designed and built the chicken coop below.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;/assets/posts/general/chicken_coop.png&quot; alt=&quot;Chicken coop&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Typescript/Babylon.js tests and prototype&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="ProgressReport" /><category term="DevDiary" /><summary type="html">So there was some progress, just nothing with gamedev. I worked on various admin and household tasks. For instance, I designed and built the chicken coop below.</summary></entry><entry><title type="html">Nothing</title><link href="http://localhost:4000/2023/12/01/Nothing.html" rel="alternate" type="text/html" title="Nothing" /><published>2023-12-01T00:00:00+08:00</published><updated>2023-12-01T00:00:00+08:00</updated><id>http://localhost:4000/2023/12/01/Nothing</id><content type="html" xml:base="http://localhost:4000/2023/12/01/Nothing.html">&lt;p&gt;Is it a progress report when there is no progress?&lt;/p&gt;
 
 &lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
 
@@ -149,21 +157,4 @@ spent getting back up to speed. That is the progress report, but …&lt;/p&gt;
 
 &lt;center&gt;
     &lt;iframe height=&quot;167&quot; src=&quot;http://www.youtube.com/embed/dvyQinkVeHk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="SpaceHexDuel" /><category term="ProgressReport" /><category term="DevDiary" /><summary type="html"></summary></entry><entry><title type="html">Solid Month - Progress Report</title><link href="http://localhost:4000/2023/03/01/Solid.html" rel="alternate" type="text/html" title="Solid Month - Progress Report" /><published>2023-03-01T00:00:00+08:00</published><updated>2023-03-01T00:00:00+08:00</updated><id>http://localhost:4000/2023/03/01/Solid</id><content type="html" xml:base="http://localhost:4000/2023/03/01/Solid.html">&lt;p&gt;February was a solid month. Nothing flashy or fancy, but just clearing the task list. Not bad considering I lost probably 4-5 complete days to tasks around the house. A couple of interesting issues arose. It turns out that the version of .Net Unity 5.6 uses does not support TLS1.2+ so doesn’t work on recent web services - like the host I deployed the generic server. That took a little fiddling to get working. Before working out a solution, for a couple of days, I thought the whole thing would need to be scrapped - I was not a happy boy! Also realised I needed to change the server to build-in internationalisation of strings - that was was fiddly, but not hard.&lt;/p&gt;
-
-&lt;p&gt;The SHD patch release is not done, but very close. Now I just need to: finish up the tutorial changes; record a video of me doing the tutorial; and then final testing. There is a good chance this will be complete in early March. Then hopefully my Internet will hold up long enough to do a little marketing. I’ll be losing a week due to holidays, so just those few tasks are the goals for the month. If there is time after that there always things to do: start Ci2d; improve the generic server; write libraries. I’ll work it out when the time comes.&lt;/p&gt;
-
-&lt;p&gt;Done last month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Generic game server deployed and integrated with SHD using a replicated DB&lt;/li&gt;
-  &lt;li&gt;Reorganised SHD code to split out a Common Unity Toolkit as a submodule&lt;/li&gt;
-  &lt;li&gt;AI Timeout &amp;amp; other improvements in SHD&lt;/li&gt;
-  &lt;li&gt;Started on SHD tutorial rework&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Tasks for this month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Release SHD 1.1 and market it a little&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="General" /><category term="DevDiary" /><category term="ProgressReport" /><summary type="html">February was a solid month. Nothing flashy or fancy, but just clearing the task list. Not bad considering I lost probably 4-5 complete days to tasks around the house. A couple of interesting issues arose. It turns out that the version of .Net Unity 5.6 uses does not support TLS1.2+ so doesn’t work on recent web services - like the host I deployed the generic server. That took a little fiddling to get working. Before working out a solution, for a couple of days, I thought the whole thing would need to be scrapped - I was not a happy boy! Also realised I needed to change the server to build-in internationalisation of strings - that was was fiddly, but not hard.</summary></entry></feed>
+&lt;/center&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="SpaceHexDuel" /><category term="ProgressReport" /><category term="DevDiary" /><summary type="html"></summary></entry></feed>
