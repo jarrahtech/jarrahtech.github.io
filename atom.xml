@@ -3,13 +3,30 @@
     <title type="text" xml:lang="en">Jarrah Technology</title>
     <link type="application/atom+xml" href="http://www.jarrahtechnology.com/atom.xml" rel="self"/>
     <link type="text" href="http://www.jarrahtechnology.com" rel="alternate"/>
-    <updated>2024-01-02T10:49:35+08:00</updated>
+    <updated>2024-02-02T16:40:37+08:00</updated>
     <id>http://www.jarrahtechnology.com</id>
     <author>
         <name>Jarrah Technology</name>
     </author>
     <rights>Copyright (c) 2012 Jarrah Technology</rights>
 
+    
+    <entry>
+        <title>Alternatives</title>
+        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2024/02/02/Alternatives.html/"/>
+        <published>2024-02-02T00:00:00+08:00</published>
+        <updated>2024-02-02T00:00:00+08:00</updated>
+        <id>http://www.jarrahtechnology.com/2024/02/02/Alternatives.html/</id>
+        <content type="html">&lt;p&gt;I am becoming increasingly unimpressed with Javascript based gamedev. Perhaps it is time for trying another engine. In the meantime, I have been trying out Javascript for something it is very good at - websites. I reimplemented the SHD online feedback/stats engine using it in under a week. The tooling around JS is much better than I’m accustomed. Such a smooth process and it puts doing anything in Scala to shame. Now I am trying to create a tiny MVP web tool, it shouldn’t take too long. After that I’m going to try the &lt;a href=&quot;https://godotengine.org/&quot;&gt;Godot game engine&lt;/a&gt;. The buzz is that it has improved greatly over the last 6 months and my initial dismissal may no longer be valid. After that I just need to choose an engine and stick with it.&lt;/p&gt;
+
+&lt;p&gt;This month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Other non-game-prototype&lt;/li&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
     
     <entry>
         <title>Nothing</title>
@@ -542,39 +559,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022/blob/main/assets/img/logo.png?raw=true&quot; alt=&quot;/r/roguelikedev Tutorial2022 Logo&quot; width=&quot;640&quot; /&gt;&lt;/p&gt;
-</content>
-    </entry>
-    
-    <entry>
-        <title>Joining The Club - Progress Report</title>
-        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2022/08/01/Joining-The-Club.html/"/>
-        <published>2022-08-01T00:00:00+08:00</published>
-        <updated>2022-08-01T00:00:00+08:00</updated>
-        <id>http://www.jarrahtechnology.com/2022/08/01/Joining-The-Club.html/</id>
-        <content type="html">&lt;p&gt;In July I joined the club - the Covid19 club. Luckily it was a fairly mild case but it still stopped work for nearly a fortnight (2 days in bed, a few days feeling sick and then a week super-tired). As a result I did very few hours on SHD, especially since the few hours I did spend coding were for the &lt;a href=&quot;https://old.reddit.com/r/roguelikedev/comments/vhfsda/roguelikedev_does_the_complete_roguelike_tutorial/&quot;&gt;/r/roguelikedev annual tutorial event&lt;/a&gt; (&lt;a href=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022&quot;&gt;repo&lt;/a&gt;, &lt;a href=&quot;https://jarrahtech.github.io/RoguelikeTutorial2022/&quot;&gt;playable version&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;So achievements are light this months. I have completed weeks 2 through 5 in the /r/roguelikedev challenge, with only 3 more weeks left. It has been worth doing (learning Javascript can only be useful) and without the structure I doubt I would have bothered. Given me a few more ideas to add to the list. As for SHD, I added and hooked up all the remaining planned unlocks/achievements. Plus a few bugfixes, that is it.&lt;/p&gt;
-
-&lt;p&gt;SHD tasks for the coming month are the same as last month: AI and cleanup. I’ll hopefully also get to move the websites, and of course, the last 3 weeks of the r/roguelikedev event.&lt;/p&gt;
-
-&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Wk 2-5 /r/roguelikedev tutorial event&lt;/li&gt;
-  &lt;li&gt;All unlocks/achievements done&lt;/li&gt;
-  &lt;li&gt;Some bugfixes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Full AI&lt;/li&gt;
-  &lt;li&gt;Little improvements &amp;amp; bugfixes&lt;/li&gt;
-  &lt;li&gt;Next version of prototypes&lt;/li&gt;
-  &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
-  &lt;li&gt;Online component&lt;/li&gt;
-  &lt;li&gt;complete r/roguelikedev tutorial event&lt;/li&gt;
-&lt;/ul&gt;
 </content>
     </entry>
     

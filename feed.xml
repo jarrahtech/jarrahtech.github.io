@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-02T10:49:35+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Nothing</title><link href="http://localhost:4000/2024/01/02/Coop.html" rel="alternate" type="text/html" title="Nothing" /><published>2024-01-02T00:00:00+08:00</published><updated>2024-01-02T00:00:00+08:00</updated><id>http://localhost:4000/2024/01/02/Coop</id><content type="html" xml:base="http://localhost:4000/2024/01/02/Coop.html">&lt;p&gt;So there was some progress, just nothing with gamedev. I worked on various admin and household tasks. For instance, I designed and built the chicken coop below.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-02T16:40:37+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Alternatives</title><link href="http://localhost:4000/2024/02/02/Alternatives.html" rel="alternate" type="text/html" title="Alternatives" /><published>2024-02-02T00:00:00+08:00</published><updated>2024-02-02T00:00:00+08:00</updated><id>http://localhost:4000/2024/02/02/Alternatives</id><content type="html" xml:base="http://localhost:4000/2024/02/02/Alternatives.html">&lt;p&gt;I am becoming increasingly unimpressed with Javascript based gamedev. Perhaps it is time for trying another engine. In the meantime, I have been trying out Javascript for something it is very good at - websites. I reimplemented the SHD online feedback/stats engine using it in under a week. The tooling around JS is much better than I’m accustomed. Such a smooth process and it puts doing anything in Scala to shame. Now I am trying to create a tiny MVP web tool, it shouldn’t take too long. After that I’m going to try the &lt;a href=&quot;https://godotengine.org/&quot;&gt;Godot game engine&lt;/a&gt;. The buzz is that it has improved greatly over the last 6 months and my initial dismissal may no longer be valid. After that I just need to choose an engine and stick with it.&lt;/p&gt;
+
+&lt;p&gt;This month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Other non-game-prototype&lt;/li&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="ProgressReport" /><category term="DevDiary" /><summary type="html">I am becoming increasingly unimpressed with Javascript based gamedev. Perhaps it is time for trying another engine. In the meantime, I have been trying out Javascript for something it is very good at - websites. I reimplemented the SHD online feedback/stats engine using it in under a week. The tooling around JS is much better than I’m accustomed. Such a smooth process and it puts doing anything in Scala to shame. Now I am trying to create a tiny MVP web tool, it shouldn’t take too long. After that I’m going to try the Godot game engine. The buzz is that it has improved greatly over the last 6 months and my initial dismissal may no longer be valid. After that I just need to choose an engine and stick with it.</summary></entry><entry><title type="html">Nothing</title><link href="http://localhost:4000/2024/01/02/Coop.html" rel="alternate" type="text/html" title="Nothing" /><published>2024-01-02T00:00:00+08:00</published><updated>2024-01-02T00:00:00+08:00</updated><id>http://localhost:4000/2024/01/02/Coop</id><content type="html" xml:base="http://localhost:4000/2024/01/02/Coop.html">&lt;p&gt;So there was some progress, just nothing with gamedev. I worked on various admin and household tasks. For instance, I designed and built the chicken coop below.&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;/assets/posts/general/chicken_coop.png&quot; alt=&quot;Chicken coop&quot; /&gt;&lt;/center&gt;
 
@@ -113,48 +120,4 @@ spent getting back up to speed. That is the progress report, but …&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Finish the hex library&lt;/li&gt;
   &lt;li&gt;Investigate other game engines (starting with Javascript ones)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="ProgressReport" /><category term="DevDiary" /><summary type="html">Last month split into 4 parts. First the 1.1 version of Space Hex Duel was completed and released. Next I worked on testing out new tools and setting up the Ci2D dev environment. Then I gave up on that in annoyance and just did some fun coding before finishing with a holiday to Adelaide.</summary></entry><entry><title type="html">Space Hex Duel 1.1 Released!</title><link href="http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1.html" rel="alternate" type="text/html" title="Space Hex Duel 1.1 Released!" /><published>2023-03-12T00:00:00+08:00</published><updated>2023-03-12T00:00:00+08:00</updated><id>http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1</id><content type="html" xml:base="http://localhost:4000/2023/03/12/Space-Hex-Duel-1.1.html">&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
-
-&lt;p&gt;The 1.1 patch of Space Hex Duel is now released and out on &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Itch.io&lt;/a&gt; (and still PWYW - effectively free!). It is actually quite small release, there were no game breaking bugs, so this is mainly “quality of life” improvements. Normally this would be version 1.0.1, but there are a couple of extra screens to support an online connection (feedback page, news display on the main page), so I bumped it to 1.1. Other notable changes include: a timeout on the good AI so It doesn’t sit for minutes in hard situations looking for the best possible move; and a reworded tutorial with a YouTube video (embedded at the bottom of this post) for those who just want to jump straight in. The full changelist is below.&lt;/p&gt;
-
-&lt;p&gt;Next up I should start some prototyping work for my next game. Although I’m considering releasing Space Hex Duel to Steam at some point, which will require a few extra tasks. So maybe a 1.2 release in a few months to add those?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Space Hex Duel 1.1.0 (13th March 2023)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Add Online support (if no connection do nothing and continue)
-    &lt;ul&gt;
-      &lt;li&gt;Add feedback page&lt;/li&gt;
-      &lt;li&gt;Add JarrahTech news box&lt;/li&gt;
-      &lt;li&gt;Collect anonymous stats on player progress and locale&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;AI
-    &lt;ul&gt;
-      &lt;li&gt;if shooting does not destroy anything, then try the next base’s shooting rather than check if a drop is possible (as no new spaces will have appeared)&lt;/li&gt;
-      &lt;li&gt;time limit stored in config file (timeout_seconds), defaults to 15 seconds - use  the best plan found so far if time expires&lt;/li&gt;
-      &lt;li&gt;try (a little) not to put bases that will be immediately destroyed right next to the players home&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Change Tutorial text and ensure colours and controls referred to are correct when displayed&lt;/li&gt;
-  &lt;li&gt;Code signed the executable (with a self-created certificate)&lt;/li&gt;
-  &lt;li&gt;Make tutorial skippable and add a link to a YouTube video of the tutorial&lt;/li&gt;
-  &lt;li&gt;Dropped bombs make a small explosion even if they don’t destroy what they are on&lt;/li&gt;
-  &lt;li&gt;Set explosions to be at the top of the render queue so they are not hidden by planets/bases&lt;/li&gt;
-  &lt;li&gt;Fix tooltip for unclaimed powerup hexes&lt;/li&gt;
-  &lt;li&gt;Stop unlocks running over menu if there are lots of them on game over screen&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Give different enemy types different names&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/games/spacehexduel&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/press/spacehexduel.html&quot;&gt;Presskit&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Storefront&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;center&gt;
-    &lt;iframe frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1823532?linkback=true&quot; width=&quot;552&quot; height=&quot;167&quot;&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Space Hex Duel by JarrahTech&lt;/a&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-
-&lt;center&gt;
-    &lt;iframe height=&quot;167&quot; src=&quot;http://www.youtube.com/embed/dvyQinkVeHk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="SpaceHexDuel" /><category term="ProgressReport" /><category term="DevDiary" /><summary type="html"></summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Charles</name></author><category term="Posts" /><category term="ProgressReport" /><category term="DevDiary" /><summary type="html">Last month split into 4 parts. First the 1.1 version of Space Hex Duel was completed and released. Next I worked on testing out new tools and setting up the Ci2D dev environment. Then I gave up on that in annoyance and just did some fun coding before finishing with a holiday to Adelaide.</summary></entry></feed>
