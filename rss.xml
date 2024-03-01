@@ -6,9 +6,24 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Fri, 02 Feb 2024 16:40:37 +0800</pubDate>
-    <lastBuildDate>Fri, 02 Feb 2024 16:40:37 +0800</lastBuildDate>
+    <pubDate>Fri, 01 Mar 2024 16:53:01 +0800</pubDate>
+    <lastBuildDate>Fri, 01 Mar 2024 16:53:01 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>No Marketing?</title>
+      <link>http://www.jarrahtechnology.com/2024/03/01/Marketing.html</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/03/01/Marketing</guid>
+      <description>&lt;p&gt;Last month I finished the little webtool idea - at least enough that it worked. Of course doing a very barebones MVP generated an extremely long list of possible improvements. Not going to post the details, as I am not certain I’ll do anymore work on it. The result is out of my usual area so I’m not sure if its worth making it user-friendly and then marketing it. I doubt my ability to sell it and even if I did a good job, I have little confidence it would generate much income. So I’ll keep it on the back burner, and get to trying to create Godot prototype for now. Didn’t manage to properly start that task last month, just reading and prep, so time to get coding.&lt;/p&gt;
+
+&lt;p&gt;This month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Alternatives</title>
@@ -513,31 +528,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;Online component&lt;/li&gt;
   &lt;li&gt;Try not to get distracted&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Roguelike Tutorial 2022</title>
-      <link>http://www.jarrahtechnology.com/2022/08/17/Roguelike.html</link>
-      <pubDate>Wed, 17 Aug 2022 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2022/08/17/Roguelike</guid>
-      <description>&lt;p&gt;As a distraction from other things I should have been doing over the last 6 weeks, I completed the &lt;a href=&quot;https://www.reddit.com/r/roguelikedev/comments/vhfsda/roguelikedev_does_the_complete_roguelike_tutorial/&quot;&gt;/r/roguelikedev Tutorial 2022&lt;/a&gt;. An event to teach people how to write roguelike games like &lt;a href=&quot;https://en.wikipedia.org/wiki/NetHack&quot;&gt;Nethack&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Angband_%28video_game%29&quot;&gt;Angband&lt;/a&gt;, and my old favourite, &lt;a href=&quot;/blog/2016/07/omega.html&quot;&gt;Omega&lt;/a&gt;. I wanted to learn some &lt;a href=&quot;https://javascript.info/&quot;&gt;Javascript&lt;/a&gt;, and this seemed a good way to go.&lt;/p&gt;
-
-&lt;p&gt;It is done now. There is a &lt;a href=&quot;https://jarrahtech.github.io/RoguelikeTutorial2022/&quot;&gt;playable version here&lt;/a&gt; and the &lt;a href=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022&quot;&gt;source code is here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The controls are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;movement/target: arrow keys or wasd (+qezx)&lt;/li&gt;
-  &lt;li&gt;look: ‘/’&lt;/li&gt;
-  &lt;li&gt;pickup: ‘p’&lt;/li&gt;
-  &lt;li&gt;message history: ‘v’&lt;/li&gt;
-  &lt;li&gt;drop/leave: ‘l’&lt;/li&gt;
-  &lt;li&gt;activate/use/equip: ‘u’&lt;/li&gt;
-  &lt;li&gt;character screen: ‘c’&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/jarrahtech/RoguelikeTutorial2022/blob/main/assets/img/logo.png?raw=true&quot; alt=&quot;/r/roguelikedev Tutorial2022 Logo&quot; width=&quot;640&quot; /&gt;&lt;/p&gt;
 </description>
     </item>
     
