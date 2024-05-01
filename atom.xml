@@ -3,13 +3,29 @@
     <title type="text" xml:lang="en">Jarrah Technology</title>
     <link type="application/atom+xml" href="http://www.jarrahtechnology.com/atom.xml" rel="self"/>
     <link type="text" href="http://www.jarrahtechnology.com" rel="alternate"/>
-    <updated>2024-03-01T16:53:01+08:00</updated>
+    <updated>2024-05-01T16:59:14+08:00</updated>
     <id>http://www.jarrahtechnology.com</id>
     <author>
         <name>Jarrah Technology</name>
     </author>
     <rights>Copyright (c) 2012 Jarrah Technology</rights>
 
+    
+    <entry>
+        <title>Nada</title>
+        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2024/05/01/Nada.html/"/>
+        <published>2024-05-01T00:00:00+08:00</published>
+        <updated>2024-05-01T00:00:00+08:00</updated>
+        <id>http://www.jarrahtechnology.com/2024/05/01/Nada.html/</id>
+        <content type="html">&lt;p&gt;How many synonyms are there for nothing? I suspect if my current rate of doing nothing (on gamedev) contines I may find out! No progress in March or April.&lt;/p&gt;
+
+&lt;p&gt;Sometime:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
     
     <entry>
         <title>No Marketing?</title>
@@ -505,39 +521,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;AI working well, just speeding up code so that can process more scenarios in reasonable time (5ms to 0.19ms so far)&lt;/li&gt;
   &lt;li&gt;Played with setups &amp;amp; org for next project&lt;/li&gt;
   &lt;li&gt;Bugfixes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Full AI&lt;/li&gt;
-  &lt;li&gt;Little improvements &amp;amp; bugfixes&lt;/li&gt;
-  &lt;li&gt;Next version of prototypes&lt;/li&gt;
-  &lt;li&gt;Online component&lt;/li&gt;
-  &lt;li&gt;Try not to get distracted&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </entry>
-    
-    <entry>
-        <title>Light At The End Of The Tunnel - Progress Report</title>
-        <link type="text/html" rel="alternate" href="http://www.jarrahtechnology.com/2022/09/01/Light-Tunnel.html/"/>
-        <published>2022-09-01T00:00:00+08:00</published>
-        <updated>2022-09-01T00:00:00+08:00</updated>
-        <id>http://www.jarrahtechnology.com/2022/09/01/Light-Tunnel.html/</id>
-        <content type="html">&lt;p&gt;The point has been reached where the end is so near, I find my attention waning and drifting to other projects. This month I spent nearly a record low number of hours on SHD, and yet my todo list is still quite short. Today I went through the list of ideas/issues/features remaining. Most are not worth doing, or are code improvements for the next game (they will make no significant difference to this one). The ones left I grouped by theme and numbered by importance - the last is #5. The first is the long-planned full AI; second is the online componenent. The others are not worth mentioning.&lt;/p&gt;
-
-&lt;p&gt;So what did I do this past month? The first couple of weeks was spent finishing off the r/roguelikedev tutorial event &lt;a href=&quot;/2022/08/17/Roguelike.html&quot;&gt;(see this post for more info)&lt;/a&gt;. Then I spent some (too much!) time moving all my websites from &lt;a href=&quot;www.linode.com&quot;&gt;Linode&lt;/a&gt; to &lt;a href=&quot;www.github.com&quot;&gt;GitHub Pages&lt;/a&gt;. Not because I’m unhappy with Linode (they have been great), but to same time by not managing my own virtual servers for a couple of simple static websites. Then I did a little daydreaming of ideas. Lastly a few hours fixing up bugs, tooltips and unlocks before starting work on the AI.&lt;/p&gt;
-
-&lt;p&gt;SHD tasks for the coming month are to just finish the damn thing (maybe not this month, but hopefully next).&lt;/p&gt;
-
-&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Little improvements &amp;amp; bugfixes&lt;/li&gt;
-  &lt;li&gt;Move websites/repos to free hosts&lt;/li&gt;
-  &lt;li&gt;r/roguelikedev tutorial event complete &lt;a href=&quot;/2022/08/17/Roguelike.html&quot;&gt;(see this post to play)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Multi-frame AI framework&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Over the next month:&lt;/p&gt;
