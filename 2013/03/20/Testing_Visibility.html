@@ -146,7 +146,8 @@ focusEntity.transform.lossyScale.x
     <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// Returns true iff linecast from&lt;-&gt;to does not hit anything other than targetTrans</span>
+<span class="c1">// Returns true iff linecast from&lt;-&gt;to does not hit anything other than targetTrans
+</span>
 <span class="kt">bool</span> <span class="nf">Intercepted</span><span class="p">(</span><span class="n">Vector3</span> <span class="k">from</span><span class="p">,</span> <span class="n">Vector3</span> <span class="n">to</span><span class="p">,</span> <span class="n">Transform</span> <span class="n">targetTrans</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">RaycastHit</span> <span class="n">hit</span><span class="p">;</span>
     <span class="k">return</span> <span class="n">Physics</span><span class="p">.</span><span class="nf">Linecast</span><span class="p">(</span><span class="k">from</span><span class="p">,</span> <span class="n">to</span><span class="p">,</span> <span class="k">out</span> <span class="n">hit</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">hit</span><span class="p">.</span><span class="n">transform</span> <span class="p">!=</span> <span class="n">targetTrans</span><span class="p">;</span>

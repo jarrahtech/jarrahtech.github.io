@@ -6,9 +6,26 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Wed, 01 May 2024 16:59:14 +0800</pubDate>
-    <lastBuildDate>Wed, 01 May 2024 16:59:14 +0800</lastBuildDate>
+    <pubDate>Fri, 21 Jun 2024 15:48:43 +0800</pubDate>
+    <lastBuildDate>Fri, 21 Jun 2024 15:48:43 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Nada</title>
+      <link>http://www.jarrahtechnology.com/2024/06/21/Linux.html</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/06/21/Linux</guid>
+      <description>&lt;p&gt;This update is for June, July &amp;amp; August. I’ve done no significant gamedev work in the last month and some other tasks have come up that mean nothing is likely to be done until mid-August (at the earliest). So no change.&lt;/p&gt;
+
+&lt;p&gt;Ok, a little change. My desktop is now Linux, to be exact Ubuntu 24.04 (it has a &lt;a href=&quot;https://en.wikipedia.org/wiki/Numbat&quot;&gt;numbat&lt;/a&gt; for a mascot!). I’ve used Windows for over 25 years now, but before  that my home computer was Linux going back to university. Linux still has some annoyances (I guess all OSes do), but it has moved on a long way, and a lot is better than I remember, especially in the ecosystem of programs available. You can even play decent comercial games on it now - what a world we live in.&lt;/p&gt;
+
+&lt;p&gt;Sometime:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Nada</title>
@@ -479,38 +496,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
 &lt;/ul&gt;
 
 &lt;p&gt;Anyway, time to get back to it!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Need For Speed - Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2022/10/03/Need-For-Speed.html</link>
-      <pubDate>Mon, 03 Oct 2022 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2022/10/03/Need-For-Speed</guid>
-      <description>&lt;p&gt;If you looked at SHD a month ago and again today, you would probably notice no difference at all. However, behind the scenes a great deal has changed. Over the last month my main task has been improving the AI. It soon became clear a major issue was speed. Examining a set of moves took several milliseconds (ms), and there were often thousands of possible moves, sometimes tens of thousands - it was taking too long. In speeding up the analysis, errors began creeping into the system caused by timing and threading issues. Hmmm. I decided to change the way the engine worked so that these errors could not occur and managed to get this largely complete in a week. The result was that average analysis time for a single set of moves went from 5ms to 0.19ms, error free. Proud of that work. It  should be fast enough to let the AI to look more than one move ahead - which is the next task.&lt;/p&gt;
-
-&lt;p&gt;I also got a little distracted by possible future projects. Now have another good idea for the next project. Hard decisions will need to be made soon around what to do next.&lt;/p&gt;
-
-&lt;p&gt;SHD tasks for November are the same as before, just the AI is now very close to complete.&lt;/p&gt;
-
-&lt;p&gt;Last month’s completed tasks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Moved SHD engine from a Plan/Action pattern to a Command/Effect pattern&lt;/li&gt;
-  &lt;li&gt;AI working well, just speeding up code so that can process more scenarios in reasonable time (5ms to 0.19ms so far)&lt;/li&gt;
-  &lt;li&gt;Played with setups &amp;amp; org for next project&lt;/li&gt;
-  &lt;li&gt;Bugfixes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Over the next month:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Full AI&lt;/li&gt;
-  &lt;li&gt;Little improvements &amp;amp; bugfixes&lt;/li&gt;
-  &lt;li&gt;Next version of prototypes&lt;/li&gt;
-  &lt;li&gt;Online component&lt;/li&gt;
-  &lt;li&gt;Try not to get distracted&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
