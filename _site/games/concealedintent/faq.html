@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Concealed Intent Gameplay FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Concealed Intent Gameplay FAQ">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<h3 id="concealed-intent-gameplay-frequently-asked-questions">Concealed Intent Gameplay Frequently Asked Questions</h3>
+
+<p><b>Questions:</b></p>
+
+<ul>
+  <li><a href="#turn_order">In what order do events occur during a turn?</a></li>
+  <li><a href="#extraction">How is it possible to complete the Extraction
+mission?</a></li>
+  <li><a href="#detection">How is detection determined?</a></li>
+  <li><a href="#sharing">How do ships share detection?</a></li>
+  <li><a href="#usurp">How does usurping/jamming work?</a></li>
+  <li><a href="#notification">How do I get Steam notifications to work?</a></li>
+</ul>
+
+<hr />
+
+<p><b>Answers:</b></p>
+
+<p><b><a name="turn_order">In what order do events occur during a
+turn?</a></b></p>
+
+<p>In the simulation engine, each ship’s plans are executed according to
+the order:</p>
+
+<ol>
+  <li>All launches for all ships</li>
+  <li>All other non-move plans for all ships</li>
+  <li>Planned moves for any remaining ships (those which have not
+exploded) are split into 16 parts, and for each part:
+    <ol>
+      <li>Each ship makes their current 1/16th move</li>
+      <li>All ships determine their detections levels</li>
+    </ol>
+  </li>
+  <li>Finally, any scenario events occur (e.g. escape pods appearing, etc)</li>
+</ol>
+
+<p>When displayed on the screen to the player, the sequence of events may
+seem slightly out of order. This is because each action is given a
+random start/end time (within bounds) to make the play phase appear more
+interesting as all the ships will act at slightly different times
+compared to each other.</p>
+
+<p>This ordering has some implications:</p>
+
+<ol>
+  <li>Drone launches will occur even if the launching ship explodes, same
+for shooting.</li>
+  <li>Ships about to explode will not move.</li>
+  <li>The level of detection a ship gains each turn does not depend on
+their positions at the start of the turn, nor the end of the turn,
+but instead is averaged over their positions throughout the turn.</li>
+</ol>
+
+<p><b><a name="extraction">How is it possible to complete the Extraction
+mission?</a></b></p>
+
+<p>The Extraction mission can be completed in two ways: an easy way and an
+extremely hard way.</p>
+
+<p>Here are some tips towards the easy way. Try to avoid fighting, you will
+be quickly outnumbered. If you are not fighting, do you really need
+drones or active sensors? Notice there is a large planet about half way
+to the station. Remember if you hide behind something then you will
+disappear to the enemy. Note that the informer will fly towards you, so
+as long as you are close enough to the station, you don’t need to fly
+towards them too. Also, using countermeasure will affect the enemy’s
+detection the turn after they are used. So if you drop signature to 0 in
+turn 4, then in turn 5 the enemies won’t see you (i.e., they can still
+shoot you in turn 4).</p>
+
+<p><b><a name="detection">How is detection determined?</a></b></p>
+
+<p>The idea behind the detection system is that your detection builds over
+time as you learn more about the enemy. But there is still the
+possibility of it decreasing if they get far away or go low signature or
+hide.</p>
+
+<p>The formula for detection on an enemy ship each turn is:</p>
+
+<p><code class="language-plaintext highlighter-rouge">detection = (last_detection * decay) + current_sensor_gain + sharing</code></p>
+
+<p>When calculating detection, first the level of detection the ship had on
+a target the previous turn is reduced (“decayed”). The amount of
+reduction changes depending on a number of factors, usually it is quite
+low, just a few percent each turn, but if the target has effective 0
+signature (due to countermeasures or no line-of-sight) then it can reach
+400%, which means the target will completely disappear from sensors in a
+quarter of a turn. This step allows detection levels to drop or for the
+enemy to even disappear.</p>
+
+<p>Then any detection you gain this turn from your sensors is added to the
+remainder from the decay step. Here you can look at the sensitivity of
+the sensors at the range of the target and then multiply that by the
+target’s signature. The sensitivity can be seen by hovering over the
+sensor’s component in the stats panel at the bottom centre of the
+screen. For example, if there is an enemy ship with signature 20 at
+range 2500km and you are using a passive Powered Omni sensor, then at
+that range the sensitivity is 0.3. Thus you “gain” 20 * 0.3 = 6% that
+turn, and hopefully your detection builds.</p>
+
+<p>So first you lose a bit and then you gain a bit each turn. Hopefully
+more of the latter, than the former.</p>
+
+<p>This was done to get the desired effect with detection. It should slowly
+build, unless the target is high signature. If you let a ship start to
+get away, detection will slowly drop. If the target hides or goes very
+low signature, then it may quickly disappear.</p>
+
+<p>The detection calculation is done 16 times per turn as the ships move
+and range changes and the result averaged - <a href="#turn_order">see
+the answer to FAQ #1</a>.<br />
+Also you also share detection among ships (but not perfectly) -
+<a href="#sharing">see the answer to FAQ #4</a>.</p>
+
+<p><b><a name="sharing">How do ships share detection?</a></b></p>
+
+<p>After calculating detection for each pair of ships, each team shares
+detection among all its ships. The idea is that these ships are in
+communication with each other regarding the whereabouts of their
+targets. All the ships in a team (all your ships comprise a single team)
+compare the detection they have on every target. The ship with the
+highest detection on a target then “shares” it with the others, but not
+perfectly.</p>
+
+<p>To get the best possible gain, the ships sharing detection must be
+2000km apart; this is to model triangulation of the target. The further
+the distance between ships from the 2000km mark, the less the gain (at
+0km the gain is always 0, as it is at 4000km or further apart). In any
+case the maximum detection gain a ship can get from sharing is 10% per
+turn.</p>
+
+<p>The ship with the highest detection on the target also gains a little
+too, but this is normally a small effect of a couple of percent at most
+and modified by the distance between ships (again a separation of 2000km
+provides the best gain).</p>
+
+<p>This sharing process means that the quickest way to increase detection
+on a target is to launch multiple drones and keep them all around 2000km
+from each other. Although when doing this remember there is a +1
+signature per drone controlled (caused by the communication), or higher
+if Linkers are loaded.</p>
+
+<p><b><a name="usurp">How does usurping/jamming work?</a></b></p>
+
+<p>There are two weapons in the game that can change the controller of a
+drone: the Usurper and Jammer. Hitting a target with the Jammer gives a
+70% base chance of turning it uncontrolled neutral. Hitting a target
+with the Usurper gives a base 40% chance of having a drone convert to
+being under your control, and if that doesn’t work, a 20% base chance of
+turning it uncontrolled neutral. But how do those base chances convert
+to actual probabilities in practice?</p>
+
+<p># If the target is not a drone or mine, then the actual probability
+will be 0%.<br />
+# If the target is autonomous (as per the skirmish modifier), then the
+actual probability is the same as the base.<br />
+# If the target is uncontrolled and neutral (if for instance it was
+previously jammed), then the actual probability is 100%.<br />
+# Otherwise, the base is multiplied by the distance from target to its
+controller divided by 3000km and divided again by 1+ the number of
+Linkers loaded on the target’s controller. This means that the chance of
+converting the target is greater the further a drone is from its
+controller, and smaller when the target’s controller has Linkers.</p>
+
+<p><b><a name="notification">How do I get Steam notifications to
+work?</a></b></p>
+
+<p>Concealed Intent can now send Steam notifications for online games. When
+you have been challenged or when the game is waiting for you to enter
+plans, it can put a small popup window on your desktop (if the Steam
+client is running). You may be asked to decide if you wish to allow
+these notifications the next time you play Concealed Intent or start an
+online duel. Alternatively, you can check or change these settings and
+notifications for all your games (which enable the feature) at:
+<a href="http://steamcommunity.com/id/me/gamenotifications/">http://steamcommunity.com/id/me/gamenotifications/</a>.</p>
+
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

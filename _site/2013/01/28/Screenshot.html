@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Screenshot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>January 28, 2013</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Screenshot
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>It has been a while since the last Concealed Intent screenshot. As work
+is now progressing again at a decent rate after moving country, it is
+time to share the progress.</p>
+
+<p><a href="/assets/posts/ci/ConcealedIntent_WIP_20130127.png"><img src="/assets/posts/ci/ConcealedIntent_WIP_20130127.png" title="Work In Progress" width="512" height="384" alt="Work In Progress" /></a></p>
+
+<!--more-->
+
+<p>The last month has been largely spent on GUI improvements. Much as I’d
+like to spend all my time on the engine and networking, the GUI needs
+more work. Early feedback suggested the game was hard to understand.
+Thus, various information and control elements are being added to see
+what helps make the game more intuitive.</p>
+
+<p>It should be noted that all the artwork is work-in-progress and largely
+created by someone with little graphical talent (me!). It will be
+replaced by more professional content once it is decided exactly what
+content is required.</p>
+
+<p>In this screenshot we see a Player Corvette and Drone facing off against
+a Skiff and 3 other unidentified objects. The Drone has been selected
+and it is targetting the Skiff (firing when the chance to hit is greater
+than 80%). It is also has a move planned. The green chevrons show how
+far the Drone can move in the next turn. The red chevrons show what will
+remain of the planned move for subsequent turns (the game is turn
+based). As the Drone is selected, some statistics are now displayed on
+the left. This was specifically suggested by a tester and caused some
+thought on my part (which will be the subject of a future post). All the
+planning options available to the ship are shown by icons displayed
+close to the point they are used (move controls are positioned at the
+last set waypoint, targeting controls midway to the target).</p>
+
+<p>The red and green buttons at the top of the screen are quick
+select/focus buttons. Clicking the green LD button provided the view
+above. Clicking on the CR button would show the Corvette’s plans.
+Clicking on the red buttons would focus on the corresponding enemy
+object. Some buttons have ? as the corresponding detected enemy object
+has yet to be identified.</p>
+
+<p>Hopefully controlling the game is now clearer, but there is still more
+work to do!</p>
+
+<p>I think the controls around shooting are confusing. It is not obvious
+(as testers confirm) how lock, range and hit percentages relate to each
+other. Here the drone has a lock of 37% on the Skiff at a range of
+353lms, which equates to a chance of hitting of around 5. Since the
+Drone is waiting for a hit percentage of 80, it won’t shoot. Got that? I
+didn’t think so.</p>
+
+<p>I think specifying the distance units doesn’t help. It might be better
+displayed as a dimensionless number. LMS stands for light milliseconds
+or the distance light travels in a millisecond or 300km (so the Skiff,
+at 353lms, is 106000km from the drone or roughly 30% the distance from
+the Earth to the Moon). The distance relative to the speed of light is
+important in the sensors calculation, but probably not to most players.</p>
+
+<p>Can you tell the game is 3D? Testers report that they didn’t realise
+they could move up and down out of the horizontal plane. Partly this is
+an issue of the game being set in space. There is no visual indication
+of height. I need to add one - not sure how yet.</p>
+
+<p>So there are the recent achievements and the immediate goals.</p>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/ConcealedIntent.html">ConcealedIntent</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

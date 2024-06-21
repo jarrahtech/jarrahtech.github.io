@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Working with Unity, rather than against it</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>August 26, 2014</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Working with Unity, rather than against it
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>Like the old cliche “to a hammer, everything looks like a nail”, as a
+programmer I think many of my game-dev problems can be solved with code.
+So at first many of my solutions to issues in Concealed Intent were to
+add more functions onto control classes. For instance, to handle screen
+size changes, each GUI element’s control class included a function that
+knew how to resize that GUI element. The problem with this is sometimes
+this is the only code required in such a class. Also, it requires the
+resizing logic to be hardcoded and thus changing it means changing the
+code. This is not the Unity way.</p>
+
+<!--more-->
+
+<p>From my experience, Unity seems to prefer that functionality be broken
+into small (hopefully reusable) pieces that are then placed as Unity
+components (inheriting from Unity’s <code>MonoBehaviour</code> class).
+Public parameters on these components are then editable in the Unity
+editor and the class is added to the frame-by-frame update loop. The
+idea of public variables and adding unused code (as sizing is event
+based) to frequently run loops seems wrong to me after years of
+professional software development. However, that appears to be the way
+Unity is intended to be used, and it certainly makes things easier. Here
+is how I moved my element sizing code into Unity components.</p>
+
+<p>I wrote the system based on a series of discrete screen sizes. That is,
+rather than have the GUI respond to a continuous stream of screen size
+changes or sizes, it will instead jump to a particular configuration
+when a particular screen size is applied. This is because while screen
+size checking will detect the smallest change, most of the changes will
+be the player changing the screen resolution.</p>
+
+<p>So firstly, the program needs to be able to recognise what is the
+appropriate size. To do this I created a class to listen to NGUI screen
+events, calculate the appropriate internal screen size category, and if
+that category has changed fire a new event. The screen sizes are
+organised by width as that is what is important to me. Screens with a
+width below 1024 pixels use the <code>W1024</code> sizing scheme,
+between 1025 &amp; 1440 pixels wide use the <code>W1440</code> scheme and
+larger screens use the <code>W1920</code> scheme. It should be easy to
+add more.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="c1">// Copyright 2014 Jarrah Technology (http://www.jarrahtechnology.com). All Rights Reserved.
+</span>
+
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">ScreenControl</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="n">ScreenControl</span> <span class="n">Instance</span><span class="p">;</span>
+  <span class="k">public</span> <span class="k">enum</span> <span class="n">ScreenSize</span> <span class="p">{</span> <span class="n">W1024</span> <span class="p">=</span> <span class="m">1024</span><span class="p">,</span> <span class="n">W1440</span> <span class="p">=</span> <span class="m">1440</span><span class="p">,</span> <span class="n">W1920</span> <span class="p">=</span> <span class="m">1920</span> <span class="p">}</span>
+
+  <span class="k">public</span> <span class="k">delegate</span> <span class="k">void</span> <span class="nf">OnScreenHandler</span><span class="p">(</span><span class="n">ScreenSize</span> <span class="n">size</span><span class="p">);</span>
+  <span class="k">public</span> <span class="k">event</span> <span class="n">OnScreenHandler</span> <span class="n">OnScreenChange</span><span class="p">;</span>
+
+  <span class="k">public</span> <span class="n">ScreenSize</span> <span class="n">Size</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">Instance</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
+            <span class="nf">CalcIdx</span><span class="p">();</span>
+            <span class="n">UICamera</span><span class="p">.</span><span class="n">onScreenResize</span> <span class="p">+=</span> <span class="n">OnScreenResize</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">Instance</span> <span class="p">!=</span> <span class="k">this</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">Destroy</span><span class="p">(</span><span class="n">gameObject</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">void</span> <span class="nf">OnScreenResize</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">ScreenSize</span> <span class="n">old</span> <span class="p">=</span> <span class="n">Size</span><span class="p">;</span>
+        <span class="nf">CalcIdx</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">old</span> <span class="p">!=</span> <span class="n">Size</span> <span class="p">&amp;&amp;</span> <span class="n">OnScreenChange</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">OnScreenChange</span><span class="p">(</span><span class="n">Size</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">void</span> <span class="nf">CalcIdx</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="n">ScreenSize</span> <span class="n">s</span> <span class="k">in</span> <span class="p">(</span><span class="n">ScreenSize</span><span class="p">[])</span><span class="n">Enum</span><span class="p">.</span><span class="nf">GetValues</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">ScreenSize</span><span class="p">)))</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">Screen</span><span class="p">.</span><span class="n">width</span> <span class="p">&lt;=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Size</span> <span class="p">=</span> <span class="n">s</span><span class="p">;</span>
+                <span class="k">return</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Then on the root <code>GameObject</code> of my GUI goes a component
+which listens to these events and passes them on to a collection of
+sizing components in its children <code>GameObject</code>’s. The
+collection of sizing components can be reloaded programmatically. It
+will also not recurse past a child with another component of the same
+type attached. Thus if part of the GUI changes its children, a new
+<code>SizerNode</code> can be placed at the root of this part of the GUI
+and its <code>Reload</code> method called whenever children are added or
+removed. For example, a grid should have a <code>SizerNode</code> on it
+and when objects are added/removed from the grid, <code>Reload</code>
+should be called. In this way only the parts of the GUI that need
+reloading are reloaded.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="c1">// Copyright 2014 Jarrah Technology (http://www.jarrahtechnology.com). All Rights Reserved.
+</span>
+
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">SizerNode</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+
+    <span class="n">List</span><span class="p">&lt;</span><span class="n">Sizer</span><span class="p">&gt;</span> <span class="n">sizers</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Sizer</span><span class="p">&gt;();</span>
+
+    <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">Reload</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">Reload</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">sizers</span><span class="p">.</span><span class="nf">Clear</span><span class="p">();</span>
+        <span class="nf">LoadWidgets</span><span class="p">(</span><span class="n">gameObject</span><span class="p">);</span>
+        <span class="nf">OnScreenChange</span><span class="p">(</span><span class="n">ScreenControl</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">Size</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">void</span> <span class="nf">LoadWidgets</span><span class="p">(</span><span class="n">GameObject</span> <span class="n">go</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="n">Transform</span> <span class="n">t</span> <span class="k">in</span> <span class="n">go</span><span class="p">.</span><span class="n">transform</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">sizers</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="n">GetComponents</span><span class="p">&lt;</span><span class="n">Sizer</span><span class="p">&gt;());</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="n">GetComponents</span><span class="p">&lt;</span><span class="n">SizerNode</span><span class="p">&gt;().</span><span class="n">Length</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nf">LoadWidgets</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="n">gameObject</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>   
+
+    <span class="k">void</span> <span class="nf">OnScreenChange</span><span class="p">(</span><span class="n">ScreenControl</span><span class="p">.</span><span class="n">ScreenSize</span> <span class="n">newSize</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="n">Sizer</span> <span class="n">s</span> <span class="k">in</span> <span class="n">sizers</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">s</span><span class="p">.</span><span class="nf">UpdateSize</span><span class="p">(</span><span class="n">newSize</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>This just leaves the code to change the GUI element’s size. First an
+abstract superclass, so that many different sizing systems can be used
+and still picked up by the <code>SizerNode</code>’s.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="c1">// Copyright 2014 Jarrah Technology (http://www.jarrahtechnology.com). All Rights Reserved.
+</span>
+
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">Sizer</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">UpdateSize</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">UpdateSize</span><span class="p">(</span><span class="n">ScreenControl</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">Size</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">abstract</span> <span class="k">void</span> <span class="nf">UpdateSize</span><span class="p">(</span><span class="n">ScreenControl</span><span class="p">.</span><span class="n">ScreenSize</span> <span class="n">size</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Then components like the below class can be placed on the elements to
+resize. This one changes the NGUI widget width and height. In the Unity
+editor it appears as an array of width/height pairs for various screen
+sizes. I’ll leave it as an exercise for the reader to write other sizing
+classes. So far I have used sizers that change local position, NGUI
+widget anchors, font sizes and grid parameters. All are basically the
+same as the code below and work nicely in the Unity editor. A GUI
+element can also have multiple sizers on it. I have elements with font
+and dimension resizers on them.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="c1">// Copyright 2014 Jarrah Technology (http://www.jarrahtechnology.com). All Rights Reserved.
+</span>
+
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">DimensionSizer</span> <span class="p">:</span> <span class="n">Sizer</span> <span class="p">{</span>
+
+    <span class="n">UIWidget</span> <span class="n">widget</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="n">DimensionSize</span><span class="p">[]</span> <span class="n">sizes</span><span class="p">;</span>
+
+    <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">widget</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">UIWidget</span><span class="p">&gt;();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">UpdateSize</span><span class="p">(</span><span class="n">ScreenControl</span><span class="p">.</span><span class="n">ScreenSize</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="n">DimensionSize</span> <span class="n">fs</span> <span class="k">in</span> <span class="n">sizes</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">size</span> <span class="p">&lt;=</span> <span class="n">fs</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">widget</span><span class="p">.</span><span class="n">width</span> <span class="p">=</span> <span class="n">fs</span><span class="p">.</span><span class="n">width</span><span class="p">;</span>
+                <span class="n">widget</span><span class="p">.</span><span class="n">height</span> <span class="p">=</span> <span class="n">fs</span><span class="p">.</span><span class="n">height</span><span class="p">;</span>
+                <span class="k">return</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">[</span><span class="n">System</span><span class="p">.</span><span class="n">Serializable</span><span class="p">]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">DimensionSize</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="n">ScreenControl</span><span class="p">.</span><span class="n">ScreenSize</span> <span class="n">size</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">height</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">width</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>This system works so much better in Unity than my previous system. It is
+so easy to change - I can tweak it in the editor while the game is
+running. I am a convert. Now I need to convert other parts of my code
+that can work in a similar way. I have already done so for handling
+colour changes (in Concealed Intent players can adjust the colours used
+to denote various game factions). It could also be done for highlighting
+and transparency changes when a ship or component is selected. It is on
+the (very long) todo list.</p>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/ConcealedIntent.html">ConcealedIntent</a>, 
+    
+      <a class="post" href="/blog/tag/DevDiary.html">DevDiary</a>, 
+    
+      <a class="post" href="/blog/tag/Unity.html">Unity</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

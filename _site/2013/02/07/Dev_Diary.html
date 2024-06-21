@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Developer Diary - 7th February 2013</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>February  7, 2013</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Developer Diary - 7th February 2013
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>I have nothing to show for the last week’s work on Concealed Intent. Not
+because I haven’t been working, but because the effort was spent behind
+the scenes. I have been working on rearchitecting the simulation maths
+(mainly for detection).</p>
+
+<p>Originally all the simulation code was attached to classes representing
+the spaceships themselves. So a ship has sensors and those sensors knew
+how to detect other ships - typical
+<a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OO</a> design.
+However, during early testing a number of different ways were suggested
+to handle detection and determine lock. I needed to be able to change
+between multiple simulation schemes easily. Thus in the last week the
+maths has been put into its own class using a <a href="http://en.wikipedia.org/wiki/Strategy_pattern">Strategy
+Pattern</a>. This change
+made testing easier (so I wrote some tests - and found a few silly maths
+errors!) and allowed the ship classes to be greatly simplified.</p>
+
+<p>After that it wasn’t too hard to create a builder system for creating
+scenarios. Below is the new code for creating my 2-against-1 test
+scenario. I think this is quite easy to understand what the scenario
+involves. It can get more complicated with goals and events added, but
+the declarative syntax remains.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">ScenarioBuilder</span> <span class="n">builder</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ScenarioBuilder</span><span class="p">(</span><span class="s">"Mark's Mission"</span><span class="p">);</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">Calcs</span><span class="p">(</span><span class="n">BasicCalcsBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">().</span><span class="nf">NoiseMult</span><span class="p">(</span><span class="m">5</span><span class="p">).</span><span class="nf">TimeDecay</span><span class="p">(</span><span class="m">1</span><span class="p">).</span><span class="nf">TargettingGain</span><span class="p">(</span><span class="m">1.5f</span><span class="p">));</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">Skybox</span><span class="p">(</span><span class="s">"SkyBoxes/Basic Star Field/Basic Star Field"</span><span class="p">).</span><span class="nf">ViewScale</span><span class="p">(</span><span class="m">0.66f</span><span class="p">);</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">CameraFov</span><span class="p">(</span><span class="m">25</span><span class="p">).</span><span class="nf">CameraPosition</span><span class="p">(</span><span class="m">336</span><span class="p">,</span> <span class="m">270</span><span class="p">,</span> <span class="p">-</span><span class="m">525</span><span class="p">).</span><span class="nf">CameraRotation</span><span class="p">(</span><span class="m">25</span><span class="p">,</span> <span class="m">330</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Sulaco"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">CORVETTE</span><span class="p">).</span><span class="nf">SetAsPlayer</span><span class="p">().</span><span class="nf">Position</span><span class="p">(</span><span class="m">100</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">).</span><span class="nf">DefaultLoadout</span><span class="p">());</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Pirate 1"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">SKIFF</span><span class="p">).</span><span class="nf">Ctrl</span><span class="p">(</span><span class="n">Control</span><span class="p">.</span><span class="n">TENTATIVE_CONTROL</span><span class="p">).</span><span class="nf">Position</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">).</span><span class="nf">DefaultLoadout</span><span class="p">().</span><span class="nf">SetAsEnemy</span><span class="p">());</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Pirate 2"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">SKIFF</span><span class="p">).</span><span class="nf">Ctrl</span><span class="p">(</span><span class="n">Control</span><span class="p">.</span><span class="n">AGGRESSIVE_CONTROL</span><span class="p">).</span><span class="nf">Position</span><span class="p">(-</span><span class="m">200</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="p">-</span><span class="m">300</span><span class="p">).</span><span class="nf">DefaultLoadout</span><span class="p">().</span><span class="nf">SetAsEnemy</span><span class="p">());</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Brockley"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">MERCURY</span><span class="p">).</span><span class="nf">Ctrl</span><span class="p">(</span><span class="n">Control</span><span class="p">.</span><span class="n">PREVIEW_CONTROL</span><span class="p">).</span><span class="nf">Position</span><span class="p">(</span><span class="m">40</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">40</span><span class="p">));</span>
+<span class="n">builder</span><span class="p">.</span><span class="nf">AddEntity</span><span class="p">(</span><span class="n">EntityBuilder</span><span class="p">.</span><span class="nf">Create</span><span class="p">(</span><span class="s">"Star"</span><span class="p">,</span> <span class="n">EntityType</span><span class="p">.</span><span class="n">G_STAR</span><span class="p">).</span><span class="nf">Position</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">40000</span><span class="p">).</span><span class="nf">Rotation</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">180</span><span class="p">,</span> <span class="m">0</span><span class="p">));</span></code></pre></figure>
+
+<p>So after a week, the game is largely where it started - just with more
+tests and easier to modify maths and scenarios. I think it was worth the
+effort. Next up, trying out various new systems for detection and lock.</p>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/ConcealedIntent.html">ConcealedIntent</a>, 
+    
+      <a class="post" href="/blog/tag/DevDiary.html">DevDiary</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Circling in Unity3D with RotateAround</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>February 21, 2015</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Circling in Unity3D with RotateAround
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>_Concealed Intent is on Steam Greenlight! Please <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=394572500!_">vote for it
+here</a></p>
+
+<p><em>I’ll be GDC this year. If you are there too and watch to meet up, feel
+free to send me a message.</em></p>
+
+<p>In Concealed Intent I wanted enemies to circle the players, and not just
+in a predictable flat y=? plane. No, instead they should fly all sorts
+of curved paths above and below their targets. The game is fully 3D and
+the enemy AI should demonstrate this. So began my affair with Unity3D’s
+<a href="http://docs.unity3d.com/ScriptReference/Transform.RotateAround.html">Transform.RotateAround</a>.
+If that function and its uses are second nature to you then this blog
+post will be old news, if not then read on…</p>
+
+<p><img src="/assets/posts/ci/circling/action.png" width="550" alt="" /></p>
+
+<!--more-->
+
+<p>So what exactly does this <code>Transform.RotateAround(Vector3 point,
+Vector3 axis, float angle);</code> function do? It moves the
+<code>Transform</code> through <code>angle</code> degrees around the
+<code>point</code> given. That is, <code>point</code> is the center of a
+circle with the <code>Transform</code> on its edge, which moves
+<code>angle</code> around this circle.</p>
+
+<p><img src="/assets/posts/ci/circling/1.png" width="550" alt="" /></p>
+
+<p>So what does the <code>axis</code> vector do? In maths, it is the
+<a href="http://en.wikipedia.org/wiki/Normal_(geometry)">normal of the
+plane</a> on which the circle is drawn. Imagine walking on flat ground
+in a circle and looking straight up into the sky, that is the
+<code>axis</code> vector. Now imagine walking in a circle on the side of
+a steep hill and looking up directly away from the ground. You are no
+longer looking straight up into the sky, but at an angle because the
+circle in which you are walking on is itself on an angle. The “up”
+vector points away from the slope, and again this is the
+<code>axis</code>. The circle the sun makes as it crosses the sky would
+have the <code>axis</code> as <code>Vector3.right</code> or
+<code>Vector3.left</code>, depending on which way around the circle you
+wanted it to move.</p>
+
+<p>Now let’s say you wanted to have a spaceship move around another object
+(its target) in a circle. Although in space it doesn’t matter which way
+is up as long as the ship continues in a nice circle. So you have a
+<code>Transform</code> for the ship and a vector for the target, what is
+“up”. The <code>axis</code> could be fixed as <code>Vector3.up</code> or
+<code>Vector3.right</code>, but then the enemy ships will always circle
+their targets in the same way - too easy to predict. Instead, each ship
+should work out its own “up”, but a random vector by itself can’t be
+used.</p>
+
+<p><img src="/assets/posts/ci/circling/2.png" width="350" alt="" /></p>
+
+<p>The <code>point</code> and the <code>axis</code> parameters define a
+plane. If the <code>Transform</code> is not in this plane then rather
+than rotate around the <code>point</code>, Unity will shift the plane
+along the <code>axis</code> (“up”) until it is in the plane and then
+rotate around that point. This is shown in the image above. This
+situation maybe what is desired. Imagine a camera looking down on a
+player from an angle. To get this camera to rotate around the player
+while remaining at the same height use
+<code>cameraTransform.RotateAround(playerPosition, Vector3.up,
+angle)</code> (assuming <code>Vector3.up</code> is the right axis for
+the game).</p>
+
+<p><img src="/assets/posts/ci/circling/3.png" width="550" alt="" /></p>
+
+<p>If this shifting of the center of the circle is not what is required (as
+in Concealed Intent) then the <code>axis</code> provided must define a
+plane that includes the <code>Transform</code>. Luckily there is a handy
+way to calculate such an axis - the <a href="http://en.wikipedia.org/wiki/Cross_product">cross
+product</a>, already provided
+in Unity by
+<a href="http://docs.unity3d.com/ScriptReference/Vector3.Cross.html">Vector3.Cross</a>.
+<code>Cross</code> takes two vectors and uses them to define a plane,
+returning the normal of that plane. Since we know the
+<code>Transform</code> to rotate and the <code>point</code> it should
+rotate around, one of these vectors is <code>Transform.position -
+point</code>. The other vector can be anything, so I just use a random
+vector. The code I use to get the <code>axis</code> is below, where
+<code>Me</code> is the the enemy, and <code>center</code> is the point
+it is circling:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">do</span> <span class="p">{</span>
+  <span class="n">Vector3</span> <span class="n">perturb</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Vector3</span><span class="p">(</span><span class="n">Random</span><span class="p">.</span><span class="nf">Range</span><span class="p">(-</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">),</span> <span class="n">Random</span><span class="p">.</span><span class="nf">Range</span><span class="p">(-</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">),</span> <span class="n">Random</span><span class="p">.</span><span class="nf">Range</span><span class="p">(-</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">)).</span><span class="n">normalized</span><span class="p">;</span>
+  <span class="n">normal</span> <span class="p">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="nf">Cross</span><span class="p">(</span><span class="n">me</span><span class="p">.</span><span class="n">Position</span> <span class="p">-</span> <span class="n">center</span><span class="p">,</span> <span class="n">perturb</span><span class="p">).</span><span class="n">normalized</span><span class="p">;</span>
+  <span class="kt">bool</span> <span class="n">newOrientation</span> <span class="p">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="nf">Dot</span><span class="p">(</span><span class="n">normal</span><span class="p">,</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">up</span><span class="p">)</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">orientation</span> <span class="p">!=</span> <span class="n">newOrientation</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">normal</span> <span class="p">=</span> <span class="p">-</span><span class="n">normal</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">count</span><span class="p">++</span> <span class="p">&lt;</span> <span class="n">RETRIES</span> <span class="p">&amp;&amp;</span> <span class="n">normal</span><span class="p">.</span><span class="n">magnitude</span> <span class="p">&lt;</span> <span class="m">0.01f</span><span class="p">);</span></code></pre></figure>
+
+<p>Two extra points to note here. First is that if the vector
+<code>Transform.position - point</code> is parallel to the random
+vector, then the cross product won’t work (it will be the zero vector).
+This is the reason for the check <code>normal.magnitude \&lt; 0.01f</code>
+and recalculating the normal if this is <code>true</code>. A number
+slightly greater than 0 is used to handle any <a href="http://en.wikipedia.org/wiki/Numerical_error">numerical errors in the
+calculation</a>. The second
+line to note is <code>Vector3.Dot(normal, Vector3.up) \&gt; 0;</code> -
+this checks that the normal always points in expected direction and thus
+always goes clockwise or counterclockwise depending on the value of
+<code>orientation</code>.</p>
+
+<p>It can also sometimes be useful not to use a random vector when
+crossing. If you know something special about the situation a specific
+second vector may be appropriate. For instance, if the direction in
+which the target is moving is known this could be used as the vector to
+cross with. Then depending on the orientation of the resulting normal,
+the <code>Transform</code> will either rotate towards the direction or
+movement, or away from it.</p>
+
+<p>Now with the appropriate axis, <code>Transform.RotateAround(Vector3
+point, Vector3 axis, float angle);</code> can be called to get the
+expected result. However, Concealed Intent does two extra things. Below
+is the code it uses:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">Vector3</span><span class="p">[]</span> <span class="nf">CreateCircle</span><span class="p">(</span><span class="n">Vector3</span> <span class="n">self</span><span class="p">,</span> <span class="n">Vector3</span> <span class="n">center</span><span class="p">,</span> <span class="n">Vector3</span> <span class="n">up</span><span class="p">,</span> <span class="kt">float</span> <span class="n">radius</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Vector3</span><span class="p">[]</span> <span class="n">circle</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector3</span><span class="p">[</span><span class="n">steps</span><span class="p">];</span>
+        <span class="n">dummyTrans</span><span class="p">.</span><span class="n">position</span> <span class="p">=</span> <span class="n">self</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">circle</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
+            <span class="kt">float</span> <span class="n">ratio</span> <span class="p">=</span> <span class="p">(</span><span class="n">i</span> <span class="p">+</span> <span class="m">1</span><span class="p">)</span> <span class="p">/</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">steps</span><span class="p">;</span>
+            <span class="n">dummyTrans</span><span class="p">.</span><span class="nf">RotateAround</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">up</span><span class="p">,</span> <span class="m">180</span><span class="p">*</span><span class="n">ratio</span><span class="p">);</span>
+            <span class="n">circle</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">=</span> <span class="n">dummyTrans</span><span class="p">.</span><span class="n">position</span> <span class="p">*</span> <span class="p">(</span><span class="m">1</span><span class="p">+(</span><span class="n">radius</span><span class="p">-</span><span class="m">1</span><span class="p">)*</span><span class="n">ratio</span><span class="p">);</span>       
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">circle</span><span class="p">;</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p>Concealed Intent is turn based - it needs to know the enemy ships’ plans
+before they actually move. Thus rather than call
+<code>RotateAround</code> on the enemy <code>Transform</code> itself, it
+uses a dummy transform on an empty <code>Gameobject</code> instead and
+stores its position at various (<code>steps</code>) points in the
+circle. Also, the enemy may want to spiral into, or away from, the
+target. This is achieved with the <code>… \*
+(1+(radius-1)\*ratio)</code>, if radius is less than 1 it will spiral
+in; greater than 1 it will spiral away.</p>
+
+<p>So that is nearly all I’ve learnt about moving objects in circles in
+Unity. RotateAround is a powerful tool, use it wisely.</p>
+
+<p><strong>Contact Details:</strong></p>
+
+<ul>
+  <li><a href="http://www.concealedintent.com">Concealed Intent website &amp; blog</a></li>
+  <li>Twitter: <a href="https://twitter.com/JarrahTech">@JarrahTech</a></li>
+  <li><a href="http://www.indiedb.com/games/concealed-intent">IndieDB entry</a></li>
+  <li><a href="http://forums.tigsource.com/index.php?topic=46163.0">TIGSource
+DevBlog</a></li>
+  <li>Facebook:
+<a href="https://www.facebook.com/JarrahTechnology">JarrahTechnology</a></li>
+  <li>Instagram: <a href="http://instagram.com/jarrahtech">JarrahTech</a></li>
+  <li><a href="http://eepurl.com/7uj2j">Mailing List</a></li>
+  <li>Email: charles at jarrahtechnology dot com</li>
+</ul>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/ConcealedIntent.html">ConcealedIntent</a>, 
+    
+      <a class="post" href="/blog/tag/Syndicated.html">Syndicated</a>, 
+    
+      <a class="post" href="/blog/tag/Unity.html">Unity</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>

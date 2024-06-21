@@ -1,0 +1,532 @@
+Current Version: 1.3.0 (20th April 2018)
+
+Known Issues:
+* See Forum thread: http://steamcommunity.com/app/374150/discussions/0/490125103634714520/
+
+Immediate Roadmap:
+* Bugfixes
+
+1.3.0 (20th April 2018) -> 1.3.1 (???)
+* Escape Pods now have much higher base signature
+* Supply Pods in Gather skirmish are now a litle closer to the origin on average
+* Updated Steam Web API key
+* Updated to Unity 5.6
+
+1.2.0 (6th April 2017) -> 1.3.0 (20th April 2018)
+* Ability to rewatch just finished online games finished in last 90 days 
+* Fix rare numeric error causing crash when AI calculating flanking circle
+* Be able to replay last turn of unseen finished online scenarios 
+* Fix bug with online refresh button, by having it reset itself 5 seconds after use 
+* Can now drag mission list even if mouse is over locked missions
+* Only check the player is visible at the start of a mission in skirmishes and online games (so not to move camera if it has been purposely positioned in campaign missions)
+* Make cargo ships in Factory mission a little slower and initial lock a little better
+* Fix bug preventing email addresses being entered on the feedback screen
+* Hide random internet matchmaking (not enough players for this to work)
+* Update Unity engine to fix potential security issue
+
+1.1.3 (14th November 2016) -> 1.2.0 (6th April 2017)
+* Fix online server bug where signature for movement incorrectly calculated
+* Speed of pulse and multi-pulse lasers now scaled by turn time
+* Online refresh button
+* Non-Steam online login screens and system
+* State more explicitly that the helper ships in various missions are controlled by the player
+* Randomly generated map option in skirmishes
+* Make randomly generated Gather skirmishes a little easier
+* Resize turn control according to screen size
+* Fix crash bug when an unarmed entity attempts to orbit at optimal weapons range
+* Added Stealth Drone
+* Added Detonation Drone
+* Remove Steam ContentPrep from OSX builds
+* Check the player is visible at the start of a mission and move the camera if not
+* Fix bug where focussing on a ship could move the camera behind a natural (blocking the focussed view) 
+* Store and display last skirmish settings between restarts and scenarios
+* Fix bug on Linux builds in certain countries where ships' decimal stats are incorrectly parsed
+* Fix bug where friends' Steam status is requested multiple times in a row due an incorrectly sized sliding window
+
+1.1.2 (7th November 2016) -> 1.1.3 (14th November 2016)
+* Loadout reset button now resets max component counts (thanks anonymous feedback person)
+
+1.1.1 (25th October 2016) -> 1.1.2 (7th November 2016)
+* Fix online game bug in plan validation - check more carefully if the submitted id is new and widen movement tolerance (thanks OblivionDoll & FridayBiology)
+* Fix crash bug in Exhumation if goals completed out of intended order (thanks anonymous feedback person)
+
+1.1.0 (15th October 2016) -> 1.1.1 (25th October 2016)
+* Fix leaking links in feedback system
+* Fix crash bug in the minelayer AI in the Clear mission (thanks Andy)
+
+1.0.1 (13th August 2016) -> 1.1.0 (15th October 2016)
+* Fix bug where it was possible to finish the Extraction mission without collecting the Informer
+* Fix bug with skirmish minefields having clashing ids and decrease max number of mines
+* Fix crash bug when resizing screen at same time that a player ship explodes
+* Update server shell scripts for better logging
+* Fix bug where not all drones are going neutral after their controller is destroyed
+* Remove friends' Steam login status display and periodic reload as incorrect results being returned
+* Use action icons in focus buttons to display plans rather than a blinking ship name
+* Add Gather skirmish objective
+* Save player prefs immediately upon changes (for Linux)
+* Tentative contacts
+* Updated key bindings for Linux
+* Steam async game turn notifications
+* Ensure usurped drones have the correct name in online games
+* Ensure that the loadout screen's title reflects correctly whether a player or enemy ship is being loaded
+* Fix bug where challenges and games disappear from online status screen after playing a scenario
+* Fix bug where database pool in online server repetitively recreated
+* Show a graphic that a ship is shielded, if it is hit and fully id'ed
+* Fix incorrect time being display in online game buttons
+* Correctly scale CM
+* Adjust height and move markers to display better on Linux
+* Set a max effective number of coolers to prevent unbeatable builds
+* Fix bug where defences' noise modifier was being counted twice for display in online games (internal sim was correct, but the player displayed number was wrong)
+* Fix timing bug with launches and shooting in online games
+* Display online draws as such
+* Have a link to the CI FAQ on the tutorial menu
+* Fix dumb bug with damage taken calculation
+* Extraction mission: update text to make the nature of the mission clearer and stop spawned enemies targetting the Informer
+* Allow an email address in feedback, move fields around, better messages
+* Linux build
+* Automated build and deploy system
+
+1.0.0 (30th July 2016) -> 1.0.1 (13th August 2016)
+* Add more countermeasures at the start of Halt & Extraction
+* Add title to feedback to remind players it is anonymous
+* Make mouse scrollwheel work on OSX
+* Ensure minimum loadout at start of Layers
+* Change loadout message in Pickup & specify loadout is current loadout
+* Make arrow keys work on flow tables
+* Accelerate camera actions in game & add a multiplier in Gameplay options
+* Have mission & control lists use scrollwheel
+* Faster scroll on focus, loadout & stats components
+* If scrolling in focus do not zoom in/out (like rotate)
+* Make achievement stripes in online games easier to achieve
+* Show "Return" key as "Return/Enter" as some people do not have "Return" written on that key
+* Keep a backup profile in case of corruption - thanks to UberSomething
+* If profile corrupt on startup, discard and create a new profile
+* Don't exit if profile being written (wait a little instead)
+* Remove ProfileUpdater
+* Standardise laser, engine & sensor graphs by category (components in each category should use same x & y axes) - thanks to Aleccia Heartnet
+* Allow loadout to be reset to initial 
+* Force the grid back on if it was left off at the end of the View tutorial
+* Refer to pods as "escape pods" in Rescue missions
+* Better tooltip for Base skirmishes
+* Provide replay quick-key in Advanced tutorial
+
+0.9.34 (25th July 2016) -> 1.0.0 (30th July 2016)
+* Update version number
+* Fix spelling error
+
+0.9.33 (11th July 2016) -> 0.9.34 (25th July 2016)
+* Ensure artillery beams displayed in Illumination mission
+* Fix bug where heightmarkers were shown even if grid off and ship not being previewed
+* Ensure the sfx/animations for sensors and cms continues in play/replay mode even if the ship is deselected
+* Default "Show Objectives" to true for new players (thanks to https://www.youtube.com/user/jaguarusf)
+* Add a link on the menu screen for the CI YouTube playlist and add the intro and tactics videos to the list of tutorials
+* Fix bug where categorised components on non-id'ed ships were incorrect (they should only show the components that have been activated)
+
+0.9.32 (21st June 2016) -> 0.9.33 (11th July 2016)
+* Stop shuttles in Savior skirmishes getting stuck behind asteroids
+* Remove request for review at end of final campaign mission as it is apparently against Steam rules
+* Force laser fire to appear in online games even if the firer is hidden
+* Fix issue with uncontrolled drones sometimes being usurped but not acting as player drones (when they really are)
+* Prevent "target hit" graphics from drifting off target during high rotation turns
+* Force focus button to be inactive when they first appear so undetected ships don't take up grid space
+* Stop "time remaining" from being displayed on the skirmish loadout screen if there is a online challenge outstanding
+* Make the engine stats component work like other components on click -> left-click = set waypoint, right-click = delete waypoint
+* Fix rare object pool crash when unity can't find a gameobject (why!?)
+
+0.9.31 (10th June 2016) -> 0.9.32 (21st June 2016)
+* Stop target focus reticules from "sticking"
+* Stop crash when just launched ships fire on player in online games
+* Ensure target weapon hud selectors appear completely onscreen the first time they are displayed
+* Ensure "Can Target" line changes colour when game colours changed
+* Make Last Stand mission more difficult
+* Set waves "victory" to wave 15 (ie survive the first cycle) and add a repairer to the base
+* Change twitter/facebook icons colour on hover
+* Componentise server and combine with feedback
+
+0.9.30 (20th May 2016) -> 0.9.31 (10th June 2016)
+* Ensure move line & active sensor shells colours change with game colours
+* Stop loadout components being both selected and disabled when capacity exceeded. 
+* Make stack HUD selectors, stats grids, flow tables & objective markers handle screen size changes
+* If enemy has no target then most ships/drones will move randomly to look for them  & sometimes turn off sensor suppression 
+* Move Skirmish enemy start positions in a little
+* Suppressed sensors now still allows one ship/drone to use their sensors
+* If no optimal range use max weapon range instead
+* Fix silly error in Jiggle where it was modifying range by an order of magnitude more than expected
+* Hard AI Frigate & Corvette become more aggressive if hull low or all drones gone
+* Enemy ships now assume unknown targets carry a Medium Pulse when calculating optimal ranges
+* Online DB archive system & indexes
+* Just usurped player ships now retain plans over a replay
+* Added Hard AI system that means command ship may tell their drones to target other drones as secondaries ("drone denial")
+* Ensure enemies targeting drones do not also target uncategorised entities (as they could be ships)
+* Hard AI Cruisers now set drones aggressive if attacking or under attack
+* Hard AI Corvette & Frigate ships now more sensible in their use of countermeasures, Cruisers & Destroyers launch more but under the same conditions
+* Fix silly bug where enemies incorrectly calculated the danger near them
+* Move Hard AI start location closer to player
+* Enemy ships with disruptors chose better targets
+* Prevent Jammers being able to usurp neutrals
+* Make local enemies attack local neutrals (unless set to ignore them)
+* Make waves spawn further away
+* Update colour and size handlers to be more consistent
+* Periodically realign focus button images (as they sometimes jump out of alignment)
+* More consistent noise & hull highlighting and stop the highlight getting stuck
+* Make Usurper Skiff more aggressive
+* Decode mission now sets Message Steam achievement
+* Reaching wave 12 of waves skirmish counts as a victory for Steam achievements
+* Added to extra (weak) waves to waves skirmish to space out ships and make it a bit easier
+
+0.9.29 (5th May 2016) -> 0.9.30 (20th May 2016)
+* Waves skirmish objective
+* Savior skirmish objective
+* Move back starting camera position in some tutorials & missions
+* Set minimum of 49 turns before declaring a draw 
+* Darken starlight 
+* Fix bug where target markers were being incorrectly reused
+* Ensure narrative panel is above objectives
+* Wider objectives in various screen resolutions
+* Better objective text in Exhumation & Extraction
+* Add Twitter & Facebook icons/links on main menu screen
+* Add victory stripe achievements to skirmishes
+* Fix rare coroutine start bug
+* Skirmish base objective requires at least 4 player ships
+
+0.9.28 (4th May 2016) -> 0.9.29 (5th May 2016)
+* Fix stupid null check error in M3
+
+0.9.27 (23rd April 2016) -> 0.9.28 (4th May 2016)
+* Going to menu no longer deselects
+* Stop focus icons disappearing when menu turned off
+* Clear tooltips when selector cleared
+* Better selector positioning
+* Add Targeting quick key 
+* Fix selector bug where components drawn on top of eachother when going straight from one selector to another
+* Fix targeting tooltip bug where it stated the wrong current target
+* Reload allowable screen resolutions each time selection is displayed
+* Fullscreen on multiple monitors fix
+* Update to Unity 5.3
+* Force OSX versions to be foregrounded on startup (thanks to increpare)
+
+0.9.26 (22nd March 2016) -> 0.9.27 (23rd April 2016)
+* Don't allow entities without engines to plan movement & similar for other action types
+* Fix bug when cancelling launch of ship that was not launched
+* Fix narrative button collider sizing bug
+* Another(!) attempt at fixing misaligned alternative highlights
+* Fix tutorial highlight bug with cancelled launches
+* Display Quick Key options on turn control and stats components GUI elements
+* Rename "current sig." to "previous sig." & "planned sig." to "current sig."
+* Remove Basic sensors from loadout options
+* Change sensor stats to make the active/passive split clearer
+* Better checks that moves in tutorials are correct before continuing
+* Update victory stripe conditions
+* Don't show full stats tooltips in first 3 tutorial missions
+* Consistent tooltip offset
+* Updated narrative text on various missions/tutorials
+* Remove hardest 3 steam achievements, because I haven't got them in over 100 hours of gameplay they are probably too hard
+* Turn cloud save back on
+* Fix rare time bug with heightmarkers when a new entity is first displayed
+* Combine Decode & Burglary missions into one
+* Combine Loyalty & Seizure missions into one
+* Only show offscreen indicator text in T4 if target is offscreen & make indicators larger for large screens
+* Non-player ship's components now display tooltips if they are partially or fully id'ed
+* Force ship rotation on loadout screen unless player is currently dragging
+* Stop GUI items being highlighted if they are clipped
+* Ensure final drone in T1 is a sphere after appearing
+* Put a weaker weapon on the drone attacking the Shuttle in Pickup mission
+
+0.9.25 (29th February 2016) -> 0.9.26 (22nd March 2016)
+* Update text on all tutorials & M1->3
+* Remove M1 (First Day)
+* Make it impossible to explode in the tutorial
+* Updated component descriptions
+* Provide a warning in M4 if too far from station to get through its shields
+* Prevent gimbal lock on loadout ship model
+* Added keyboard shortcut for Action ('Z' by default)
+* Add Tactics as a 4th tute
+* Don't lose all lock on just switched drones - lock decays as normal from last lock before switch (100% for ex-player or ally ships)
+* Drones switched to player team in online duels now have a meaningful display name rather than the lookup code
+* Better messages on component tooltips
+* Add stats to component tooltips
+* Force description of disruptor in Decode
+* Weapon display can't pass through naturals anymore 
+* Pickup loadout options add up to default loadout
+* Ensure campaign navbar starts at top
+* Add a Spotter to Frigate loadout
+* Fix editor destroy error when closing scenario
+
+0.9.24 (20th February 2016) -> 0.9.25 (29th February 2016)
+* Higher resolution PC desktop image
+* Fix occasional NPE when online games conceded && online menu locked in waiting state
+* Fix bug where the online opponent could be displayed as yourself
+* Display a list of finished games
+* More evenly matched random skirmishes
+* Increase linker size & give cruiser an extra ECM
+* Fix bug where only the first defined player ship could collect escape pods
+* Uncontrolled non-autonomous ships turn neutral after a turn
+* Fix bug with unknown sphere still slightly visible on enemies when they should be completely transparent
+* Stop target drone in Tutorial 1 flying behind player ship
+* Wider & further min/max focus distances
+* Reposition Hull "?" for Unknowns in stats display
+* Fix bug with badly positioned skirmish ships when scrollbars at bottom of range and the 2nd last skirmish ship deleted
+* Fix bug where skirmish flow tables slightly out of alignment & not resizing properly
+* Fix bug with just switched drones not working with replays
+* Make colliders on skirmish loadout & remove buttons work across the whole button & make loadout button more visible when loadout modified. Also make skirmish ship scrollviews shrink when a ship is removed
+* Server update to restart at the first point after 5 days that no players are connected & fix db timeout issue
+
+0.9.23 (3rd February 2016) -> 0.9.24 (20th February 2016)
+* Hard AI skirmish modifier
+  - clusters most enemies at start
+  - better rangefinding despite loadout changes (enemies dynamically calculate range)
+  - enemies will no longer "overkill"
+  - enemies should opportunistically target weak player ships/drones
+  - command ships (cruisers, corvettes & frigates) will try to organise other ships/drones to surround dangerous targets
+  - command ships will suppress the use of active sensors amoung other ships if they think there are enough sensors
+  - command ships will detect if an enemy has disappeared and try to regain detection
+  - stations have ai system and can act like ships
+  - special firing rules for usurpers and painters
+* Remove radiation skirmish modifier
+* Put upper & lower bounds on disruption percentage regardless of range
+* Fix bug where circling AI entities starting on circle centre would remain stationary
+* Change Corvette default loadout to remove small beam & add decoy and another laser drone
+* Flow panel tooltips now cleared on drag
+* Fix bug where flow panels sometimes start in random position
+* Starting rotation of player ships in skirmish is now pointing away from start point
+
+0.9.22 (15th January 2016) -> 0.9.23 (3rd February 2016)
+* Fix bug where online games go to wait status after replay when still planning
+* More specific wording in the tutorials
+* Stacked entities display a single (combined) target marker
+* Make uncontrolled controllables have a disruption probability of 100%
+* Fix bug with stack selectors being destroyed rather than deleted if launch -> select -> cancel launch
+* Stop scrolling views from rotating the camera
+* Fix tooltips on flowtables appearing even if flowtable is not visible
+* Allow all scrollviews to be dragged
+* Add ordering to the running of enemy AI - more powerful ships go first (useful for future AI work)
+* Rework of Skirmish settings
+* Fix bug with "Move Towards" with intermediate waypoints where the path was calculated in reverse (so sometimes no LOS)
+* Remove foreach in focus buttons and pool them
+
+0.9.21 (1st January 2016) -> 0.9.22 (15th January 2016)
+* Darken the narrative background to make it clearer in cluttered scenarios
+* Move most in-mission narrative message to planning phase
+* Fix bug where internal planet radius was too large
+* Fix bug where switching teams means that bringing a focus button into view moves the wrong focus container
+* Update Victory Stripe conditions in the campaign to be more realistic
+* Only draw stats grid a maximum of once per frame
+* Display plans during all non-playing phases
+* Reload & display plans on online game reload
+* Make stats panel 10px shorter and move hull/noise labels closer to their corresponding gui elements
+* Nerf shields and repairers a little to prevent undamagable ships
+* Enemies should spiral towards optimal range, rather than move in straight lines (but they may still appear to move in a straight line if optimal range is a long way from their current position - ie a very tight spiral)
+* Don't add online placeholder entities into focus buttons (causing it to jump)
+* Periodically reload Steam friend status & display Steam avatar
+* Switch teams now works in replays
+* Stop server automatically creating a default game if a steam friend challenge expires due to waiting time 
+* Add time remaining to online game button
+* A successful challenge -> game transition no longer sometimes incorrectly display as cancelled
+* Pool TargetMarker and StackSelector for performance
+* Cache gui tweens
+* Colour and make larger the "to hit percentage". Players can now shoot with lock's down to 0%. Make Gui firing system consistent.
+* Highlight target drone only once at end of T1
+* Prevent players being able to challenge themselves
+* Updated audio settings to use less memory/cpu
+* Object pool can now expand if necessary
+* Adjust layers to remove unnecessary physics checks 
+* Remove hashsets from planners for performance
+* Allow multiple feedback messages & clean up feedback screen
+* Larger and more readable online wait screen font
+* Click fallthrough added to targeting stats HUD
+* Can now use either Delete or Backspace to remove a waypoint by default. Also fix up secondary controls a little.
+* Another attempt to ensure "ALT" hint in tutorial and component grids are always shown correctly
+
+0.9.20 (24th December 2015) -> 0.9.21 (1st January 2016)
+* Fix a stupid casting bug
+
+0.9.19 (30th November 2015) -> 0.9.20 (24th December 2015)
+* When checking stacks for unstacking immediately check newly created stack too, in order to prevent incorrect stacks
+* Stricter online plan validation
+* Action button flashes if online results ready to be played
+* Fix positioning of turn marker in the menu on some resolutions
+* Stop explosion camera shake if camera is rotating
+* Possible now in Decode pick up the Codebreaker's pod the same turn their ship is destroyed
+* Set background music to play continuously through the all phases (previously only played for planning)
+* Set default SFX volume to 75% & Master volume to 80%. Also lowered volume on most weapons by 20%.
+* Focus point for online games
+* Fix bug where control options are sometimes all bunched up on top of each other
+* Made hermit station model a little smaller so it doesn't extend beyond unknown sphere
+* Mute music on application focus loss (thanks anonymous feedback person!)
+* Fix colliders on End menu Next button (thanks anonymous feedback person!)
+* Able to challenge Steam friends
+* So many changes to the way online duels are set up I can't list them all here
+* Don't recalculate threat map after a replay
+* Server returns game time remaining in session status
+* In tutorial, highlight player ship if it needs to be selected for commands to work
+* Stop flickering when starting to move (mainly on macs) 
+
+0.9.18 (27th November 2015) -> 0.9.19 (30th November 2015)
+* Added tactical tips to early missions
+* Cover more tutorial situations
+* If highlighted entity is stacked then highlight its stack selector
+* Set minimum signature to 0 rather than 1
+* Ensure ring of move disc is drawn to correct proportions
+* Better mission button positioning
+
+0.9.17 (23rd November 2015) -> 0.9.18 (27th November 2015)
+* Steam achievements
+* Made Pickup a little easier
+* Adjusted down detection boundaries
+* Added heightmarkers to tutorial move targets
+* Increased detection decay and decreased mid-range passive sensor sensitivity to encourage hiding
+* Prevent delta location being inside naturals (move instead to nearest free space)
+* AI targeting by most dangerous now orders by closest if danger levels are equal (so targeting only drones works better)
+* Hide actions (like cm & sensors) for stacked entities so they do not appear as if the top-of-stack is planning them.
+* Prevent overlap of text and completed tick on missions list for some resolutions
+* Enable targetting of entities in the same stack as firer
+* Reset Heightmarker layer when depreviewed (stopping height markers displaying randomly)
+* Remove generated name tag from generated ships
+* Clicking on offscreen indicators now selects & focuses, rather than just focus
+* Clicking on stack selector now selects, rather than just moving to the top of the stack
+
+0.9.16 (12th November 2015) -> 0.9.17 (23rd November 2015)
+* Caught missed situations in Decode & Burglary
+* Updated component description text
+* Make Loadout stats flash colour on load/unload & increased font size
+* Only depreview mouse pointer if in preview mode
+* Remove = gap in some < or > conditional tests
+* Codebreaker in Decode now only targets drones
+* Added text to say the 'F' key is for focus (as well as center) & the station in Layers has shields & the codebreaker has a jammer 
+* Position noise markers better on focus buttons (esp. for 1920 resolutions)
+* Position "ALT+mouse" hint better (esp. for 1920 resolutions)
+* Fix bug where drones launched from stations had no texture applied
+* Fix bug where a corrupted .dat file (how did that happen?) can cause TurnPlayTime out of bounds and break the game 
+* Fix bug where use of the loadout filter may cause filtered components to be reused in the loadout grid causing the grid to act strangely
+* Fix bug where replaying a turn in which a stacked entity is first detected and becomes Categorised or better causes crash
+* Make it possible to skip the first two (introductory) missions
+* Added 4 new SP missions: Clear, Factory, Rescue, Last Stand
+* Remove SSL to speed online communication (no secret information is transmitted for Steam users)
+* Force garbage collection during display of phase markers
+
+0.9.15 (4th November 2015) -> 0.9.16 (12th November 2015) (Intial Steam EA)
+* Enable rotation in vertical move mode
+* Adjusted Void skybox to remove sharp edges on galaxy image
+* Add message suggesting a Steam review when finishing the last mission
+* Show button prompts for move discs in tutorial 
+* Make Illumination, Seizure & Burglary missions a bit harder
+* Fix bug where games crashes if starting a mission overcapacity due to (very lucky!) use of a usurper in the previous mission
+* Fix bug where component highlight could be showing even when required entity is not (sometimes caused crash)
+* Steam cards
+* Right-click + Alt hint now shown in entity highlight when required
+* Boost power of disruptors against uncontrolled drones
+* Stop HUD Selector going past left or bottom edge of screen
+* Prevent rotation of background camera due to mouse movement in scenario menus
+
+0.9.14 (8th October 2015) -> 0.9.15 (4th November 2015)
+ * Fix screen size issues - all screen sizes down to 1024w by 720h should work and appear centered
+ * Early Access setup
+ * Balancing work
+ * Numerous fixes for online play
+
+0.9.13 (18th September 2015) -> 0.9.14 (8th October 2015)
+ * MoveTo entity now works on any mouseclick & path shows to entity
+ * Feedback sends hashed SteamId if available
+ * Activating planners with an index always activates the planner, even if it is already activated
+ * Steam clients automatically login to online server
+ * online server and associated scripts deployed
+ * Option to store logs
+ * Image effects turned off if not at "Fantastic" image quality
+ * Steam name used for feedback if available
+ * Unremovable loadout items
+ * Random skirmish options
+ * Added bloom to star flares
+ * More SFX noises & shorter UI noises
+ * Reworked Loadout screen
+ * Custom mouse pointer
+ * Don't show offscreen indicator for stacked entities, show stack size on top instead
+ * Removed info tooltip on stats components - put description on normal tooltip. Made number bigger.
+ * More visible selection highlight in id ring (for unknown's too). Removed stack indicator.
+ * Added Splash screen
+ * Music plays even with 0 volume
+ * Reworked control system & GUI
+ * Removed Achievements
+ * New Tutorial
+ * Removed log
+
+0.9.12 (1st September 2015) -> 0.9.13 (18th September 2015)
+ * Added concede button in online duels
+ * Added reload button in online duels
+ * Display timers in online duels
+ * Update entity stats and descriptions
+ * Set maximum tooltips width (after which it line breaks)
+ * Simple profanity filter for online player names
+ * New modular narrative system, narratives now stay on by default until button press or trigger (not time based)
+ * 4 new missions in campaign
+ * Updated soundtrack so each map has its own song
+ * Block text now uses the more readable Universalis font
+ * Fix beam noise (not stopping) bug
+ * So many little bugfixs and mission changes I lost track of them
+
+0.9.11 (31st July 2015) -> 0.9.12 (1st September 2015)
+ * In client scenario launched entities now have the same locks on them as it's launcher
+ * Weapons fire now tracks target better and goes a little slower
+ * Non-entity focus points now in the right place
+ * Entities can now only be disrupted once per turn
+ * Playing/Replaying title card now appears 0.25 seconds before action starts (so it doesn't overlap)
+ * Id rings & spheres fade and resize smoothly
+ * Online duels
+
+0.9.10 (17th July 2015) -> 0.9.11 (31st July 2015)
+ * Centered focus & component panels
+ * Reorganised stats panel
+ * Selectors now change size according to screen size
+ * Reorganised skirmish screen
+ * Heightmarkers handle selection changing during non-planning phase.
+ * Pods are now unlaunchable
+ * Fix issue with incorrectly (and gameable) unknown sphere sizes
+ * Fixed decoy's strange path
+ * Move mission loadout screen to start of mission, rather than end of previous
+ * Updated Loadout panel
+ * Updated Turn Control panel
+ * Some performance improvements
+ * Added a phase notification panel for Play, Plan & Replay phases
+ * Fixed bug where button click sfx not playing sometimes
+
+0.9.9 (24th June 2015) -> 0.9.10 (17th July 2015)
+ * Basic Steamworks integration
+ * Can rotate/zoom/pan when setting movement waypoints
+ * Fixed bug where move line showed incorrect distance colouring
+ * Fixed bug with heightmarkers not highlighting properly. Also next move heightmarkers do not highlight now
+ * Added "move to" icon on entities when in move planning
+ * Added components: painter, cooler, linker, repairer, armor, shielding
+ * Improved Entity HUD positioning code so it is more consistent across different screen resolutions
+ * Behind the scenes changes to make adding modding support easier 
+ * Changes to support online play
+ * Lots of other little bugs fixed
+ 
+0.9.8 (12th June 2015) -> 0.9.9 (24th June 2015)
+ * Fixed bug where pod was being held over between missions
+ * Beam laser on research stations now correct
+ * Categorised sensors & weapons display in the stats panel again
+ * Update to Unity5 & updated many libraries & graphical assets
+ * Heightmarkers are displayed for selected entities when playing with the grid. Heightmarkers never displayed if the height is 0.
+ * Fixed problem with dragging waypoints caused by its collider being enveloped by heightmarker highlight collider.
+ * Natural entities descriptions are now in the right place.
+ * Fixed bug where planning actions sometimes were not displayed after replays or switching through a stack.
+ * Tutorial text now shows the actual key being used for a function rather than hardcoding it (in case a player changes it).
+ * Added some more tooltips.
+ * Fixed stats display crash if all drones launched from component view
+
+0.9.7 (5th June 2015) -> 0.9.8 (12th June 2015)
+ * Improved campaign workflow & smaller savefiles
+ * Stop tooltips appearing off the edge of the screen
+ * Some performance improvements
+ * Minor UI sizing and depth changes
+ * Fixed bug where asteroids' height marker box colliders were off-centre
+ * Added GUI SFX
+ * Fixed disruptor direction bug
+
+0.9.6 (25th May 2015) -> 0.9.7 (5th June 2015)
+ * Fixed log bug & decoy display & collider size
+ * Game icon
+ * Add "direction to offscreen enemy" icons
+ * Focus name flashes if a player ship has no plans
+ * Drones add to noise
+ * Set turrets and engine points on models rather than have everything originate at centre of model
+ * Pre-render explosions and weapon effects to prevent framerate spikes

@@ -1,0 +1,30 @@
+Current Version: 1.1.0 (13th March 2023)
+
+Known Issues:
+* Some builds have scenarios end abruptly (without final explosion) - hard to replicate, may be fixed with 1.1 (not seen since)
+* Possible, but unlikely, that Good AI may not find a positive EV plan within the timelimit, even if one exists - what to do?
+
+Immediate Roadmap:
+* Bugfixes
+* Look into Steam support?
+
+1.1.0 (13th March 2023)
+* Add Online support (if no connection do nothing and continue)
+  - Add feedback page
+  - Add JarrahTech news box
+  - Collect anonymous stats on player progress and locale
+* AI 
+  - if shooting does not destroy anything, then try the next base's shooting rather than check if a drop is possible (as no new spaces will have appeared)
+  - time limit stored in config file (timeout_seconds), defaults to 15 seconds - use  the best plan found so far if time expires
+  - try (a little) not to put bases that will be immediately destroyed right next to the players home
+* Change Tutorial text and ensure colours and controls referred to are correct when displayed
+* Code signed the executable (with a self-created certificate)
+* Make tutorial skippable and add a link to a YouTube video of the tutorial
+* Dropped bombs make a small explosion even if they don't destroy what they are on
+* Set explosions to be at the top of the render queue so they are not hidden by planets/bases
+* Fix tooltip for unclaimed powerup hexes
+* Stop unlocks running over menu if there are lots of them on game over screen
+* Give different enemy types different names
+
+1.0.0 (9th December 2022) 
+* Initial Release to Itch.io

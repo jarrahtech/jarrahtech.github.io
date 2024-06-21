@@ -1,0 +1,504 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jarrah Technology</title>
+    <link>http://www.jarrahtechnology.com/</link>
+    <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Jarrah Technology</description>
+    <language>en-us</language>
+    <pubDate>Fri, 21 Jun 2024 15:48:43 +0800</pubDate>
+    <lastBuildDate>Fri, 21 Jun 2024 15:48:43 +0800</lastBuildDate>
+
+    
+    <item>
+      <title>Nada</title>
+      <link>http://www.jarrahtechnology.com/2024/06/21/Linux.html</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/06/21/Linux</guid>
+      <description>&lt;p&gt;This update is for June, July &amp;amp; August. I’ve done no significant gamedev work in the last month and some other tasks have come up that mean nothing is likely to be done until mid-August (at the earliest). So no change.&lt;/p&gt;
+
+&lt;p&gt;Ok, a little change. My desktop is now Linux, to be exact Ubuntu 24.04 (it has a &lt;a href=&quot;https://en.wikipedia.org/wiki/Numbat&quot;&gt;numbat&lt;/a&gt; for a mascot!). I’ve used Windows for over 25 years now, but before  that my home computer was Linux going back to university. Linux still has some annoyances (I guess all OSes do), but it has moved on a long way, and a lot is better than I remember, especially in the ecosystem of programs available. You can even play decent comercial games on it now - what a world we live in.&lt;/p&gt;
+
+&lt;p&gt;Sometime:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nada</title>
+      <link>http://www.jarrahtechnology.com/2024/05/01/Nada.html</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/05/01/Nada</guid>
+      <description>&lt;p&gt;How many synonyms are there for nothing? I suspect if my current rate of doing nothing (on gamedev) contines I may find out! No progress in March or April.&lt;/p&gt;
+
+&lt;p&gt;Sometime:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>No Marketing?</title>
+      <link>http://www.jarrahtechnology.com/2024/03/01/Marketing.html</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/03/01/Marketing</guid>
+      <description>&lt;p&gt;Last month I finished the little webtool idea - at least enough that it worked. Of course doing a very barebones MVP generated an extremely long list of possible improvements. Not going to post the details, as I am not certain I’ll do anymore work on it. The result is out of my usual area so I’m not sure if its worth making it user-friendly and then marketing it. I doubt my ability to sell it and even if I did a good job, I have little confidence it would generate much income. So I’ll keep it on the back burner, and get to trying to create Godot prototype for now. Didn’t manage to properly start that task last month, just reading and prep, so time to get coding.&lt;/p&gt;
+
+&lt;p&gt;This month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alternatives</title>
+      <link>http://www.jarrahtechnology.com/2024/02/02/Alternatives.html</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/02/02/Alternatives</guid>
+      <description>&lt;p&gt;I am becoming increasingly unimpressed with Javascript based gamedev. Perhaps it is time for trying another engine. In the meantime, I have been trying out Javascript for something it is very good at - websites. I reimplemented the SHD online feedback/stats engine using it in under a week. The tooling around JS is much better than I’m accustomed. Such a smooth process and it puts doing anything in Scala to shame. Now I am trying to create a tiny MVP web tool, it shouldn’t take too long. After that I’m going to try the &lt;a href=&quot;https://godotengine.org/&quot;&gt;Godot game engine&lt;/a&gt;. The buzz is that it has improved greatly over the last 6 months and my initial dismissal may no longer be valid. After that I just need to choose an engine and stick with it.&lt;/p&gt;
+
+&lt;p&gt;This month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Other non-game-prototype&lt;/li&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nothing</title>
+      <link>http://www.jarrahtechnology.com/2024/01/02/Coop.html</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/01/02/Coop</guid>
+      <description>&lt;p&gt;So there was some progress, just nothing with gamedev. I worked on various admin and household tasks. For instance, I designed and built the chicken coop below.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;/assets/posts/general/chicken_coop.png&quot; alt=&quot;Chicken coop&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Typescript/Babylon.js tests and prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nothing</title>
+      <link>http://www.jarrahtechnology.com/2023/12/01/Nothing.html</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/12/01/Nothing</guid>
+      <description>&lt;p&gt;Is it a progress report when there is no progress?&lt;/p&gt;
+
+&lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Typescript/Babylon.js tests and prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rewrite</title>
+      <link>http://www.jarrahtechnology.com/2023/11/02/Rewrite.html</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/11/02/Rewrite</guid>
+      <description>&lt;p&gt;Over the last month I have continued rewriting my libraries for the third time, currently into Typescript, having given up on Scala. I still like Scala. It would be my favorite language to code in, if I never wanted to actually deliver anything. Unfortunately its tooling is atrocious. It is a common (and usually hyperbolic) trope to claim that a language is dying. While I’m not going to say that, mainly due to experience, the Scala community does not feel thriving. Typescript was the obvious choice since I was transpiling Scala into Javascript anyway to use the Babylon.js library. The process has been very smooth (especially the IDE tools). Still, I’m not sure its the right decision - Rust with various game engines or C# with Godot being the  other contenders.&lt;/p&gt;
+
+&lt;p&gt;Work has been slow due to various around-the-house tasks that need to be done before the summer heat arrives. Still In a week or so I should be back where I was before going to China, but in a new language. Then I get back to implementing more prototype/test code towards the next game.&lt;/p&gt;
+
+&lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Typescript/Babylon.js tests and prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Smug Mode</title>
+      <link>http://www.jarrahtechnology.com/2023/10/01/Smug-Mode.html</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/10/01/Smug-Mode</guid>
+      <description>&lt;p&gt;I’m just back from a month-long overseas holiday. So no signiticant work has been done since the last report, and the coming month will be
+spent getting back up to speed. That is the progress report, but …&lt;/p&gt;
+
+&lt;p&gt;While I was away Unity announced a new pricing policy, suffered a huge developer backlash, and then &lt;a href=&quot;https://www.reuters.com/technology/unity-software-rolls-back-parts-new-pricing-policy-after-backlash-2023-09-22/&quot;&gt;rolled most of it back&lt;/a&gt;. The important change was the addition a of a per-install fee on all Unity games, even those that were made under a previous versions of Unity (which supposedly have unchangeable terms &amp;amp; conditions). There were also concerns around what counted as an install and how it would be measured. The rollback has kept the per-install fee, but removed the retroactivity and added a high install hurdle before fees accrue. The impression is that many developers feel this is good enough. I don’t.&lt;/p&gt;
+
+&lt;p&gt;I have two Unity games available. Both Concealed Intent and SpaceHexDuel are written using Unity v5, first released in 2015 and last updated in 2019. Both were released long before these new fees were announced and both are far from clearing the install hurdle. So they should be safe from Unity’s capriciousness. However, the idea that Unity could change the terms of the agreement I had with them from nearly 10 years ago (when I purchased the engine, there has been no money or purchases since) just removes any trust I have in them. Honestly, fuck Unity!&lt;/p&gt;
+
+&lt;p&gt;Luckily, I have a small headstart on abandoning Unity - thus the smugness. Back in April &lt;a href=&quot;https://www.jarrahtechnology.com/2023/04/03/Annoyance.html&quot;&gt;I wrote how I was too annoyed by Unity to keep using it&lt;/a&gt;. After a brief dalliance with Three.js I decided to use Babylon.js as my new engine. Since then I haven’t gotten far due to various distractions (like being out of the country for a month). Now there is a flood of devs away from Unity and most seem to be going to Godot. Did I make the right choice? I don’t know. Time to create some prototypes to find out!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>http://www.jarrahtechnology.com/2023/08/01/Learning.html</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/08/01/Learning</guid>
+      <description>&lt;p&gt;Over the last month I have continued learning the Scala.js/Babylon.js environment by creating a prototype for my next game. Progress is slow but steady, and no blockers have been hit so far. I consider that a success. Progress will continue being slow for the next 2 months at least. Partially because it is new, and many of the familiar tools are missing, but also because there will be some large disruptions in my non-work life over the next couple of months. For that reason, do not expect a progress report next month. Although no loss, as it would just be more of the same.&lt;/p&gt;
+
+&lt;p&gt;Last month, next month and the month after:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;More Scala.js/Babylon.js tests&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bad Skink</title>
+      <link>http://www.jarrahtechnology.com/2023/07/03/Bad-Skink.html</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/07/03/Bad-Skink</guid>
+      <description>&lt;p&gt;Last month I started working on Skink, a game narrative library. Now I can annouce Skink is dead. Well, maybe not permanently dead, but dead as a reimplemetation of Ink. I just couldn’t see it working for &lt;a href=&quot;https://emshort.blog/2019/11/29/storylets-you-want-them/&quot;&gt;storylets&lt;/a&gt; (which is what I need) rather than as the engine driving a whole game (which I don’t). Unfortunately, I still spent significant time this month on it before that realisation. The rest of the month I worked on prototypes/tools for future Scala.js/Babylon.js games. I plan to continue doing that all through July too.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stopped work on Skink library&lt;/li&gt;
+  &lt;li&gt;More Scala.js/Babylon.js tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;More Scala.js/Babylon.js tests&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Skink</title>
+      <link>http://www.jarrahtechnology.com/2023/06/02/Skink.html</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/06/02/Skink</guid>
+      <description>&lt;p&gt;May seemed quite busy as I was working through it, but as expected it was not a month of great achievements. First I created some libraries out of HexTacToe to support Scala.js/Babylon.js games (see &lt;a href=&quot;https://github.com/jarrahtech/kassite&quot;&gt;Kassite on Github&lt;/a&gt;), and also some work adding Electron.js support so I could create native builds. Then I created the next IPO prototype - the first playtest went quite well (more are required). The last fortnight was spent working on Skink, a Scala reimplementation of the &lt;a href=&quot;https://github.com/inkle/ink&quot;&gt;Ink language&lt;/a&gt; for game narratives. It is an interesting project, although I’m not sure how useful it will be given I have sworn off story in my games. There was also a great deal of household tasks completed. Thankfully that todo list is much shorter now.&lt;/p&gt;
+
+&lt;p&gt;Right now I’m focussed on finishing Skink. Or at least finished enough to be minimally useful. It is just stubborness really. I hope to have that done in a couple of weeks and after that I’m going to do some tech tests on parts of Ci2d. Plus, I’ll platest and iterate on IPO whenever possible.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Created libraries (from HexTacToe) to support Scala.js/Babylon.js game creation&lt;/li&gt;
+  &lt;li&gt;Worked on Skink library&lt;/li&gt;
+  &lt;li&gt;Created next IPO prototype and tested it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Test IPO some more&lt;/li&gt;
+  &lt;li&gt;Finish initial work on Skink&lt;/li&gt;
+  &lt;li&gt;More Scala.js/Babylon.js tests&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Babylon</title>
+      <link>http://www.jarrahtechnology.com/2023/05/02/Babylon.html</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/05/02/Babylon</guid>
+      <description>&lt;p&gt;Over the last month I investigated alternatives to the Unity3d game engine. In particular, the Javascript based Babylon engine (I took a look at Tyrian too, but it is 2d only so I moved on). Now there is HexTacToe, an incredibly simple hex based tic-tac-toe game created as a Scala.js and Babylon.js proof-of-concept. &lt;a href=&quot;https://www.jarrahtechnology.com/HexTacToe/&quot;&gt;Play it here&lt;/a&gt; and the &lt;a href=&quot;https://github.com/jarrahtech/HexTacToe&quot;&gt;code is on Github here&lt;/a&gt;. I still need to clean it up a bit, but the functionality is all done. The point has been proved, all these technologies play nicely together. There was the occasional frustration, but overall it went quite well. I am impressed. There is not the community or game tooling available for Babylon as for Unity. However, there are other benefits. Definitely something for me to think about. I will need to write that post on pros/cons of different engines from my point-of-view.&lt;/p&gt;
+
+&lt;p&gt;April was the month highest gamedev hours since starting this fulltime, largely because I would not give up on the problems integrating the technologies in HexTacToe (it always felt like I was so close to getting it working, and I generally was). A nice target for me to aim for again in future, but not this coming month. There is a long list of non-gamedev tasks to get done that I have been ignoring since before going to Adelaide in March. So I’m lowering expectations for May. Gamedev-wise it will be mainly reading and experimentation.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Updated hex lib &amp;amp; started scala ink (skink) library&lt;/li&gt;
+  &lt;li&gt;HexTacToe - simple hex based tic-tac-toe game as a Scala.js and Babylon.js proof-of-concept&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clean up HexTacToe for ideas on common libs and patterns&lt;/li&gt;
+  &lt;li&gt;Next IPO prototype?&lt;/li&gt;
+  &lt;li&gt;New engine experimentation?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Annoyance</title>
+      <link>http://www.jarrahtechnology.com/2023/04/03/Annoyance.html</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/04/03/Annoyance</guid>
+      <description>&lt;p&gt;Last month split into 4 parts. First the &lt;a href=&quot;https://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1.html&quot;&gt;1.1 version of Space Hex Duel was completed and released&lt;/a&gt;. Next I worked on testing out new tools and setting up the Ci2D dev environment. Then I gave up on that in annoyance and just did some fun coding before finishing with a holiday to Adelaide.&lt;/p&gt;
+
+&lt;p&gt;What annoyed me? Unity. In particular Unity 5.6, and the lack of support in modern libraries and technologies. Admittedly that version is about 6 years old, but it is the version I own (forever) and the prices have risen significantly for the current version. Do I really want to spend the money for an update? I don’t need any of the big new features, but there will come a time that I just won’t be able to build and run with the old version anymore. Already VS Code (my IDE) no longer supports the version of .Net required by 5.6 (I had to trick it to work productively). I don’t want to end up trapped. So it is time to investigate my options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stay on Unity 5.6 and suck it up&lt;/li&gt;
+  &lt;li&gt;Move to the current free version of Unity&lt;/li&gt;
+  &lt;li&gt;Move to the current paid version of Unity&lt;/li&gt;
+  &lt;li&gt;Move to a similar open source engine like Godot&lt;/li&gt;
+  &lt;li&gt;Move to another big (but quite different) engine like Unreal&lt;/li&gt;
+  &lt;li&gt;Move to a Javascript engine (like Tyrian or Babylon) and release to the web&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They all have their pros &amp;amp; cons (maybe I’ll write a post about them). For now I am going to check out some Javascript options, largely because those are the ones I know least about.&lt;/p&gt;
+
+&lt;p&gt;Also I learnt that I should restrict the ordering of actions in turn-based games to reduce the space of possible actions. This will make the search space for AI much smaller. For example, in SHD it is possible to shoot or place your piece in any order. Just changing this (eg forcing the player to place before shooting) would reduce the possible moves in a turn by orders of magnitude in the worst case (when there are lots of bases). I must remember this in future.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finished and released SHD 1.1 (and did a little marketing)&lt;/li&gt;
+  &lt;li&gt;Setup Ci2D in Unity 5.6&lt;/li&gt;
+  &lt;li&gt;Investigated AI, Rewired, and updated libraries - none would work for SHD&lt;/li&gt;
+  &lt;li&gt;Added steam manager to common Unity utilities&lt;/li&gt;
+  &lt;li&gt;Hex library&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish the hex library&lt;/li&gt;
+  &lt;li&gt;Investigate other game engines (starting with Javascript ones)&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Space Hex Duel 1.1 Released!</title>
+      <link>http://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1.html</link>
+      <pubDate>Sun, 12 Mar 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/03/12/Space-Hex-Duel-1.1</guid>
+      <description>&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
+
+&lt;p&gt;The 1.1 patch of Space Hex Duel is now released and out on &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Itch.io&lt;/a&gt; (and still PWYW - effectively free!). It is actually quite small release, there were no game breaking bugs, so this is mainly “quality of life” improvements. Normally this would be version 1.0.1, but there are a couple of extra screens to support an online connection (feedback page, news display on the main page), so I bumped it to 1.1. Other notable changes include: a timeout on the good AI so It doesn’t sit for minutes in hard situations looking for the best possible move; and a reworded tutorial with a YouTube video (embedded at the bottom of this post) for those who just want to jump straight in. The full changelist is below.&lt;/p&gt;
+
+&lt;p&gt;Next up I should start some prototyping work for my next game. Although I’m considering releasing Space Hex Duel to Steam at some point, which will require a few extra tasks. So maybe a 1.2 release in a few months to add those?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Space Hex Duel 1.1.0 (13th March 2023)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add Online support (if no connection do nothing and continue)
+    &lt;ul&gt;
+      &lt;li&gt;Add feedback page&lt;/li&gt;
+      &lt;li&gt;Add JarrahTech news box&lt;/li&gt;
+      &lt;li&gt;Collect anonymous stats on player progress and locale&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;AI
+    &lt;ul&gt;
+      &lt;li&gt;if shooting does not destroy anything, then try the next base’s shooting rather than check if a drop is possible (as no new spaces will have appeared)&lt;/li&gt;
+      &lt;li&gt;time limit stored in config file (timeout_seconds), defaults to 15 seconds - use  the best plan found so far if time expires&lt;/li&gt;
+      &lt;li&gt;try (a little) not to put bases that will be immediately destroyed right next to the players home&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Change Tutorial text and ensure colours and controls referred to are correct when displayed&lt;/li&gt;
+  &lt;li&gt;Code signed the executable (with a self-created certificate)&lt;/li&gt;
+  &lt;li&gt;Make tutorial skippable and add a link to a YouTube video of the tutorial&lt;/li&gt;
+  &lt;li&gt;Dropped bombs make a small explosion even if they don’t destroy what they are on&lt;/li&gt;
+  &lt;li&gt;Set explosions to be at the top of the render queue so they are not hidden by planets/bases&lt;/li&gt;
+  &lt;li&gt;Fix tooltip for unclaimed powerup hexes&lt;/li&gt;
+  &lt;li&gt;Stop unlocks running over menu if there are lots of them on game over screen&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Give different enemy types different names&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/games/spacehexduel&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/press/spacehexduel.html&quot;&gt;Presskit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Storefront&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+    &lt;iframe frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1823532?linkback=true&quot; width=&quot;552&quot; height=&quot;167&quot;&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Space Hex Duel by JarrahTech&lt;/a&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+    &lt;iframe height=&quot;167&quot; src=&quot;http://www.youtube.com/embed/dvyQinkVeHk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solid Month - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2023/03/01/Solid.html</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/03/01/Solid</guid>
+      <description>&lt;p&gt;February was a solid month. Nothing flashy or fancy, but just clearing the task list. Not bad considering I lost probably 4-5 complete days to tasks around the house. A couple of interesting issues arose. It turns out that the version of .Net Unity 5.6 uses does not support TLS1.2+ so doesn’t work on recent web services - like the host I deployed the generic server. That took a little fiddling to get working. Before working out a solution, for a couple of days, I thought the whole thing would need to be scrapped - I was not a happy boy! Also realised I needed to change the server to build-in internationalisation of strings - that was was fiddly, but not hard.&lt;/p&gt;
+
+&lt;p&gt;The SHD patch release is not done, but very close. Now I just need to: finish up the tutorial changes; record a video of me doing the tutorial; and then final testing. There is a good chance this will be complete in early March. Then hopefully my Internet will hold up long enough to do a little marketing. I’ll be losing a week due to holidays, so just those few tasks are the goals for the month. If there is time after that there always things to do: start Ci2d; improve the generic server; write libraries. I’ll work it out when the time comes.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Generic game server deployed and integrated with SHD using a replicated DB&lt;/li&gt;
+  &lt;li&gt;Reorganised SHD code to split out a Common Unity Toolkit as a submodule&lt;/li&gt;
+  &lt;li&gt;AI Timeout &amp;amp; other improvements in SHD&lt;/li&gt;
+  &lt;li&gt;Started on SHD tutorial rework&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Release SHD 1.1 and market it a little&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Happy Coding - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2023/02/02/Happy-Coding.html</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/02/02/Happy-Coding</guid>
+      <description>&lt;p&gt;There was a surprise with the JarrahTech end of month summary. I was expecting to require a whole load of excuses why I did so few hours of work. I still have those excuses (I have been spending many hours doing maintenance on the house), but it turns out they are not needed. Without realising it, I have spend a respectable amount of time completing a basic generic game server. It was a mostly enjoyable process where I tried out a load of new libraries and technologies, so maybe that is why the time just disappeared?&lt;/p&gt;
+
+&lt;p&gt;Anyway, the generic server is largely done. The functionality needed at this stage is all there, but a couple of unexpected &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; related issues came up in a test deploy (database replication and external logging). When they are done I’ll write the integration into SHD and then the patch release. Still looking good for this month. I’m not sure I chose the best technology for the server, but I’m not redoing it now - maybe later.&lt;/p&gt;
+
+&lt;p&gt;I also had a chat with people about what game I should develop next. In a complete non-surprise it will be Concealed Intent 2D (a working title, not the final name). It will combine the stealth focused synchronous turn-based spaceship combat of Concealed Intent with a procgen rogue-like and on a flat 2D map (rather than full 3D). Two other ideas also caught people’s attention. As a result there may be some background work on the IPO card game, and maybe a little experimentation towards something else.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finished generic game server (stats, feedback, news, etc …)&lt;/li&gt;
+  &lt;li&gt;Chose Concealed Intent 2D (ci2d) as my next project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Deploy generic game server&lt;/li&gt;
+  &lt;li&gt;Work on (and hopefully complete) a 1.1 patch release for SHD&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inevitable - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2023/01/04/Inevitable.html</link>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2023/01/04/Inevitable</guid>
+      <description>&lt;p&gt;The big news from last month is &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Space Hex Duel is released&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;The plan was to take the rest of December dealing with a little marketing, the holidays and do some coding for fun before choosing the next project. Well I managed two of those. My internet connection died the day after release and only got repaired nearly a fortnight later, so not much marketing. There have been seven downloads of the game and two people got back to me - one liked it (and paid for it despite being PWYW - thanks!), the other had difficulty with the tutorial. Thanks to the feedback and some of my own thoughts, I now have a couple of things to change. Time for a patch release. It probably won’t be for this month, but hopefully early Feb it will be done. Then I’ll do some more marketing and revisit a possible Steam release.&lt;/p&gt;
+
+&lt;p&gt;I’m also back working on a generic online game server. Not for playing SHD online, but to handle all the other stuff like feedback, game stats, etc. As part of the patch release I will build this into SHD. It will be in keeping with the original idea of SHD as a testbed for new libraries. As for the next project, last month I had 5 ideas worth pursuing, which I have now whittled down to 6 (I had a good idea for a simple card-battler). Hmmmm.&lt;/p&gt;
+
+&lt;p&gt;Done last month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Little fixes in SHD&lt;/li&gt;
+  &lt;li&gt;Released SHD to Itch with a little marketing and support&lt;/li&gt;
+  &lt;li&gt;Rework internal Scala libraries&lt;/li&gt;
+  &lt;li&gt;Worked on generic game server (stats, feedback, news, etc …)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tasks for this month:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish generic game server&lt;/li&gt;
+  &lt;li&gt;Work on patch release for SHD&lt;/li&gt;
+  &lt;li&gt;Think about next project&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Space Hex Duel Released!</title>
+      <link>http://www.jarrahtechnology.com/2022/12/09/Space-Hex-Duel-Released.html</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/12/09/Space-Hex-Duel-Released</guid>
+      <description>&lt;center&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;&lt;img src=&quot;/assets/posts/ahb/capsule_lg.png&quot; alt=&quot;Space Hex Duel&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
+
+&lt;p&gt;It is done! Space Hex Duel is now available on &lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Itch.io&lt;/a&gt; as a Pay-What-You-Want (PWYW) download (suggested donation: US$2).
+I recommend interested people download it for free, and if they enjoy it and would like to say thankyou, then go back and donate. I chose PWYW as a test - to get as
+many people as possible playing and see if it has any potential. Also, because it has not been playtested by anyone other than myself - hopefully there will
+not be many issues.&lt;/p&gt;
+
+&lt;center&gt;
+    &lt;iframe height=&quot;167&quot; src=&quot;http://www.youtube.com/embed/62viGwySbjk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+    &lt;iframe frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1823532?linkback=true&quot; width=&quot;552&quot; height=&quot;167&quot;&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Space Hex Duel by JarrahTech&lt;/a&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;p&gt;For the basic marketing material see above and:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/games/spacehexduel&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jarrahtechnology.com/press/spacehexduel.html&quot;&gt;Presskit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jarrahtech.itch.io/spacehexduel&quot;&gt;Storefront&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So what next?&lt;/p&gt;
+
+&lt;p&gt;The first task will be to let people know the game is released. Time to dust off my mailing list and Twitter/Mastodon accounts. Probably a few other places too. If nothing else it is good practice.
+Next, fix any bugs that come up. Since I should have tons of time apart from bugfixing (&lt;em&gt;fingers crossed&lt;/em&gt;), I need to decide what to do next. I have 5 possibilities, from the obvious (Concealed Intent 2D) to the unusual (not telling yet!). I also need to decide if I should release this game to Steam. I’m tempted, just because Steam is so big compared to everyone else in PC games that if it is not there then the game will be obscure. However, releasing to Steam will require some extra work, and I don’t want to start that yet. Instead I will mostly spend the few weeks mostly on just-for-fun programming and household tasks. The plan being to start the new year on the next game (and if decide to do it, Steam).&lt;/p&gt;
+
+&lt;p&gt;Happy Holidays.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>So Close - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/12/04/So-Close.html</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/12/04/So-Close</guid>
+      <description>&lt;p&gt;Ahhh, I am agonisingly close to release! This progress report is delayed a few days because I thought I could get it out yesterday. The game is complete (enough :). However, I forgot how long it takes to make a trailer video and other marketing materials. Now the plan is to release by Friday (9th). The trailer should be done on Monday, but then there is copy/images for various forums (Itch, website, IndieDB, mailing list, …) and I have decided to have another go at improving the AI time estimation function (presently it can be badly wrong).&lt;/p&gt;
+
+&lt;p&gt;My TODO list for the month:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Release!&lt;/li&gt;
+  &lt;li&gt;???&lt;/li&gt;
+  &lt;li&gt;Profit&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The tasks completed last month were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finished Tutorial&lt;/li&gt;
+  &lt;li&gt;Improved UI and text&lt;/li&gt;
+  &lt;li&gt;Lots of QA/bugfixing&lt;/li&gt;
+  &lt;li&gt;Started creating marketing materials&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Now Or Never - Progress Report</title>
+      <link>http://www.jarrahtechnology.com/2022/11/01/Now-Or-Never.html</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2022/11/01/Now-Or-Never</guid>
+      <description>&lt;p&gt;A little change to format in this progress report. Rather than say what I hope to achieve, instead the below list is SHD’s remaining tasks (in order). It is also my current plan. The goal is the release of SHD to Itch.io by the end of the month. That is it. This section comes first, because I’m focussed on the finish. Tasks 1 &amp;amp; 4 may take some time; the rest should be fairly straightforward (fingers crossed).&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tutorial&lt;/li&gt;
+  &lt;li&gt;Translations: remove non-english and check text&lt;/li&gt;
+  &lt;li&gt;Possible small changes: should blast self-destruct? how many levels use dumb AI?&lt;/li&gt;
+  &lt;li&gt;Clean/test/build&lt;/li&gt;
+  &lt;li&gt;Itch.io: build, screenshots, cover image &amp;amp; release&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Last month I ruthlessly culled the list of remaining tasks. This game need to be finished ASAP. The AI component is good enough. I could work on it for many months if I wanted, but won’t. The online component is dropped, the feedback screen is gone. The project’s README file now has over a dozen other possible small improvements, plus a few of bigger ones (but was online play ever a real possibility?). I don’t expect to revisit them.&lt;/p&gt;
+
+&lt;p&gt;The tasks completed last month were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finished AI&lt;/li&gt;
+  &lt;li&gt;Completed UI sizing for different screen sizes (this took most of the time, especially tracking down a DPI scaling bug)&lt;/li&gt;
+  &lt;li&gt;Updated splash screen&lt;/li&gt;
+  &lt;li&gt;Bugfixes&lt;/li&gt;
+  &lt;li&gt;Started on tutorial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anyway, time to get back to it!&lt;/p&gt;
+</description>
+    </item>
+    
+
+  </channel> 
+</rss>

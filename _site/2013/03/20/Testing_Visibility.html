@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing for Partial Visibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jarrah Technology">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.jarrahtechnology.com/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jarrahtechnology.com/rss.xml" />
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/pygments/default.css" rel="stylesheet">
+    <link href="/assets/css/jt.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+        background-color: #9c0000;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        margin-bottom: 10px;
+      }
+      .navbar-inner {
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>    
+    <div class="container">
+      <div class="hero-unit">
+        <a href="/"><img src="/assets/img/logo.png" alt="Jarrah Technology logo"/></a>
+      </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-right">
+              <li class=""><a href="/">Home</a></li>
+              <li><a href="/press">Press</a></li>
+              <li class=""><a href="/news">News</a></li>
+              <li class=""><a href="/games">Games</a></li>
+              <li class=""><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="row">
+<div class="span12">
+<h4>March 20, 2013</h4>
+<h4>Category: News</h4>
+<h4>Author: Charles</h4>
+<h2>Testing for Partial Visibility
+<a href="https://twitter.com/intent/tweet?text=%20%40JarrahTech%20http://www.jarrahtechnology.com" target="_blank"><img alt="Twitter" src="/assets/img/twitter.png"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=//www.jarrahtechnology.com" target="_blank"><img alt="Facebook" src="/assets/img/facebook.png"/></a>
+<a href="http://plus.google.com/share?url=http://www.jarrahtechnology.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/img/gplus.png" alt="Share on Google+"/></a>
+</h2>
+      <p>As Concealed Intent is a 3D game with objects free to move in any
+direction, development often throws up interesting 3D geometry problems
+(see old problems
+<a href="http://www.cordinc.com/blog/2012/09/collinearity-in-unity3d.html">here</a>
+and
+<a href="http://www.cordinc.com/blog/2012/03/line-plane-intersection-in-uni.html">here</a>).
+The latest problem was testing to see if an object is partially visible,
+or rather, if something is slightly blocking the view. Imagine that you
+have a spaceship and you want to know not only if it is visible on the
+screen, but also if a part of it is behind a planet or another ship.</p>
+
+<!--more-->
+
+<p>There are well-known good solutions to finding if an <a href="http://wiki.unity3d.com/index.php?title=IsVisibleFrom">object is on the
+screen</a> or if
+there is something inbetween the camera and a single point in space
+(using
+<a href="http://docs.unity3d.com/Documentation/ScriptReference/Physics.Linecast.html">Physics.Linecast</a>).
+However, I wanted to know if part of the object was hidden and part
+visible. That is, if the object’s edge projected onto the plane with the
+line from the object’s center to the camera as its normal, is anything
+intersecting it when viewed from the camera. Luckily for me the objects
+I’m interested in are spheres and so become circles when projected onto
+a plane. Furthermore, I only tested 4 diametrically opposed points on
+these circles (plus the center). The problem then is to derive these
+points.</p>
+
+<p>Firstly we know the position of the camera position <em>C</em>, center of the
+object <em>O</em> and its radius <em>r</em>. Thus the plane passing through the point
+<em>O</em> with the normal <em>C</em> - <em>O</em> is the plane the object needs to be
+projected onto. Since the object is a sphere, all that is required is to
+get orthogonal axes on this plane passing through <em>O</em> and the move along
+them <em>r</em> distance in each direction (giving 4 opposite points on the
+projected circle). To get one such axis cross the plane normal with any
+vector other than the normal itself. To get the next axis cross the
+derived axis with the normal. After normalising the axis vectors,
+multiply each by the radius and the 4 opposite points are <em>O</em> plus/minus
+these two vectors. In Unity3D use <code>Physics.Linecast</code> to test
+if there is anything inbetween the camera and these points.</p>
+
+<p>Below is the <code>C\#</code> code I used to perform these tests. The
+result is an array of five booleans corresponding to whether the view of
+the object center and 4 opposite bounding points is obscured by an
+intervening object. What is done after this is up to the programmer. I
+used the code to ensure that when focusing on an object it wasn’t
+partially blocked. If it was blocked than the camera was moved in the
+direction opposite to the blocking object and the view tested again. For
+reference, I found the radius with the code
+<code>((SphereCollider)focusEntity.collider).radius \*
+focusEntity.transform.lossyScale.x  
+</code>.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="kt">bool</span><span class="p">[]</span> <span class="nf">IsObscured</span><span class="p">(</span><span class="n">Vector3</span> <span class="n">cameraPos</span><span class="p">,</span> <span class="n">Vector3</span> <span class="n">focus</span><span class="p">,</span> <span class="kt">float</span> <span class="n">radius</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Vector3</span> <span class="n">cameraNormal</span> <span class="p">=</span> <span class="p">(</span><span class="n">cameraPos</span> <span class="p">-</span> <span class="n">focus</span><span class="p">).</span><span class="n">normalized</span><span class="p">;</span>
+    <span class="n">Vector3</span> <span class="n">planeAxis1</span> <span class="p">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="nf">Cross</span><span class="p">(</span><span class="n">cameraNormal</span><span class="p">,</span> <span class="n">cameraNormal</span> <span class="p">!=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">forward</span> <span class="p">?</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">forward</span> <span class="p">:</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">right</span><span class="p">).</span><span class="n">normalized</span><span class="p">;</span>
+    <span class="n">Vector3</span> <span class="n">planeAxis2</span> <span class="p">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="nf">Cross</span><span class="p">(</span><span class="n">planeAxis1</span><span class="p">,</span> <span class="n">cameraNormal</span><span class="p">).</span><span class="n">normalized</span>
+    <span class="k">return</span> <span class="nf">Obscured</span><span class="p">(</span><span class="n">cameraPos</span><span class="p">,</span> <span class="n">focusEntity</span><span class="p">.</span><span class="n">transform</span><span class="p">,</span> <span class="n">planeAxis1</span><span class="p">,</span> <span class="n">planeAxis2</span><span class="p">,</span> <span class="n">radius</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span><span class="p">[]</span> <span class="nf">Obscured</span><span class="p">(</span><span class="n">Vector3</span> <span class="n">camera</span><span class="p">,</span> <span class="n">Transform</span> <span class="n">center</span><span class="p">,</span> <span class="n">Vector3</span> <span class="n">axis1</span><span class="p">,</span> <span class="n">Vector3</span> <span class="n">axis2</span><span class="p">,</span> <span class="kt">float</span> <span class="n">radius</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">bool</span><span class="p">[]</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">bool</span><span class="p">[</span><span class="m">5</span><span class="p">];</span>
+    <span class="n">result</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="nf">Intercepted</span><span class="p">(</span><span class="n">camera</span><span class="p">,</span> <span class="n">center</span><span class="p">.</span><span class="n">position</span><span class="p">,</span> <span class="n">center</span><span class="p">);</span>
+    <span class="n">result</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">=</span> <span class="nf">Intercepted</span><span class="p">(</span><span class="n">camera</span><span class="p">,</span> <span class="n">center</span><span class="p">.</span><span class="n">position</span> <span class="p">+</span> <span class="p">(</span><span class="n">radius</span> <span class="p">*</span> <span class="n">axis1</span><span class="p">),</span> <span class="n">center</span><span class="p">);</span>
+    <span class="n">result</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">=</span> <span class="nf">Intercepted</span><span class="p">(</span><span class="n">camera</span><span class="p">,</span> <span class="n">center</span><span class="p">.</span><span class="n">position</span> <span class="p">-</span> <span class="p">(</span><span class="n">radius</span> <span class="p">*</span> <span class="n">axis1</span><span class="p">),</span> <span class="n">center</span><span class="p">);</span>
+    <span class="n">result</span><span class="p">[</span><span class="m">3</span><span class="p">]</span> <span class="p">=</span> <span class="nf">Intercepted</span><span class="p">(</span><span class="n">camera</span><span class="p">,</span> <span class="n">center</span><span class="p">.</span><span class="n">position</span> <span class="p">+</span> <span class="p">(</span><span class="n">radius</span> <span class="p">*</span> <span class="n">axis2</span><span class="p">),</span> <span class="n">center</span><span class="p">);</span>
+    <span class="n">result</span><span class="p">[</span><span class="m">4</span><span class="p">]</span> <span class="p">=</span> <span class="nf">Intercepted</span><span class="p">(</span><span class="n">camera</span><span class="p">,</span> <span class="n">center</span><span class="p">.</span><span class="n">position</span> <span class="p">-</span> <span class="p">(</span><span class="n">radius</span> <span class="p">*</span> <span class="n">axis2</span><span class="p">),</span> <span class="n">center</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Returns true iff linecast from&lt;-&gt;to does not hit anything other than targetTrans
+</span>
+<span class="kt">bool</span> <span class="nf">Intercepted</span><span class="p">(</span><span class="n">Vector3</span> <span class="k">from</span><span class="p">,</span> <span class="n">Vector3</span> <span class="n">to</span><span class="p">,</span> <span class="n">Transform</span> <span class="n">targetTrans</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">RaycastHit</span> <span class="n">hit</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">Physics</span><span class="p">.</span><span class="nf">Linecast</span><span class="p">(</span><span class="k">from</span><span class="p">,</span> <span class="n">to</span><span class="p">,</span> <span class="k">out</span> <span class="n">hit</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">hit</span><span class="p">.</span><span class="n">transform</span> <span class="p">!=</span> <span class="n">targetTrans</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><strong>Comments:</strong>
+<em>I have removed the commenting system (for privacy concerns), below are the comments that were left on this post before doing so…</em></p>
+
+<p><em>Drew Ski @ 2013-10-14</em> - I was needing this for my game.  I had the thought to use the multiple casting method.  Didn’t think to approach it in this way.  Thank you for this.  It pushed me in the right direction.  With a bit of tweaking for my own purposes it worked like a charm.  Good job and thanks again.</p>
+
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+Tags: 
+    
+      <a class="post" href="/blog/tag/Unity.html">Unity</a>, 
+    
+      <a class="post" href="/blog/tag/Technical.html">Technical</a>
+    
+</div>
+</div>
+  
+
+<hr>
+
+      <footer>
+        <p>&copy; Jarrah Technology 2013-2022</p>
+      </footer>
+
+     </div><!-- /container -->
+
+  </body>
+</html>
