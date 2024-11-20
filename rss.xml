@@ -6,9 +6,26 @@
     <atom:link href="http://www.jarrahtechnology.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Jarrah Technology</description>
     <language>en-us</language>
-    <pubDate>Fri, 21 Jun 2024 17:22:20 +0800</pubDate>
-    <lastBuildDate>Fri, 21 Jun 2024 17:22:20 +0800</lastBuildDate>
+    <pubDate>Wed, 20 Nov 2024 14:28:28 +0800</pubDate>
+    <lastBuildDate>Wed, 20 Nov 2024 14:28:28 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Restart?</title>
+      <link>http://www.jarrahtechnology.com/2024/11/11/Restart.html</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0800</pubDate>
+      <guid>http://www.jarrahtechnology.com/2024/11/11/Restart</guid>
+      <description>&lt;p&gt;Its been a while. So what has been happening? Not much. In the last week I’ve started coding again, but nothing directly gamedev related, although not completely unrelated. I updated my old Scala libraries to the most recent versions of the system and them improved some planet generation code I wrote years ago. Fun, but probably not going anywhere. I also installed Linux Mint on my old 2012 Macbook Pro (as the old OS was creaking and wouldn’t update). It actually works better now - the trackpad used to work intermittently, now it is fine! I wrote and posted this from the laptop.&lt;/p&gt;
+
+&lt;p&gt;Really need to get back to doing some work, starting with the much delayed Godot prototype test.&lt;/p&gt;
+
+&lt;p&gt;Sometime soon:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Godot prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Linux</title>
@@ -465,37 +482,6 @@ Next, fix any bugs that come up. Since I should have tons of time apart from bug
   &lt;li&gt;Lots of QA/bugfixing&lt;/li&gt;
   &lt;li&gt;Started creating marketing materials&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Now Or Never - Progress Report</title>
-      <link>http://www.jarrahtechnology.com/2022/11/01/Now-Or-Never.html</link>
-      <pubDate>Tue, 01 Nov 2022 00:00:00 +0800</pubDate>
-      <guid>http://www.jarrahtechnology.com/2022/11/01/Now-Or-Never</guid>
-      <description>&lt;p&gt;A little change to format in this progress report. Rather than say what I hope to achieve, instead the below list is SHD’s remaining tasks (in order). It is also my current plan. The goal is the release of SHD to Itch.io by the end of the month. That is it. This section comes first, because I’m focussed on the finish. Tasks 1 &amp;amp; 4 may take some time; the rest should be fairly straightforward (fingers crossed).&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Tutorial&lt;/li&gt;
-  &lt;li&gt;Translations: remove non-english and check text&lt;/li&gt;
-  &lt;li&gt;Possible small changes: should blast self-destruct? how many levels use dumb AI?&lt;/li&gt;
-  &lt;li&gt;Clean/test/build&lt;/li&gt;
-  &lt;li&gt;Itch.io: build, screenshots, cover image &amp;amp; release&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Last month I ruthlessly culled the list of remaining tasks. This game need to be finished ASAP. The AI component is good enough. I could work on it for many months if I wanted, but won’t. The online component is dropped, the feedback screen is gone. The project’s README file now has over a dozen other possible small improvements, plus a few of bigger ones (but was online play ever a real possibility?). I don’t expect to revisit them.&lt;/p&gt;
-
-&lt;p&gt;The tasks completed last month were:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Finished AI&lt;/li&gt;
-  &lt;li&gt;Completed UI sizing for different screen sizes (this took most of the time, especially tracking down a DPI scaling bug)&lt;/li&gt;
-  &lt;li&gt;Updated splash screen&lt;/li&gt;
-  &lt;li&gt;Bugfixes&lt;/li&gt;
-  &lt;li&gt;Started on tutorial&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anyway, time to get back to it!&lt;/p&gt;
 </description>
     </item>
     
